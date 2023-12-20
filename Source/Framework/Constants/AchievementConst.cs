@@ -501,7 +501,7 @@ namespace Framework.Constants
         IsForQuest = 0x20  // Is For Quest
     }
 
-    public enum CriteriaType : byte
+    public enum CriteriaType : short
     {
         KillCreature = 0,   // Kill NPC "{Creature}"
         WinBattleground = 1,   // Win battleground "{Map}"
@@ -601,9 +601,9 @@ namespace Framework.Constants
         ReleasedSpirit = 95,  /*NYI*/ // Released Spirit
         AccountKnownPet = 96,  /*NYI*/ // Account knows pet "{Creature}" (Backtracked)
         DefeatDungeonEncounterWhileElegibleForLoot = 97,  /*NYI*/ // Defeat Encounter "{DungeonEncounter}" While Eligible For Loot
-                                                                  // UNUSED 18{}                                 = 98,  // Unused
-                                                                  // UNUSED 19{}                                 = 99,  // Unused
-                                                                  // UNUSED 20{}                                 = 100, // Unused
+        // UNUSED 18{}                                 = 98,  // Unused
+        // UNUSED 19{}                                 = 99,  // Unused
+        // UNUSED 20{}                                 = 100, // Unused
         HighestDamageDone = 101, // Highest damage done in 1 single ability
         HighestDamageTaken = 102, // Most damage taken in 1 single hit
         TotalDamageTaken = 103, // Total damage taken
@@ -614,7 +614,7 @@ namespace Framework.Constants
         BuyTaxi = 108, // Buy a taxi
         GetLootByType = 109, // Get loot via "{$Loot Acquisition}"
         LandTargetedSpellOnTarget = 110, // Land targeted spell "{Spell}" on a target
-                                         // UNUSED 21{}                                 = 111, // Unused
+        // UNUSED 21{}                                 = 111, // Unused
         LearnTradeskillSkillLine = 112, // Learn tradeskill skill line "{SkillLine}"
         HonorableKills = 113, // Honorable kills (number in interface, won't update except for login)
         AcceptSummon = 114, // Accept a summon
@@ -745,7 +745,9 @@ namespace Framework.Constants
         PerksProgramMonthComplete = 249, /*NYI*/
         CompleteTrackingQuest = 250, /*NYI*/
 
-        Count
+        GainLevels = 253, // Gain Levels
+
+        Count = 257
     }
 
     public enum CriteriaDataType
