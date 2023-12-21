@@ -22,6 +22,7 @@ namespace Game.Entities
 {
     public abstract class WorldObject : WorldLocation, IDisposable
     {
+        public static implicit operator bool(WorldObject obj) => obj != null;
         public WorldObject(bool isWorldObject)
         {
             _name = "";

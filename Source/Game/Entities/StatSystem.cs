@@ -13,6 +13,8 @@ namespace Game.Entities
 {
     public partial class Unit
     {
+        public static implicit operator bool(Unit obj) => obj == null;
+
         public void HandleStatFlatModifier(UnitMods unitMod, UnitModifierFlatType modifierType, float amount, bool apply)
         {
             if (unitMod >= UnitMods.End || modifierType >= UnitModifierFlatType.End)

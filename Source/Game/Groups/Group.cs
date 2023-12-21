@@ -19,6 +19,11 @@ namespace Game.Groups
 {
     public class Group
     {
+        public static implicit operator bool(Group grp)
+        {
+            return grp != null && !string.IsNullOrWhiteSpace(grp.m_leaderName);
+        }
+
         public Group()
         {
             m_leaderName = "";

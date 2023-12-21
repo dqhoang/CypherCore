@@ -396,7 +396,7 @@ namespace Scripts.EasternKingdoms.BlackrockMountain.BlackrockDepths.CorenDirebre
         {
             Unit caster = GetCaster();
 
-            targets.RemoveAll(new UnitAuraCheck<WorldObject>(true, SpellIds.HasDarkBrewmaidensBrew));
+            targets.RemoveAll(new UnitAuraCheck(true, SpellIds.HasDarkBrewmaidensBrew));
 
             if (targets.Count > 1)
             {

@@ -23,6 +23,11 @@ namespace Game.Entities
 {
     public class GameObject : WorldObject
     {
+        public static implicit operator bool(GameObject gameObject)
+        {
+            return gameObject != null;
+        }
+
         public GameObject() : base(false)
         {
             ObjectTypeMask |= TypeMask.GameObject;
