@@ -324,7 +324,7 @@ namespace Game.Entities
         void GetSetOfSpellsInSpellGroup(SpellGroup group_id, out List<int> foundSpells, ref List<SpellGroup> usedGroups)
         {
             foundSpells = new List<int>();
-            if (usedGroups.Find(p => p == group_id) == 0)
+            if (usedGroups.Find(p => p == group_id) != 0)
                 return;
 
             usedGroups.Add(group_id);
@@ -1084,7 +1084,6 @@ namespace Game.Entities
             }
 
             List<uint> groups = new();
-            uint count = 0;
             do
             {
                 uint group_id = result.Read<uint>(0);
@@ -1133,12 +1132,11 @@ namespace Game.Entities
 
                 foreach (var spell in spells)
                 {
-                    ++count;
                     mSpellSpellGroup.Add((uint)spell, (SpellGroup)group);
                 }
             }
 
-            Log.outInfo(LogFilter.ServerLoading, "Loaded {0} spell group definitions in {1} ms", count, Time.GetMSTimeDiffToNow(oldMSTime));
+            Log.outInfo(LogFilter.ServerLoading, "Loaded {0} spell group definitions in {1} ms", mSpellSpellGroup.Count, Time.GetMSTimeDiffToNow(oldMSTime));
         }
 
         public void LoadSpellGroupStackRules()
@@ -1294,7 +1292,7 @@ namespace Game.Entities
             //                                         0        1           2                3                 4                 5                 6
             SQLResult result = DB.World.Query("SELECT SpellId, SchoolMask, SpellFamilyName, SpellFamilyMask0, SpellFamilyMask1, SpellFamilyMask2, SpellFamilyMask3, " +
                 //7          8           9              10              11       12              13                  14              15      16        17
-                "ProcFlags, ProcFlags2, SpellTypeMask, SpellPhaseMask, HitMask, AttributesMask, DisableEffectsMask, ProcsPerMinute, Chance, Cooldown, Charges FROM spell_proc");
+                "ProcFlags, ProcFlags2, SpellTypeMask, SpellPhaseMask, HitMask, AttributesMask, DisableEffectsMask, ProcsPerMinute, Chance, Cooldown, Charges FROM spell_proc Order By SpellId");
 
             uint count = 0;
             if (!result.IsEmpty())
@@ -1319,9 +1317,12 @@ namespace Game.Entities
 
                     if (allRanks)
                     {
+                        if (spellInfo.IsRanked())
+                            Log.outError(LogFilter.Sql, "Spell {0} listed in `spell_proc` with all ranks, but spell has no ranks.", spellId);
+
                         if (spellInfo.GetFirstRankSpell().Id != (uint)spellId)
                         {
-                            Log.outError(LogFilter.Sql, "Spell {0} listed in `spell_proc` is not first rank of spell.", spellId);
+                            Log.outError(LogFilter.Sql, "Spell {0} listed in `spell_proc` is not the first rank of the spell.", spellId);
                             continue;
                         }
                     }
