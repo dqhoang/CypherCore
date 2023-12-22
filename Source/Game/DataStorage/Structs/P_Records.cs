@@ -2,6 +2,7 @@
 // Licensed under the GNU GENERAL PUBLIC LICENSE. See LICENSE file in the project root for full license information.
 
 using Framework.Constants;
+using System;
 
 namespace Game.DataStorage
 {
@@ -176,6 +177,13 @@ namespace Game.DataStorage
         public uint Id;
         public uint ItemID;
         public byte ItemLevelDelta;
+    }
+
+    public sealed class PVPStatRecord
+    {
+        public LocalizedString Description;
+        public uint ID;
+        public int MapID;
     }
 
     public sealed class PvpSeasonRecord

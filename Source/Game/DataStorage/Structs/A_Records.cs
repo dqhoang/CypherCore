@@ -259,12 +259,6 @@ namespace Game.DataStorage
         public uint ArtifactPowerID;
     }
 
-    public sealed class ArtifactQuestXPRecord
-    {
-        public uint Id;
-        public uint[] Difficulty = new uint[10];
-    }
-
     public sealed class ArtifactTierRecord
     {
         public uint Id;

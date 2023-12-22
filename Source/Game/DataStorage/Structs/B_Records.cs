@@ -30,6 +30,17 @@ namespace Game.DataStorage
         public byte Sex;
         public byte Data;                                                     // real ID to hair/facial hair
     }
+    public sealed class BattlePetAbilityRecord
+    {
+        public uint Id;
+        public string Name;
+        public string Description;
+        public int IconFileDataId;
+        public byte PetTypeEnum;
+        public int Cooldown;
+        public short BattlePetVisualId;
+        public byte Flags;
+    }
 
     public sealed class BattlePetBreedQualityRecord
     {

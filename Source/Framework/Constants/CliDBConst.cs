@@ -994,6 +994,22 @@ namespace Framework.Constants
         Disabled = 0x04
     }
 
+    public enum CfgCategoriesCharsets : byte
+    {
+        Any     = 0x00,
+        Latin1  = 0x01,
+        English = 0x02,
+        Russian = 0x04,
+        Korean  = 0x08,
+        Chinese = 0x10
+    };
+
+    public enum CfgCategoriesFlags : byte
+    {
+        None        = 0x0,
+        Tournament  = 0x1
+    };
+
     public enum ChrCustomizationReqFlag
     {
         HasRequirements = 0x01

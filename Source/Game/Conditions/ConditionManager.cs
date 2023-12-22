@@ -2903,7 +2903,7 @@ namespace Game
                 case WorldStateExpressionFunctions.WeekNumber:
                     long now = GameTime.GetGameTime();
                     uint raidOrigin = 1135695600;
-                    Cfg_RegionsRecord region = CliDB.CfgRegionsStorage.LookupByKey(Global.WorldMgr.GetRealmId().Region);
+                    CfgRegionsRecord region = CliDB.CfgRegionsStorage.LookupByKey(Global.WorldMgr.GetRealmId().Region);
                     if (region != null)
                         raidOrigin = region.Raidorigin;
 

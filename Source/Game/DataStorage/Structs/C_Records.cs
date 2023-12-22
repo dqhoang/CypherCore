@@ -2,11 +2,26 @@
 // Licensed under the GNU GENERAL PUBLIC LICENSE. See LICENSE file in the project root for full license information.
 
 using Framework.Constants;
+using System;
 using System.Numerics;
 
 namespace Game.DataStorage
 {
-    public sealed class Cfg_RegionsRecord
+    public sealed class CfgCategoriesRecord
+    {
+        public uint ID;
+        public LocalizedString Name;
+        public ushort LocaleMask;
+        public byte CreateCharsetMask;
+        public byte ExistingCharsetMask;
+        public byte Flags;
+        public sbyte Order;
+
+        public CfgCategoriesCharsets GetCreateCharsetMask() { return (CfgCategoriesCharsets)CreateCharsetMask; }
+        public CfgCategoriesCharsets GetExistingCharsetMask() { return (CfgCategoriesCharsets)ExistingCharsetMask; }
+        public CfgCategoriesFlags GetFlags() { return (CfgCategoriesFlags)Flags; }
+    }
+    public sealed class CfgRegionsRecord
     {
         public uint Id;
         public string Tag;

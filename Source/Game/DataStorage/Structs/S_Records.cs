@@ -68,6 +68,13 @@ namespace Game.DataStorage
         public string Script;
     }
 
+    public sealed class ServerMessagesRecord
+    {
+
+        public uint ID;
+        public LocalizedString Text;
+    }
+
     public sealed class SkillLineRecord
     {
         public LocalizedString DisplayName;
