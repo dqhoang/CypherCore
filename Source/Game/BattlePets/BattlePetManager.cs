@@ -183,8 +183,14 @@ namespace Game.BattlePets
                 do
                 {
                     uint species = petsResult.Read<uint>(1);
-                    ObjectGuid ownerGuid = !petsResult.IsNull(11) ? ObjectGuid.Create(HighGuid.Player, petsResult.Read<ulong>(11)) : ObjectGuid.Empty;
-
+                    ObjectGuid ownerGuid = ObjectGuid.Empty;
+                    try // HACK: I'm receiving 3 columns, possibly due to empty set from DB.
+                    {
+                         if(!petsResult.IsNull(11))
+                            ownerGuid = ObjectGuid.Create(HighGuid.Player, petsResult.Read<ulong>(11));
+                    }catch (Exception e) {
+                        Log.outError(LogFilter.SqlDev, $"BattlePetMgr: PetsResult error: {e.Message}");
+                    }
                     BattlePetSpeciesRecord speciesEntry = CliDB.BattlePetSpeciesStorage.LookupByKey(species);
                     if (speciesEntry != null)
                     {
