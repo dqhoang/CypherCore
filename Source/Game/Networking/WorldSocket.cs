@@ -810,7 +810,7 @@ namespace Game.Networking
                             if (_worldSession != null && !_worldSession.HasPermission(RBACPermissions.SkipCheckOverspeedPing))
                             {
                                 Log.outError(LogFilter.Network, "WorldSocket:HandlePing: {0} kicked for over-speed pings (address: {1})", _worldSession.GetPlayerInfo(), GetRemoteIpAddress());
-                                //return ReadDataHandlerResult.Error;
+                                return false;
                             }
                         }
                     }
