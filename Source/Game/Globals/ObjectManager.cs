@@ -6673,9 +6673,9 @@ namespace Game
         public void LoadPetLevelInfo()
         {
             uint oldMSTime = Time.GetMSTime();
-
+            var maxPlayerLevel = WorldConfig.GetIntValue(WorldCfg.MaxPlayerLevel);
             //                                         0               1      2   3     4    5    6    7     8    9
-            SQLResult result = DB.World.Query("SELECT creature_entry, level, hp, mana, str, agi, sta, inte, spi, armor FROM pet_levelstats");
+            SQLResult result = DB.World.Query($"SELECT creature_entry, level, hp, mana, str, agi, sta, inte, spi, armor FROM pet_levelstats where level <= {maxPlayerLevel}");
 
             if (result.IsEmpty())
             {
@@ -6694,13 +6694,13 @@ namespace Game
                 }
 
                 uint currentlevel = result.Read<uint>(1);
-                if (currentlevel > WorldConfig.GetIntValue(WorldCfg.MaxPlayerLevel))
+                if (currentlevel > maxPlayerLevel)
                 {
                     if (currentlevel > SharedConst.StrongMaxLevel)        // hardcoded level maximum
                         Log.outError(LogFilter.Sql, "Wrong (> {0}) level {1} in `pet_levelstats` table, ignoring.", SharedConst.StrongMaxLevel, currentlevel);
                     else
                     {
-                        Log.outInfo(LogFilter.Server, "Unused (> MaxPlayerLevel in worldserver.conf) level {0} in `pet_levelstats` table, ignoring.", currentlevel);
+                        Log.outInfo(LogFilter.Misc, "Unused (> MaxPlayerLevel in worldserver.conf) level {0} in `pet_levelstats` table, ignoring.", currentlevel);
                         ++count;                                // make result loading percent "expected" correct in case disabled detail mode for example.
                     }
                     continue;
@@ -8746,7 +8746,7 @@ namespace Game
                 AddLocaleString(result.Read<string>(10), locale, data.QuestCompletionLog);
             } while (result.NextRow());
 
-            Log.outInfo(LogFilter.ServerLoading, "Loaded {0} Quest Tempalate locale strings in {1} ms", _questTemplateLocaleStorage.Count, Time.GetMSTimeDiffToNow(oldMSTime));
+            Log.outInfo(LogFilter.ServerLoading, "Loaded {0} Quest Template locale strings in {1} ms", _questTemplateLocaleStorage.Count, Time.GetMSTimeDiffToNow(oldMSTime));
         }
         public void LoadQuestObjectivesLocale()
         {
