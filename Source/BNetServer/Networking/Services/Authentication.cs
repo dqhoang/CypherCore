@@ -9,6 +9,8 @@ using Framework.Database;
 using Framework.Realm;
 using Google.Protobuf;
 using System;
+using System.Text.Json;
+using System.Text.Json.Nodes;
 
 namespace BNetServer.Networking
 {
@@ -37,9 +39,64 @@ namespace BNetServer.Networking
 
             locale = logonRequest.Locale;
             os = logonRequest.Platform;
-            build = (uint)logonRequest.ApplicationVersion;
+            timezoneOffset = 0;
+            if(logonRequest.DeviceId != null)
+            {
+                // Hack: lets break the string apart and find the "UTCO" key
+                var offset = uint.Parse(JsonNode.Parse(logonRequest.DeviceId)["UTCO"].ToString());
+                TimeSpan convert;
+                switch (offset)
+                {
+                    case 0xAADC2D37u: convert = TimeSpan.FromMinutes(-720); break;
+                    case 0x362F107Bu: convert = TimeSpan.FromMinutes(-690); break;
+                    case 0x2C44C70Cu: convert = TimeSpan.FromMinutes(-660); break;
+                    case 0xB84A209Eu: convert = TimeSpan.FromMinutes(-640); break;
+                    case 0xBA3D57D1u: convert = TimeSpan.FromMinutes(-630); break;
+                    case 0x4040695Au: convert = TimeSpan.FromMinutes(-600); break;
+                    case 0xB65A75D0u: convert = TimeSpan.FromMinutes(-570); break;
+                    case 0xC8614DEBu: convert = TimeSpan.FromMinutes(-540); break;
+                    case 0x3A68BD26u: convert = TimeSpan.FromMinutes(-510); break;
+                    case 0x51E8096Cu: convert = TimeSpan.FromMinutes(-480); break;
+                    case 0x4DD8F896u: convert = TimeSpan.FromMinutes(-420); break;
+                    case 0x674B7C0Fu: convert = TimeSpan.FromMinutes(-360); break;
+                    case 0x633C6B39u: convert = TimeSpan.FromMinutes(-300); break;
+                    case 0x0BAD340Au: convert = TimeSpan.FromMinutes(-240); break;
+                    case 0x74B25683u: convert = TimeSpan.FromMinutes(-225); break;
+                    case 0x09B9FCD7u: convert = TimeSpan.FromMinutes(-210); break;
+                    case 0x150C169Bu: convert = TimeSpan.FromMinutes(-180); break;
+                    case 0x191B2771u: convert = TimeSpan.FromMinutes(-120); break;
+                    case 0xD7D3B14Eu: convert = TimeSpan.FromMinutes(-60); break;
+                    case 0x47CE5170u: convert = TimeSpan.FromMinutes(-44); break;
+                    case 0x15E8E23Bu: convert = TimeSpan.FromMinutes(60); break;
+                    case 0x733864AEu: convert = TimeSpan.FromMinutes(120); break;
+                    case 0xF71F9C94u: convert = TimeSpan.FromMinutes(180); break;
+                    case 0xBDE50F54u: convert = TimeSpan.FromMinutes(210); break;
+                    case 0x2BDD6DB9u: convert = TimeSpan.FromMinutes(240); break;
+                    case 0xB1E07F42u: convert = TimeSpan.FromMinutes(270); break;
+                    case 0x454FF132u: convert = TimeSpan.FromMinutes(300); break;
+                    case 0x3F4DA929u: convert = TimeSpan.FromMinutes(330); break;
+                    case 0xD1554AC4u: convert = TimeSpan.FromMinutes(360); break;
+                    case 0xBB667143u: convert = TimeSpan.FromMinutes(390); break;
+                    case 0x9E2B78C9u: convert = TimeSpan.FromMinutes(420); break;
+                    case 0x1C377816u: convert = TimeSpan.FromMinutes(450); break;
+                    case 0x1A4440E3u: convert = TimeSpan.FromMinutes(480); break;
+                    case 0xB49DF789u: convert = TimeSpan.FromMinutes(525); break;
+                    case 0xC3A28C54u: convert = TimeSpan.FromMinutes(540); break;
+                    case 0x35A9FB8Fu: convert = TimeSpan.FromMinutes(570); break;
+                    case 0x889BD751u: convert = TimeSpan.FromMinutes(600); break;
+                    case 0x8CAAE827u: convert = TimeSpan.FromMinutes(660); break;
+                    case 0x7285EE60u: convert = TimeSpan.FromMinutes(690); break;
+                    case 0x1CC2DEF4u: convert = TimeSpan.FromMinutes(720); break;
+                    case 0x89B8FD2Fu: convert = TimeSpan.FromMinutes(765); break;
+                    case 0x98DBA70Eu: convert = TimeSpan.FromMinutes(780); break;
+                    case 0xC59585BBu: convert = TimeSpan.FromMinutes(840); break;
+                    default:
+                    case 0x350CA8AFu: convert = TimeSpan.Zero; break;
+                }
 
-            var hostname = Global.LoginServiceMgr.GetHostnameForClient(GetRemoteIpEndPoint());
+                timezoneOffset = (short)convert.TotalMinutes;
+            }
+            build = (uint)logonRequest.ApplicationVersion;
 
             ChallengeExternalRequest externalChallenge = new();
             externalChallenge.PayloadType = "web_auth_url";

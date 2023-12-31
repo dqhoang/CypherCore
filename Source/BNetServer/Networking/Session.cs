@@ -22,6 +22,7 @@ namespace BNetServer.Networking
 
         string locale;
         string os;
+        short timezoneOffset;
         uint build;
         string ipCountry;
 

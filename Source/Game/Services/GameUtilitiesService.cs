@@ -105,7 +105,7 @@ namespace Game
             var realmAddress = Params.LookupByKey("Param_RealmAddress");
             if (realmAddress != null)
                 return Global.RealmMgr.JoinRealm((uint)realmAddress.UintValue, Global.WorldMgr.GetRealm().Build, System.Net.IPAddress.Parse(GetRemoteAddress()), GetRealmListSecret(),
-                    GetSessionDbcLocale(), GetOS(), GetAccountName(), response);
+                    GetSessionDbcLocale(), GetOS(), GetTimezoneOffset(), GetAccountName(), response);
 
             return BattlenetRpcErrorCode.Ok;
         }
