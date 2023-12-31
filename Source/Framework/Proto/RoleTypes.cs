@@ -45,24 +45,33 @@ namespace Bgs.Protocol {
 
   }
   #region Messages
-  public sealed partial class Role : pb::IMessage<Role> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class Role : pb::IMessage<Role>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<Role> _parser = new pb::MessageParser<Role>(() => new Role());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Role> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.RoleTypesReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Role() {
       OnConstruction();
     }
@@ -70,6 +79,7 @@ namespace Bgs.Protocol {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Role(Role other) : this() {
       _hasBits0 = other._hasBits0;
       id_ = other.id_;
@@ -85,6 +95,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Role Clone() {
       return new Role(this);
     }
@@ -95,6 +106,7 @@ namespace Bgs.Protocol {
 
     private uint id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Id {
       get { if ((_hasBits0 & 1) != 0) { return id_; } else { return IdDefaultValue; } }
       set {
@@ -104,11 +116,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasId {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearId() {
       _hasBits0 &= ~1;
     }
@@ -119,6 +133,7 @@ namespace Bgs.Protocol {
 
     private string name_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_ ?? NameDefaultValue; }
       set {
@@ -127,11 +142,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "name" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasName {
       get { return name_ != null; }
     }
     /// <summary>Clears the value of the "name" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearName() {
       name_ = null;
     }
@@ -142,6 +159,7 @@ namespace Bgs.Protocol {
         = pb::FieldCodec.ForString(26);
     private readonly pbc::RepeatedField<string> privilege_ = new pbc::RepeatedField<string>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Privilege {
       get { return privilege_; }
     }
@@ -152,6 +170,7 @@ namespace Bgs.Protocol {
         = pb::FieldCodec.ForUInt32(34);
     private readonly pbc::RepeatedField<uint> assignableRole_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<uint> AssignableRole {
       get { return assignableRole_; }
     }
@@ -162,6 +181,7 @@ namespace Bgs.Protocol {
 
     private bool required_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Required {
       get { if ((_hasBits0 & 2) != 0) { return required_; } else { return RequiredDefaultValue; } }
       set {
@@ -171,11 +191,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "required" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRequired {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "required" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRequired() {
       _hasBits0 &= ~2;
     }
@@ -186,6 +208,7 @@ namespace Bgs.Protocol {
 
     private bool unique_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Unique {
       get { if ((_hasBits0 & 4) != 0) { return unique_; } else { return UniqueDefaultValue; } }
       set {
@@ -195,11 +218,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "unique" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasUnique {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "unique" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearUnique() {
       _hasBits0 &= ~4;
     }
@@ -210,6 +235,7 @@ namespace Bgs.Protocol {
 
     private uint relegationRole_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint RelegationRole {
       get { if ((_hasBits0 & 8) != 0) { return relegationRole_; } else { return RelegationRoleDefaultValue; } }
       set {
@@ -219,11 +245,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "relegation_role" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRelegationRole {
       get { return (_hasBits0 & 8) != 0; }
     }
     /// <summary>Clears the value of the "relegation_role" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRelegationRole() {
       _hasBits0 &= ~8;
     }
@@ -234,6 +262,7 @@ namespace Bgs.Protocol {
         = pb::FieldCodec.ForUInt32(74);
     private readonly pbc::RepeatedField<uint> kickableRole_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<uint> KickableRole {
       get { return kickableRole_; }
     }
@@ -244,16 +273,19 @@ namespace Bgs.Protocol {
         = pb::FieldCodec.ForUInt32(82);
     private readonly pbc::RepeatedField<uint> removableRole_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<uint> RemovableRole {
       get { return removableRole_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Role);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Role other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -274,6 +306,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasId) hash ^= Id.GetHashCode();
@@ -292,12 +325,17 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasId) {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
@@ -325,9 +363,45 @@ namespace Bgs.Protocol {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (HasName) {
+        output.WriteRawTag(18);
+        output.WriteString(Name);
+      }
+      privilege_.WriteTo(ref output, _repeated_privilege_codec);
+      assignableRole_.WriteTo(ref output, _repeated_assignableRole_codec);
+      if (HasRequired) {
+        output.WriteRawTag(40);
+        output.WriteBool(Required);
+      }
+      if (HasUnique) {
+        output.WriteRawTag(48);
+        output.WriteBool(Unique);
+      }
+      if (HasRelegationRole) {
+        output.WriteRawTag(56);
+        output.WriteUInt32(RelegationRole);
+      }
+      kickableRole_.WriteTo(ref output, _repeated_kickableRole_codec);
+      removableRole_.WriteTo(ref output, _repeated_removableRole_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasId) {
@@ -356,6 +430,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Role other) {
       if (other == null) {
         return;
@@ -383,7 +458,11 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -431,28 +510,92 @@ namespace Bgs.Protocol {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            Name = input.ReadString();
+            break;
+          }
+          case 26: {
+            privilege_.AddEntriesFrom(ref input, _repeated_privilege_codec);
+            break;
+          }
+          case 34:
+          case 32: {
+            assignableRole_.AddEntriesFrom(ref input, _repeated_assignableRole_codec);
+            break;
+          }
+          case 40: {
+            Required = input.ReadBool();
+            break;
+          }
+          case 48: {
+            Unique = input.ReadBool();
+            break;
+          }
+          case 56: {
+            RelegationRole = input.ReadUInt32();
+            break;
+          }
+          case 74:
+          case 72: {
+            kickableRole_.AddEntriesFrom(ref input, _repeated_kickableRole_codec);
+            break;
+          }
+          case 82:
+          case 80: {
+            removableRole_.AddEntriesFrom(ref input, _repeated_removableRole_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class RoleState : pb::IMessage<RoleState> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class RoleState : pb::IMessage<RoleState>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<RoleState> _parser = new pb::MessageParser<RoleState>(() => new RoleState());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RoleState> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.RoleTypesReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RoleState() {
       OnConstruction();
     }
@@ -460,6 +603,7 @@ namespace Bgs.Protocol {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RoleState(RoleState other) : this() {
       _hasBits0 = other._hasBits0;
       name_ = other.name_;
@@ -474,6 +618,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RoleState Clone() {
       return new RoleState(this);
     }
@@ -484,6 +629,7 @@ namespace Bgs.Protocol {
 
     private string name_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_ ?? NameDefaultValue; }
       set {
@@ -492,11 +638,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "name" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasName {
       get { return name_ != null; }
     }
     /// <summary>Clears the value of the "name" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearName() {
       name_ = null;
     }
@@ -507,6 +655,7 @@ namespace Bgs.Protocol {
         = pb::FieldCodec.ForUInt32(34);
     private readonly pbc::RepeatedField<uint> assignableRole_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<uint> AssignableRole {
       get { return assignableRole_; }
     }
@@ -517,6 +666,7 @@ namespace Bgs.Protocol {
 
     private bool required_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Required {
       get { if ((_hasBits0 & 1) != 0) { return required_; } else { return RequiredDefaultValue; } }
       set {
@@ -526,11 +676,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "required" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRequired {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "required" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRequired() {
       _hasBits0 &= ~1;
     }
@@ -541,6 +693,7 @@ namespace Bgs.Protocol {
 
     private bool unique_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Unique {
       get { if ((_hasBits0 & 2) != 0) { return unique_; } else { return UniqueDefaultValue; } }
       set {
@@ -550,11 +703,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "unique" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasUnique {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "unique" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearUnique() {
       _hasBits0 &= ~2;
     }
@@ -565,6 +720,7 @@ namespace Bgs.Protocol {
 
     private uint relegationRole_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint RelegationRole {
       get { if ((_hasBits0 & 4) != 0) { return relegationRole_; } else { return RelegationRoleDefaultValue; } }
       set {
@@ -574,11 +730,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "relegation_role" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRelegationRole {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "relegation_role" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRelegationRole() {
       _hasBits0 &= ~4;
     }
@@ -589,6 +747,7 @@ namespace Bgs.Protocol {
         = pb::FieldCodec.ForUInt32(74);
     private readonly pbc::RepeatedField<uint> kickableRole_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<uint> KickableRole {
       get { return kickableRole_; }
     }
@@ -599,6 +758,7 @@ namespace Bgs.Protocol {
         = pb::FieldCodec.ForUInt32(82);
     private readonly pbc::RepeatedField<uint> removableRole_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<uint> RemovableRole {
       get { return removableRole_; }
     }
@@ -609,16 +769,19 @@ namespace Bgs.Protocol {
         = pb::FieldCodec.ForUInt32(90);
     private readonly pbc::RepeatedField<uint> mentionableRole_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<uint> MentionableRole {
       get { return mentionableRole_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RoleState);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RoleState other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -638,6 +801,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasName) hash ^= Name.GetHashCode();
@@ -655,12 +819,17 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasName) {
         output.WriteRawTag(18);
         output.WriteString(Name);
@@ -684,9 +853,41 @@ namespace Bgs.Protocol {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasName) {
+        output.WriteRawTag(18);
+        output.WriteString(Name);
+      }
+      assignableRole_.WriteTo(ref output, _repeated_assignableRole_codec);
+      if (HasRequired) {
+        output.WriteRawTag(40);
+        output.WriteBool(Required);
+      }
+      if (HasUnique) {
+        output.WriteRawTag(48);
+        output.WriteBool(Unique);
+      }
+      if (HasRelegationRole) {
+        output.WriteRawTag(56);
+        output.WriteUInt32(RelegationRole);
+      }
+      kickableRole_.WriteTo(ref output, _repeated_kickableRole_codec);
+      removableRole_.WriteTo(ref output, _repeated_removableRole_codec);
+      mentionableRole_.WriteTo(ref output, _repeated_mentionableRole_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasName) {
@@ -712,6 +913,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RoleState other) {
       if (other == null) {
         return;
@@ -736,7 +938,11 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -781,7 +987,59 @@ namespace Bgs.Protocol {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 18: {
+            Name = input.ReadString();
+            break;
+          }
+          case 34:
+          case 32: {
+            assignableRole_.AddEntriesFrom(ref input, _repeated_assignableRole_codec);
+            break;
+          }
+          case 40: {
+            Required = input.ReadBool();
+            break;
+          }
+          case 48: {
+            Unique = input.ReadBool();
+            break;
+          }
+          case 56: {
+            RelegationRole = input.ReadUInt32();
+            break;
+          }
+          case 74:
+          case 72: {
+            kickableRole_.AddEntriesFrom(ref input, _repeated_kickableRole_codec);
+            break;
+          }
+          case 82:
+          case 80: {
+            removableRole_.AddEntriesFrom(ref input, _repeated_removableRole_codec);
+            break;
+          }
+          case 90:
+          case 88: {
+            mentionableRole_.AddEntriesFrom(ref input, _repeated_mentionableRole_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

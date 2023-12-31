@@ -61,24 +61,33 @@ namespace Bgs.Protocol {
   }
 
   #region Messages
-  public sealed partial class BGSServiceOptions : pb::IMessage<BGSServiceOptions> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class BGSServiceOptions : pb::IMessage<BGSServiceOptions>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<BGSServiceOptions> _parser = new pb::MessageParser<BGSServiceOptions>(() => new BGSServiceOptions());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<BGSServiceOptions> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.ServiceOptionsReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BGSServiceOptions() {
       OnConstruction();
     }
@@ -86,6 +95,7 @@ namespace Bgs.Protocol {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BGSServiceOptions(BGSServiceOptions other) : this() {
       _hasBits0 = other._hasBits0;
       descriptorName_ = other.descriptorName_;
@@ -99,6 +109,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BGSServiceOptions Clone() {
       return new BGSServiceOptions(this);
     }
@@ -109,6 +120,7 @@ namespace Bgs.Protocol {
 
     private string descriptorName_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DescriptorName {
       get { return descriptorName_ ?? DescriptorNameDefaultValue; }
       set {
@@ -117,11 +129,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "descriptor_name" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasDescriptorName {
       get { return descriptorName_ != null; }
     }
     /// <summary>Clears the value of the "descriptor_name" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearDescriptorName() {
       descriptorName_ = null;
     }
@@ -132,6 +146,7 @@ namespace Bgs.Protocol {
 
     private uint version_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Version {
       get { if ((_hasBits0 & 1) != 0) { return version_; } else { return VersionDefaultValue; } }
       set {
@@ -141,11 +156,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "version" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasVersion {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "version" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearVersion() {
       _hasBits0 &= ~1;
     }
@@ -156,6 +173,7 @@ namespace Bgs.Protocol {
 
     private string shardName_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ShardName {
       get { return shardName_ ?? ShardNameDefaultValue; }
       set {
@@ -164,11 +182,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "shard_name" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasShardName {
       get { return shardName_ != null; }
     }
     /// <summary>Clears the value of the "shard_name" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearShardName() {
       shardName_ = null;
     }
@@ -179,6 +199,7 @@ namespace Bgs.Protocol {
 
     private bool resolveClientInstance_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ResolveClientInstance {
       get { if ((_hasBits0 & 2) != 0) { return resolveClientInstance_; } else { return ResolveClientInstanceDefaultValue; } }
       set {
@@ -188,11 +209,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "resolve_client_instance" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasResolveClientInstance {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "resolve_client_instance" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearResolveClientInstance() {
       _hasBits0 &= ~2;
     }
@@ -203,6 +226,7 @@ namespace Bgs.Protocol {
 
     private global::Bgs.Protocol.BGSServiceOptions.Types.ServiceType type_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.BGSServiceOptions.Types.ServiceType Type {
       get { if ((_hasBits0 & 4) != 0) { return type_; } else { return TypeDefaultValue; } }
       set {
@@ -212,11 +236,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "type" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasType {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "type" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearType() {
       _hasBits0 &= ~4;
     }
@@ -227,6 +253,7 @@ namespace Bgs.Protocol {
 
     private string apiType_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ApiType {
       get { return apiType_ ?? ApiTypeDefaultValue; }
       set {
@@ -235,11 +262,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "api_type" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasApiType {
       get { return apiType_ != null; }
     }
     /// <summary>Clears the value of the "api_type" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearApiType() {
       apiType_ = null;
     }
@@ -250,6 +279,7 @@ namespace Bgs.Protocol {
 
     private bool isGlobal_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsGlobal {
       get { if ((_hasBits0 & 8) != 0) { return isGlobal_; } else { return IsGlobalDefaultValue; } }
       set {
@@ -259,21 +289,25 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "is_global" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIsGlobal {
       get { return (_hasBits0 & 8) != 0; }
     }
     /// <summary>Clears the value of the "is_global" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIsGlobal() {
       _hasBits0 &= ~8;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as BGSServiceOptions);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(BGSServiceOptions other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -292,6 +326,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasDescriptorName) hash ^= DescriptorName.GetHashCode();
@@ -308,12 +343,17 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasDescriptorName) {
         output.WriteRawTag(10);
         output.WriteString(DescriptorName);
@@ -345,9 +385,49 @@ namespace Bgs.Protocol {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasDescriptorName) {
+        output.WriteRawTag(10);
+        output.WriteString(DescriptorName);
+      }
+      if (HasVersion) {
+        output.WriteRawTag(32);
+        output.WriteUInt32(Version);
+      }
+      if (HasShardName) {
+        output.WriteRawTag(42);
+        output.WriteString(ShardName);
+      }
+      if (HasResolveClientInstance) {
+        output.WriteRawTag(48);
+        output.WriteBool(ResolveClientInstance);
+      }
+      if (HasType) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) Type);
+      }
+      if (HasApiType) {
+        output.WriteRawTag(66);
+        output.WriteString(ApiType);
+      }
+      if (HasIsGlobal) {
+        output.WriteRawTag(72);
+        output.WriteBool(IsGlobal);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasDescriptorName) {
@@ -378,6 +458,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(BGSServiceOptions other) {
       if (other == null) {
         return;
@@ -407,7 +488,11 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -444,11 +529,56 @@ namespace Bgs.Protocol {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            DescriptorName = input.ReadString();
+            break;
+          }
+          case 32: {
+            Version = input.ReadUInt32();
+            break;
+          }
+          case 42: {
+            ShardName = input.ReadString();
+            break;
+          }
+          case 48: {
+            ResolveClientInstance = input.ReadBool();
+            break;
+          }
+          case 56: {
+            Type = (global::Bgs.Protocol.BGSServiceOptions.Types.ServiceType) input.ReadEnum();
+            break;
+          }
+          case 66: {
+            ApiType = input.ReadString();
+            break;
+          }
+          case 72: {
+            IsGlobal = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the BGSServiceOptions message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       public enum ServiceType {
         [pbr::OriginalName("SERVICE_TYPE_RPC")] Rpc = 0,
@@ -462,24 +592,33 @@ namespace Bgs.Protocol {
 
   }
 
-  public sealed partial class SDKServiceOptions : pb::IMessage<SDKServiceOptions> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SDKServiceOptions : pb::IMessage<SDKServiceOptions>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SDKServiceOptions> _parser = new pb::MessageParser<SDKServiceOptions>(() => new SDKServiceOptions());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SDKServiceOptions> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.ServiceOptionsReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SDKServiceOptions() {
       OnConstruction();
     }
@@ -487,6 +626,7 @@ namespace Bgs.Protocol {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SDKServiceOptions(SDKServiceOptions other) : this() {
       _hasBits0 = other._hasBits0;
       inbound_ = other.inbound_;
@@ -496,6 +636,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SDKServiceOptions Clone() {
       return new SDKServiceOptions(this);
     }
@@ -506,6 +647,7 @@ namespace Bgs.Protocol {
 
     private bool inbound_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Inbound {
       get { if ((_hasBits0 & 1) != 0) { return inbound_; } else { return InboundDefaultValue; } }
       set {
@@ -515,11 +657,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "inbound" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasInbound {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "inbound" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearInbound() {
       _hasBits0 &= ~1;
     }
@@ -530,6 +674,7 @@ namespace Bgs.Protocol {
 
     private bool outbound_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Outbound {
       get { if ((_hasBits0 & 2) != 0) { return outbound_; } else { return OutboundDefaultValue; } }
       set {
@@ -539,11 +684,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "outbound" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasOutbound {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "outbound" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearOutbound() {
       _hasBits0 &= ~2;
     }
@@ -554,6 +701,7 @@ namespace Bgs.Protocol {
 
     private bool useClientId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool UseClientId {
       get { if ((_hasBits0 & 4) != 0) { return useClientId_; } else { return UseClientIdDefaultValue; } }
       set {
@@ -563,21 +711,25 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "use_client_id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasUseClientId {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "use_client_id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearUseClientId() {
       _hasBits0 &= ~4;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SDKServiceOptions);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SDKServiceOptions other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -592,6 +744,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasInbound) hash ^= Inbound.GetHashCode();
@@ -604,12 +757,17 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasInbound) {
         output.WriteRawTag(8);
         output.WriteBool(Inbound);
@@ -625,9 +783,33 @@ namespace Bgs.Protocol {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasInbound) {
+        output.WriteRawTag(8);
+        output.WriteBool(Inbound);
+      }
+      if (HasOutbound) {
+        output.WriteRawTag(16);
+        output.WriteBool(Outbound);
+      }
+      if (HasUseClientId) {
+        output.WriteRawTag(24);
+        output.WriteBool(UseClientId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasInbound) {
@@ -646,6 +828,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SDKServiceOptions other) {
       if (other == null) {
         return;
@@ -663,7 +846,11 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -684,7 +871,35 @@ namespace Bgs.Protocol {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Inbound = input.ReadBool();
+            break;
+          }
+          case 16: {
+            Outbound = input.ReadBool();
+            break;
+          }
+          case 24: {
+            UseClientId = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

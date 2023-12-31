@@ -40,12 +40,12 @@ namespace Bgs.Protocol.Report.V2 {
             "LnYyLlVzZXJPcHRpb25zSAASOwoMY2x1Yl9vcHRpb25zGAsgASgLMiMuYmdz",
             "LnByb3RvY29sLnJlcG9ydC52Mi5DbHViT3B0aW9uc0gAEj8KDmVudGl0eV9v",
             "cHRpb25zGBQgASgLMiUuYmdzLnByb3RvY29sLnJlcG9ydC52Mi5FbnRpdHlP",
-            "cHRpb25zSAA6BoL5KwIIAUIGCgR0eXBlMs4BCg1SZXBvcnRTZXJ2aWNlEngK",
+            "cHRpb25zSAA6BoL5KwIIAUIGCgR0eXBlMsIBCg1SZXBvcnRTZXJ2aWNlEnQK",
             "DFN1Ym1pdFJlcG9ydBIrLmJncy5wcm90b2NvbC5yZXBvcnQudjIuU3VibWl0",
-            "UmVwb3J0UmVxdWVzdBoULmJncy5wcm90b2NvbC5Ob0RhdGEiJYL5KwIIAYL5",
-            "KxtCGVJlc29sdmVTdWJtaXRSZXBvcnRSZWdpb24aQ4L5KycKJWJuZXQucHJv",
-            "dG9jb2wucmVwb3J0LnYyLlJlcG9ydFNlcnZpY2WC+SsIKgZyZXBvcnSC+SsC",
-            "SAGK+SsCEAFCA4ABAA=="));
+            "UmVwb3J0UmVxdWVzdBoULmJncy5wcm90b2NvbC5Ob0RhdGEiIYL5Kx0IAUIZ",
+            "UmVzb2x2ZVN1Ym1pdFJlcG9ydFJlZ2lvbho7gvkrMQolYm5ldC5wcm90b2Nv",
+            "bC5yZXBvcnQudjIuUmVwb3J0U2VydmljZSoGcmVwb3J0SAGK+SsCEAFCA4AB",
+            "AA=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Bgs.Protocol.Account.V1.AccountTypesReflection.Descriptor, global::Bgs.Protocol.Report.V2.ReportTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, global::Bgs.Protocol.FieldOptionsReflection.Descriptor, global::Bgs.Protocol.MessageOptionsReflection.Descriptor, global::Bgs.Protocol.MethodOptionsReflection.Descriptor, global::Bgs.Protocol.ServiceOptionsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -56,23 +56,32 @@ namespace Bgs.Protocol.Report.V2 {
 
   }
   #region Messages
-  public sealed partial class SubmitReportRequest : pb::IMessage<SubmitReportRequest> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SubmitReportRequest : pb::IMessage<SubmitReportRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SubmitReportRequest> _parser = new pb::MessageParser<SubmitReportRequest>(() => new SubmitReportRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SubmitReportRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Report.V2.ReportServiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SubmitReportRequest() {
       OnConstruction();
     }
@@ -80,8 +89,9 @@ namespace Bgs.Protocol.Report.V2 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SubmitReportRequest(SubmitReportRequest other) : this() {
-      agentId_ = other.HasAgentId ? other.agentId_.Clone() : null;
+      agentId_ = other.agentId_ != null ? other.agentId_.Clone() : null;
       userDescription_ = other.userDescription_;
       switch (other.TypeCase) {
         case TypeOneofCase.UserOptions:
@@ -99,6 +109,7 @@ namespace Bgs.Protocol.Report.V2 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SubmitReportRequest Clone() {
       return new SubmitReportRequest(this);
     }
@@ -107,21 +118,12 @@ namespace Bgs.Protocol.Report.V2 {
     public const int AgentIdFieldNumber = 1;
     private global::Bgs.Protocol.Account.V1.AccountId agentId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Account.V1.AccountId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
       }
-    }
-    /// <summary>Gets whether the agent_id field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasAgentId {
-      get { return agentId_ != null; }
-    }
-    /// <summary>Clears the value of the agent_id field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearAgentId() {
-      agentId_ = null;
     }
 
     /// <summary>Field number for the "user_description" field.</summary>
@@ -130,6 +132,7 @@ namespace Bgs.Protocol.Report.V2 {
 
     private string userDescription_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string UserDescription {
       get { return userDescription_ ?? UserDescriptionDefaultValue; }
       set {
@@ -138,11 +141,13 @@ namespace Bgs.Protocol.Report.V2 {
     }
     /// <summary>Gets whether the "user_description" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasUserDescription {
       get { return userDescription_ != null; }
     }
     /// <summary>Clears the value of the "user_description" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearUserDescription() {
       userDescription_ = null;
     }
@@ -150,69 +155,36 @@ namespace Bgs.Protocol.Report.V2 {
     /// <summary>Field number for the "user_options" field.</summary>
     public const int UserOptionsFieldNumber = 10;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Report.V2.UserOptions UserOptions {
-      get { return HasUserOptions ? (global::Bgs.Protocol.Report.V2.UserOptions) type_ : null; }
+      get { return typeCase_ == TypeOneofCase.UserOptions ? (global::Bgs.Protocol.Report.V2.UserOptions) type_ : null; }
       set {
         type_ = value;
         typeCase_ = value == null ? TypeOneofCase.None : TypeOneofCase.UserOptions;
-      }
-    }
-    /// <summary>Gets whether the "user_options" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasUserOptions {
-      get { return typeCase_ == TypeOneofCase.UserOptions; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "user_options" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearUserOptions() {
-      if (HasUserOptions) {
-        ClearType();
       }
     }
 
     /// <summary>Field number for the "club_options" field.</summary>
     public const int ClubOptionsFieldNumber = 11;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Report.V2.ClubOptions ClubOptions {
-      get { return HasClubOptions ? (global::Bgs.Protocol.Report.V2.ClubOptions) type_ : null; }
+      get { return typeCase_ == TypeOneofCase.ClubOptions ? (global::Bgs.Protocol.Report.V2.ClubOptions) type_ : null; }
       set {
         type_ = value;
         typeCase_ = value == null ? TypeOneofCase.None : TypeOneofCase.ClubOptions;
-      }
-    }
-    /// <summary>Gets whether the "club_options" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasClubOptions {
-      get { return typeCase_ == TypeOneofCase.ClubOptions; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "club_options" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearClubOptions() {
-      if (HasClubOptions) {
-        ClearType();
       }
     }
 
     /// <summary>Field number for the "entity_options" field.</summary>
     public const int EntityOptionsFieldNumber = 20;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Report.V2.EntityOptions EntityOptions {
-      get { return HasEntityOptions ? (global::Bgs.Protocol.Report.V2.EntityOptions) type_ : null; }
+      get { return typeCase_ == TypeOneofCase.EntityOptions ? (global::Bgs.Protocol.Report.V2.EntityOptions) type_ : null; }
       set {
         type_ = value;
         typeCase_ = value == null ? TypeOneofCase.None : TypeOneofCase.EntityOptions;
-      }
-    }
-    /// <summary>Gets whether the "entity_options" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasEntityOptions {
-      get { return typeCase_ == TypeOneofCase.EntityOptions; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "entity_options" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearEntityOptions() {
-      if (HasEntityOptions) {
-        ClearType();
       }
     }
 
@@ -226,22 +198,26 @@ namespace Bgs.Protocol.Report.V2 {
     }
     private TypeOneofCase typeCase_ = TypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TypeOneofCase TypeCase {
       get { return typeCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearType() {
       typeCase_ = TypeOneofCase.None;
       type_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SubmitReportRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SubmitReportRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -259,13 +235,14 @@ namespace Bgs.Protocol.Report.V2 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasAgentId) hash ^= AgentId.GetHashCode();
+      if (agentId_ != null) hash ^= AgentId.GetHashCode();
       if (HasUserDescription) hash ^= UserDescription.GetHashCode();
-      if (HasUserOptions) hash ^= UserOptions.GetHashCode();
-      if (HasClubOptions) hash ^= ClubOptions.GetHashCode();
-      if (HasEntityOptions) hash ^= EntityOptions.GetHashCode();
+      if (typeCase_ == TypeOneofCase.UserOptions) hash ^= UserOptions.GetHashCode();
+      if (typeCase_ == TypeOneofCase.ClubOptions) hash ^= ClubOptions.GetHashCode();
+      if (typeCase_ == TypeOneofCase.EntityOptions) hash ^= EntityOptions.GetHashCode();
       hash ^= (int) typeCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -274,13 +251,18 @@ namespace Bgs.Protocol.Report.V2 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasAgentId) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (agentId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(AgentId);
       }
@@ -288,39 +270,71 @@ namespace Bgs.Protocol.Report.V2 {
         output.WriteRawTag(18);
         output.WriteString(UserDescription);
       }
-      if (HasUserOptions) {
+      if (typeCase_ == TypeOneofCase.UserOptions) {
         output.WriteRawTag(82);
         output.WriteMessage(UserOptions);
       }
-      if (HasClubOptions) {
+      if (typeCase_ == TypeOneofCase.ClubOptions) {
         output.WriteRawTag(90);
         output.WriteMessage(ClubOptions);
       }
-      if (HasEntityOptions) {
+      if (typeCase_ == TypeOneofCase.EntityOptions) {
         output.WriteRawTag(162, 1);
         output.WriteMessage(EntityOptions);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (agentId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(AgentId);
+      }
+      if (HasUserDescription) {
+        output.WriteRawTag(18);
+        output.WriteString(UserDescription);
+      }
+      if (typeCase_ == TypeOneofCase.UserOptions) {
+        output.WriteRawTag(82);
+        output.WriteMessage(UserOptions);
+      }
+      if (typeCase_ == TypeOneofCase.ClubOptions) {
+        output.WriteRawTag(90);
+        output.WriteMessage(ClubOptions);
+      }
+      if (typeCase_ == TypeOneofCase.EntityOptions) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(EntityOptions);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasAgentId) {
+      if (agentId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AgentId);
       }
       if (HasUserDescription) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(UserDescription);
       }
-      if (HasUserOptions) {
+      if (typeCase_ == TypeOneofCase.UserOptions) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(UserOptions);
       }
-      if (HasClubOptions) {
+      if (typeCase_ == TypeOneofCase.ClubOptions) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClubOptions);
       }
-      if (HasEntityOptions) {
+      if (typeCase_ == TypeOneofCase.EntityOptions) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(EntityOptions);
       }
       if (_unknownFields != null) {
@@ -330,12 +344,13 @@ namespace Bgs.Protocol.Report.V2 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SubmitReportRequest other) {
       if (other == null) {
         return;
       }
-      if (other.HasAgentId) {
-        if (!HasAgentId) {
+      if (other.agentId_ != null) {
+        if (agentId_ == null) {
           AgentId = new global::Bgs.Protocol.Account.V1.AccountId();
         }
         AgentId.MergeFrom(other.AgentId);
@@ -368,7 +383,11 @@ namespace Bgs.Protocol.Report.V2 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -376,7 +395,7 @@ namespace Bgs.Protocol.Report.V2 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasAgentId) {
+            if (agentId_ == null) {
               AgentId = new global::Bgs.Protocol.Account.V1.AccountId();
             }
             input.ReadMessage(AgentId);
@@ -388,7 +407,7 @@ namespace Bgs.Protocol.Report.V2 {
           }
           case 82: {
             global::Bgs.Protocol.Report.V2.UserOptions subBuilder = new global::Bgs.Protocol.Report.V2.UserOptions();
-            if (HasUserOptions) {
+            if (typeCase_ == TypeOneofCase.UserOptions) {
               subBuilder.MergeFrom(UserOptions);
             }
             input.ReadMessage(subBuilder);
@@ -397,7 +416,7 @@ namespace Bgs.Protocol.Report.V2 {
           }
           case 90: {
             global::Bgs.Protocol.Report.V2.ClubOptions subBuilder = new global::Bgs.Protocol.Report.V2.ClubOptions();
-            if (HasClubOptions) {
+            if (typeCase_ == TypeOneofCase.ClubOptions) {
               subBuilder.MergeFrom(ClubOptions);
             }
             input.ReadMessage(subBuilder);
@@ -406,7 +425,60 @@ namespace Bgs.Protocol.Report.V2 {
           }
           case 162: {
             global::Bgs.Protocol.Report.V2.EntityOptions subBuilder = new global::Bgs.Protocol.Report.V2.EntityOptions();
-            if (HasEntityOptions) {
+            if (typeCase_ == TypeOneofCase.EntityOptions) {
+              subBuilder.MergeFrom(EntityOptions);
+            }
+            input.ReadMessage(subBuilder);
+            EntityOptions = subBuilder;
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (agentId_ == null) {
+              AgentId = new global::Bgs.Protocol.Account.V1.AccountId();
+            }
+            input.ReadMessage(AgentId);
+            break;
+          }
+          case 18: {
+            UserDescription = input.ReadString();
+            break;
+          }
+          case 82: {
+            global::Bgs.Protocol.Report.V2.UserOptions subBuilder = new global::Bgs.Protocol.Report.V2.UserOptions();
+            if (typeCase_ == TypeOneofCase.UserOptions) {
+              subBuilder.MergeFrom(UserOptions);
+            }
+            input.ReadMessage(subBuilder);
+            UserOptions = subBuilder;
+            break;
+          }
+          case 90: {
+            global::Bgs.Protocol.Report.V2.ClubOptions subBuilder = new global::Bgs.Protocol.Report.V2.ClubOptions();
+            if (typeCase_ == TypeOneofCase.ClubOptions) {
+              subBuilder.MergeFrom(ClubOptions);
+            }
+            input.ReadMessage(subBuilder);
+            ClubOptions = subBuilder;
+            break;
+          }
+          case 162: {
+            global::Bgs.Protocol.Report.V2.EntityOptions subBuilder = new global::Bgs.Protocol.Report.V2.EntityOptions();
+            if (typeCase_ == TypeOneofCase.EntityOptions) {
               subBuilder.MergeFrom(EntityOptions);
             }
             input.ReadMessage(subBuilder);
@@ -416,6 +488,7 @@ namespace Bgs.Protocol.Report.V2 {
         }
       }
     }
+    #endif
 
   }
 

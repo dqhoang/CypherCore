@@ -38,24 +38,33 @@ namespace Bgs.Protocol {
 
   }
   #region Messages
-  public sealed partial class SemanticVersion : pb::IMessage<SemanticVersion> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SemanticVersion : pb::IMessage<SemanticVersion>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SemanticVersion> _parser = new pb::MessageParser<SemanticVersion>(() => new SemanticVersion());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SemanticVersion> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.SemanticVersionReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SemanticVersion() {
       OnConstruction();
     }
@@ -63,6 +72,7 @@ namespace Bgs.Protocol {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SemanticVersion(SemanticVersion other) : this() {
       _hasBits0 = other._hasBits0;
       majorVersion_ = other.majorVersion_;
@@ -73,6 +83,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SemanticVersion Clone() {
       return new SemanticVersion(this);
     }
@@ -83,6 +94,7 @@ namespace Bgs.Protocol {
 
     private uint majorVersion_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint MajorVersion {
       get { if ((_hasBits0 & 1) != 0) { return majorVersion_; } else { return MajorVersionDefaultValue; } }
       set {
@@ -92,11 +104,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "major_version" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasMajorVersion {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "major_version" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearMajorVersion() {
       _hasBits0 &= ~1;
     }
@@ -107,6 +121,7 @@ namespace Bgs.Protocol {
 
     private uint minorVersion_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint MinorVersion {
       get { if ((_hasBits0 & 2) != 0) { return minorVersion_; } else { return MinorVersionDefaultValue; } }
       set {
@@ -116,11 +131,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "minor_version" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasMinorVersion {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "minor_version" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearMinorVersion() {
       _hasBits0 &= ~2;
     }
@@ -131,6 +148,7 @@ namespace Bgs.Protocol {
 
     private uint patchVersion_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint PatchVersion {
       get { if ((_hasBits0 & 4) != 0) { return patchVersion_; } else { return PatchVersionDefaultValue; } }
       set {
@@ -140,11 +158,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "patch_version" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasPatchVersion {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "patch_version" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearPatchVersion() {
       _hasBits0 &= ~4;
     }
@@ -155,6 +175,7 @@ namespace Bgs.Protocol {
 
     private string versionString_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string VersionString {
       get { return versionString_ ?? VersionStringDefaultValue; }
       set {
@@ -163,21 +184,25 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "version_string" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasVersionString {
       get { return versionString_ != null; }
     }
     /// <summary>Clears the value of the "version_string" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearVersionString() {
       versionString_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SemanticVersion);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SemanticVersion other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -193,6 +218,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasMajorVersion) hash ^= MajorVersion.GetHashCode();
@@ -206,12 +232,17 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasMajorVersion) {
         output.WriteRawTag(8);
         output.WriteUInt32(MajorVersion);
@@ -231,9 +262,37 @@ namespace Bgs.Protocol {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasMajorVersion) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(MajorVersion);
+      }
+      if (HasMinorVersion) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(MinorVersion);
+      }
+      if (HasPatchVersion) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(PatchVersion);
+      }
+      if (HasVersionString) {
+        output.WriteRawTag(34);
+        output.WriteString(VersionString);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasMajorVersion) {
@@ -255,6 +314,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SemanticVersion other) {
       if (other == null) {
         return;
@@ -275,7 +335,11 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -300,7 +364,39 @@ namespace Bgs.Protocol {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            MajorVersion = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            MinorVersion = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            PatchVersion = input.ReadUInt32();
+            break;
+          }
+          case 34: {
+            VersionString = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

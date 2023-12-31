@@ -79,25 +79,34 @@ namespace Bgs.Protocol.Club.V1 {
 
   }
   #region Messages
-  public sealed partial class ClubPrivilegeSet : pb::IMessage<ClubPrivilegeSet> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ClubPrivilegeSet : pb::IMessage<ClubPrivilegeSet>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ClubPrivilegeSet> _parser = new pb::MessageParser<ClubPrivilegeSet>(() => new ClubPrivilegeSet());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     private int _hasBits1;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ClubPrivilegeSet> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Club.V1.ClubRoleReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubPrivilegeSet() {
       OnConstruction();
     }
@@ -105,6 +114,7 @@ namespace Bgs.Protocol.Club.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubPrivilegeSet(ClubPrivilegeSet other) : this() {
       _hasBits0 = other._hasBits0;
       _hasBits1 = other._hasBits1;
@@ -161,6 +171,7 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubPrivilegeSet Clone() {
       return new ClubPrivilegeSet(this);
     }
@@ -171,6 +182,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canDestroy_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanDestroy {
       get { if ((_hasBits0 & 1) != 0) { return canDestroy_; } else { return CanDestroyDefaultValue; } }
       set {
@@ -180,11 +192,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_destroy" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanDestroy {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "can_destroy" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanDestroy() {
       _hasBits0 &= ~1;
     }
@@ -195,6 +209,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetAttribute_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetAttribute {
       get { if ((_hasBits0 & 2) != 0) { return canSetAttribute_; } else { return CanSetAttributeDefaultValue; } }
       set {
@@ -204,11 +219,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_attribute" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetAttribute {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "can_set_attribute" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetAttribute() {
       _hasBits0 &= ~2;
     }
@@ -219,6 +236,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetName_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetName {
       get { if ((_hasBits0 & 4) != 0) { return canSetName_; } else { return CanSetNameDefaultValue; } }
       set {
@@ -228,11 +246,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_name" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetName {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "can_set_name" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetName() {
       _hasBits0 &= ~4;
     }
@@ -243,6 +263,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetDescription_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetDescription {
       get { if ((_hasBits0 & 8) != 0) { return canSetDescription_; } else { return CanSetDescriptionDefaultValue; } }
       set {
@@ -252,11 +273,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_description" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetDescription {
       get { return (_hasBits0 & 8) != 0; }
     }
     /// <summary>Clears the value of the "can_set_description" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetDescription() {
       _hasBits0 &= ~8;
     }
@@ -267,6 +290,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetAvatar_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetAvatar {
       get { if ((_hasBits0 & 16) != 0) { return canSetAvatar_; } else { return CanSetAvatarDefaultValue; } }
       set {
@@ -276,11 +300,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_avatar" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetAvatar {
       get { return (_hasBits0 & 16) != 0; }
     }
     /// <summary>Clears the value of the "can_set_avatar" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetAvatar() {
       _hasBits0 &= ~16;
     }
@@ -291,6 +317,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetBroadcast_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetBroadcast {
       get { if ((_hasBits0 & 32) != 0) { return canSetBroadcast_; } else { return CanSetBroadcastDefaultValue; } }
       set {
@@ -300,11 +327,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_broadcast" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetBroadcast {
       get { return (_hasBits0 & 32) != 0; }
     }
     /// <summary>Clears the value of the "can_set_broadcast" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetBroadcast() {
       _hasBits0 &= ~32;
     }
@@ -315,6 +344,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetPrivacyLevel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetPrivacyLevel {
       get { if ((_hasBits0 & 64) != 0) { return canSetPrivacyLevel_; } else { return CanSetPrivacyLevelDefaultValue; } }
       set {
@@ -324,11 +354,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_privacy_level" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetPrivacyLevel {
       get { return (_hasBits0 & 64) != 0; }
     }
     /// <summary>Clears the value of the "can_set_privacy_level" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetPrivacyLevel() {
       _hasBits0 &= ~64;
     }
@@ -339,6 +371,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canAddMember_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanAddMember {
       get { if ((_hasBits0 & 128) != 0) { return canAddMember_; } else { return CanAddMemberDefaultValue; } }
       set {
@@ -348,11 +381,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_add_member" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanAddMember {
       get { return (_hasBits0 & 128) != 0; }
     }
     /// <summary>Clears the value of the "can_add_member" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanAddMember() {
       _hasBits0 &= ~128;
     }
@@ -363,6 +398,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canKickMember_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanKickMember {
       get { if ((_hasBits0 & 256) != 0) { return canKickMember_; } else { return CanKickMemberDefaultValue; } }
       set {
@@ -372,11 +408,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_kick_member" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanKickMember {
       get { return (_hasBits0 & 256) != 0; }
     }
     /// <summary>Clears the value of the "can_kick_member" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanKickMember() {
       _hasBits0 &= ~256;
     }
@@ -387,6 +425,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetOwnMemberAttribute_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetOwnMemberAttribute {
       get { if ((_hasBits0 & 512) != 0) { return canSetOwnMemberAttribute_; } else { return CanSetOwnMemberAttributeDefaultValue; } }
       set {
@@ -396,11 +435,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_own_member_attribute" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetOwnMemberAttribute {
       get { return (_hasBits0 & 512) != 0; }
     }
     /// <summary>Clears the value of the "can_set_own_member_attribute" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetOwnMemberAttribute() {
       _hasBits0 &= ~512;
     }
@@ -411,6 +452,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetOtherMemberAttribute_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetOtherMemberAttribute {
       get { if ((_hasBits0 & 1024) != 0) { return canSetOtherMemberAttribute_; } else { return CanSetOtherMemberAttributeDefaultValue; } }
       set {
@@ -420,11 +462,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_other_member_attribute" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetOtherMemberAttribute {
       get { return (_hasBits0 & 1024) != 0; }
     }
     /// <summary>Clears the value of the "can_set_other_member_attribute" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetOtherMemberAttribute() {
       _hasBits0 &= ~1024;
     }
@@ -435,6 +479,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetOwnVoiceState_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetOwnVoiceState {
       get { if ((_hasBits0 & 2048) != 0) { return canSetOwnVoiceState_; } else { return CanSetOwnVoiceStateDefaultValue; } }
       set {
@@ -444,11 +489,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_own_voice_state" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetOwnVoiceState {
       get { return (_hasBits0 & 2048) != 0; }
     }
     /// <summary>Clears the value of the "can_set_own_voice_state" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetOwnVoiceState() {
       _hasBits0 &= ~2048;
     }
@@ -459,6 +506,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetOwnPresenceLevel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetOwnPresenceLevel {
       get { if ((_hasBits0 & 4096) != 0) { return canSetOwnPresenceLevel_; } else { return CanSetOwnPresenceLevelDefaultValue; } }
       set {
@@ -468,11 +516,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_own_presence_level" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetOwnPresenceLevel {
       get { return (_hasBits0 & 4096) != 0; }
     }
     /// <summary>Clears the value of the "can_set_own_presence_level" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetOwnPresenceLevel() {
       _hasBits0 &= ~4096;
     }
@@ -483,6 +533,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetOwnWhisperLevel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetOwnWhisperLevel {
       get { if ((_hasBits0 & 8192) != 0) { return canSetOwnWhisperLevel_; } else { return CanSetOwnWhisperLevelDefaultValue; } }
       set {
@@ -492,11 +543,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_own_whisper_level" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetOwnWhisperLevel {
       get { return (_hasBits0 & 8192) != 0; }
     }
     /// <summary>Clears the value of the "can_set_own_whisper_level" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetOwnWhisperLevel() {
       _hasBits0 &= ~8192;
     }
@@ -507,6 +560,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetOwnMemberNote_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetOwnMemberNote {
       get { if ((_hasBits0 & 16384) != 0) { return canSetOwnMemberNote_; } else { return CanSetOwnMemberNoteDefaultValue; } }
       set {
@@ -516,11 +570,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_own_member_note" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetOwnMemberNote {
       get { return (_hasBits0 & 16384) != 0; }
     }
     /// <summary>Clears the value of the "can_set_own_member_note" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetOwnMemberNote() {
       _hasBits0 &= ~16384;
     }
@@ -531,6 +587,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetOtherMemberNote_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetOtherMemberNote {
       get { if ((_hasBits0 & 32768) != 0) { return canSetOtherMemberNote_; } else { return CanSetOtherMemberNoteDefaultValue; } }
       set {
@@ -540,11 +597,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_other_member_note" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetOtherMemberNote {
       get { return (_hasBits0 & 32768) != 0; }
     }
     /// <summary>Clears the value of the "can_set_other_member_note" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetOtherMemberNote() {
       _hasBits0 &= ~32768;
     }
@@ -555,6 +614,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canUseVoice_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanUseVoice {
       get { if ((_hasBits0 & 65536) != 0) { return canUseVoice_; } else { return CanUseVoiceDefaultValue; } }
       set {
@@ -564,11 +624,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_use_voice" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanUseVoice {
       get { return (_hasBits0 & 65536) != 0; }
     }
     /// <summary>Clears the value of the "can_use_voice" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanUseVoice() {
       _hasBits0 &= ~65536;
     }
@@ -579,6 +641,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canVoiceMuteMemberForAll_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanVoiceMuteMemberForAll {
       get { if ((_hasBits0 & 131072) != 0) { return canVoiceMuteMemberForAll_; } else { return CanVoiceMuteMemberForAllDefaultValue; } }
       set {
@@ -588,11 +651,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_voice_mute_member_for_all" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanVoiceMuteMemberForAll {
       get { return (_hasBits0 & 131072) != 0; }
     }
     /// <summary>Clears the value of the "can_voice_mute_member_for_all" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanVoiceMuteMemberForAll() {
       _hasBits0 &= ~131072;
     }
@@ -603,6 +668,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canGetInvitation_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanGetInvitation {
       get { if ((_hasBits0 & 262144) != 0) { return canGetInvitation_; } else { return CanGetInvitationDefaultValue; } }
       set {
@@ -612,11 +678,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_get_invitation" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanGetInvitation {
       get { return (_hasBits0 & 262144) != 0; }
     }
     /// <summary>Clears the value of the "can_get_invitation" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanGetInvitation() {
       _hasBits0 &= ~262144;
     }
@@ -627,6 +695,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSendInvitation_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSendInvitation {
       get { if ((_hasBits0 & 524288) != 0) { return canSendInvitation_; } else { return CanSendInvitationDefaultValue; } }
       set {
@@ -636,11 +705,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_send_invitation" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSendInvitation {
       get { return (_hasBits0 & 524288) != 0; }
     }
     /// <summary>Clears the value of the "can_send_invitation" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSendInvitation() {
       _hasBits0 &= ~524288;
     }
@@ -651,6 +722,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSendGuestInvitation_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSendGuestInvitation {
       get { if ((_hasBits0 & 1048576) != 0) { return canSendGuestInvitation_; } else { return CanSendGuestInvitationDefaultValue; } }
       set {
@@ -660,11 +732,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_send_guest_invitation" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSendGuestInvitation {
       get { return (_hasBits0 & 1048576) != 0; }
     }
     /// <summary>Clears the value of the "can_send_guest_invitation" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSendGuestInvitation() {
       _hasBits0 &= ~1048576;
     }
@@ -675,6 +749,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canRevokeOwnInvitation_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanRevokeOwnInvitation {
       get { if ((_hasBits0 & 2097152) != 0) { return canRevokeOwnInvitation_; } else { return CanRevokeOwnInvitationDefaultValue; } }
       set {
@@ -684,11 +759,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_revoke_own_invitation" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanRevokeOwnInvitation {
       get { return (_hasBits0 & 2097152) != 0; }
     }
     /// <summary>Clears the value of the "can_revoke_own_invitation" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanRevokeOwnInvitation() {
       _hasBits0 &= ~2097152;
     }
@@ -699,6 +776,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canRevokeOtherInvitation_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanRevokeOtherInvitation {
       get { if ((_hasBits0 & 4194304) != 0) { return canRevokeOtherInvitation_; } else { return CanRevokeOtherInvitationDefaultValue; } }
       set {
@@ -708,11 +786,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_revoke_other_invitation" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanRevokeOtherInvitation {
       get { return (_hasBits0 & 4194304) != 0; }
     }
     /// <summary>Clears the value of the "can_revoke_other_invitation" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanRevokeOtherInvitation() {
       _hasBits0 &= ~4194304;
     }
@@ -723,6 +803,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canGetSuggestion_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanGetSuggestion {
       get { if ((_hasBits0 & 8388608) != 0) { return canGetSuggestion_; } else { return CanGetSuggestionDefaultValue; } }
       set {
@@ -732,11 +813,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_get_suggestion" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanGetSuggestion {
       get { return (_hasBits0 & 8388608) != 0; }
     }
     /// <summary>Clears the value of the "can_get_suggestion" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanGetSuggestion() {
       _hasBits0 &= ~8388608;
     }
@@ -747,6 +830,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSuggestMember_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSuggestMember {
       get { if ((_hasBits0 & 16777216) != 0) { return canSuggestMember_; } else { return CanSuggestMemberDefaultValue; } }
       set {
@@ -756,11 +840,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_suggest_member" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSuggestMember {
       get { return (_hasBits0 & 16777216) != 0; }
     }
     /// <summary>Clears the value of the "can_suggest_member" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSuggestMember() {
       _hasBits0 &= ~16777216;
     }
@@ -771,6 +857,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canApproveMember_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanApproveMember {
       get { if ((_hasBits0 & 33554432) != 0) { return canApproveMember_; } else { return CanApproveMemberDefaultValue; } }
       set {
@@ -780,11 +867,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_approve_member" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanApproveMember {
       get { return (_hasBits0 & 33554432) != 0; }
     }
     /// <summary>Clears the value of the "can_approve_member" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanApproveMember() {
       _hasBits0 &= ~33554432;
     }
@@ -795,6 +884,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canGetTicket_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanGetTicket {
       get { if ((_hasBits0 & 67108864) != 0) { return canGetTicket_; } else { return CanGetTicketDefaultValue; } }
       set {
@@ -804,11 +894,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_get_ticket" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanGetTicket {
       get { return (_hasBits0 & 67108864) != 0; }
     }
     /// <summary>Clears the value of the "can_get_ticket" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanGetTicket() {
       _hasBits0 &= ~67108864;
     }
@@ -819,6 +911,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canCreateTicket_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanCreateTicket {
       get { if ((_hasBits0 & 134217728) != 0) { return canCreateTicket_; } else { return CanCreateTicketDefaultValue; } }
       set {
@@ -828,11 +921,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_create_ticket" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanCreateTicket {
       get { return (_hasBits0 & 134217728) != 0; }
     }
     /// <summary>Clears the value of the "can_create_ticket" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanCreateTicket() {
       _hasBits0 &= ~134217728;
     }
@@ -843,6 +938,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canDestroyTicket_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanDestroyTicket {
       get { if ((_hasBits0 & 268435456) != 0) { return canDestroyTicket_; } else { return CanDestroyTicketDefaultValue; } }
       set {
@@ -852,11 +948,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_destroy_ticket" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanDestroyTicket {
       get { return (_hasBits0 & 268435456) != 0; }
     }
     /// <summary>Clears the value of the "can_destroy_ticket" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanDestroyTicket() {
       _hasBits0 &= ~268435456;
     }
@@ -867,6 +965,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canGetBan_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanGetBan {
       get { if ((_hasBits0 & 536870912) != 0) { return canGetBan_; } else { return CanGetBanDefaultValue; } }
       set {
@@ -876,11 +975,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_get_ban" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanGetBan {
       get { return (_hasBits0 & 536870912) != 0; }
     }
     /// <summary>Clears the value of the "can_get_ban" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanGetBan() {
       _hasBits0 &= ~536870912;
     }
@@ -891,6 +992,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canAddBan_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanAddBan {
       get { if ((_hasBits0 & 1073741824) != 0) { return canAddBan_; } else { return CanAddBanDefaultValue; } }
       set {
@@ -900,11 +1002,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_add_ban" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanAddBan {
       get { return (_hasBits0 & 1073741824) != 0; }
     }
     /// <summary>Clears the value of the "can_add_ban" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanAddBan() {
       _hasBits0 &= ~1073741824;
     }
@@ -915,6 +1019,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canRemoveBan_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanRemoveBan {
       get { if ((_hasBits0 & -2147483648) != 0) { return canRemoveBan_; } else { return CanRemoveBanDefaultValue; } }
       set {
@@ -924,11 +1029,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_remove_ban" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanRemoveBan {
       get { return (_hasBits0 & -2147483648) != 0; }
     }
     /// <summary>Clears the value of the "can_remove_ban" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanRemoveBan() {
       _hasBits0 &= ~-2147483648;
     }
@@ -939,6 +1046,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canCreateStream_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanCreateStream {
       get { if ((_hasBits1 & 1) != 0) { return canCreateStream_; } else { return CanCreateStreamDefaultValue; } }
       set {
@@ -948,11 +1056,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_create_stream" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanCreateStream {
       get { return (_hasBits1 & 1) != 0; }
     }
     /// <summary>Clears the value of the "can_create_stream" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanCreateStream() {
       _hasBits1 &= ~1;
     }
@@ -963,6 +1073,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canDestroyStream_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanDestroyStream {
       get { if ((_hasBits1 & 2) != 0) { return canDestroyStream_; } else { return CanDestroyStreamDefaultValue; } }
       set {
@@ -972,11 +1083,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_destroy_stream" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanDestroyStream {
       get { return (_hasBits1 & 2) != 0; }
     }
     /// <summary>Clears the value of the "can_destroy_stream" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanDestroyStream() {
       _hasBits1 &= ~2;
     }
@@ -987,6 +1100,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetStreamPosition_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetStreamPosition {
       get { if ((_hasBits1 & 4) != 0) { return canSetStreamPosition_; } else { return CanSetStreamPositionDefaultValue; } }
       set {
@@ -996,11 +1110,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_stream_position" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetStreamPosition {
       get { return (_hasBits1 & 4) != 0; }
     }
     /// <summary>Clears the value of the "can_set_stream_position" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetStreamPosition() {
       _hasBits1 &= ~4;
     }
@@ -1011,6 +1127,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetStreamAttribute_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetStreamAttribute {
       get { if ((_hasBits1 & 8) != 0) { return canSetStreamAttribute_; } else { return CanSetStreamAttributeDefaultValue; } }
       set {
@@ -1020,11 +1137,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_stream_attribute" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetStreamAttribute {
       get { return (_hasBits1 & 8) != 0; }
     }
     /// <summary>Clears the value of the "can_set_stream_attribute" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetStreamAttribute() {
       _hasBits1 &= ~8;
     }
@@ -1035,6 +1154,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetStreamName_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetStreamName {
       get { if ((_hasBits1 & 16) != 0) { return canSetStreamName_; } else { return CanSetStreamNameDefaultValue; } }
       set {
@@ -1044,11 +1164,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_stream_name" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetStreamName {
       get { return (_hasBits1 & 16) != 0; }
     }
     /// <summary>Clears the value of the "can_set_stream_name" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetStreamName() {
       _hasBits1 &= ~16;
     }
@@ -1059,6 +1181,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetStreamSubject_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetStreamSubject {
       get { if ((_hasBits1 & 32) != 0) { return canSetStreamSubject_; } else { return CanSetStreamSubjectDefaultValue; } }
       set {
@@ -1068,11 +1191,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_stream_subject" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetStreamSubject {
       get { return (_hasBits1 & 32) != 0; }
     }
     /// <summary>Clears the value of the "can_set_stream_subject" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetStreamSubject() {
       _hasBits1 &= ~32;
     }
@@ -1083,6 +1208,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetStreamAccess_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetStreamAccess {
       get { if ((_hasBits1 & 64) != 0) { return canSetStreamAccess_; } else { return CanSetStreamAccessDefaultValue; } }
       set {
@@ -1092,11 +1218,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_stream_access" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetStreamAccess {
       get { return (_hasBits1 & 64) != 0; }
     }
     /// <summary>Clears the value of the "can_set_stream_access" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetStreamAccess() {
       _hasBits1 &= ~64;
     }
@@ -1107,6 +1235,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canSetStreamVoiceLevel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanSetStreamVoiceLevel {
       get { if ((_hasBits1 & 128) != 0) { return canSetStreamVoiceLevel_; } else { return CanSetStreamVoiceLevelDefaultValue; } }
       set {
@@ -1116,11 +1245,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_set_stream_voice_level" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanSetStreamVoiceLevel {
       get { return (_hasBits1 & 128) != 0; }
     }
     /// <summary>Clears the value of the "can_set_stream_voice_level" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanSetStreamVoiceLevel() {
       _hasBits1 &= ~128;
     }
@@ -1131,6 +1262,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canCreateMessage_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanCreateMessage {
       get { if ((_hasBits1 & 256) != 0) { return canCreateMessage_; } else { return CanCreateMessageDefaultValue; } }
       set {
@@ -1140,11 +1272,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_create_message" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanCreateMessage {
       get { return (_hasBits1 & 256) != 0; }
     }
     /// <summary>Clears the value of the "can_create_message" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanCreateMessage() {
       _hasBits1 &= ~256;
     }
@@ -1155,6 +1289,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canDestroyOwnMessage_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanDestroyOwnMessage {
       get { if ((_hasBits1 & 512) != 0) { return canDestroyOwnMessage_; } else { return CanDestroyOwnMessageDefaultValue; } }
       set {
@@ -1164,11 +1299,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_destroy_own_message" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanDestroyOwnMessage {
       get { return (_hasBits1 & 512) != 0; }
     }
     /// <summary>Clears the value of the "can_destroy_own_message" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanDestroyOwnMessage() {
       _hasBits1 &= ~512;
     }
@@ -1179,6 +1316,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canDestroyOtherMessage_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanDestroyOtherMessage {
       get { if ((_hasBits1 & 1024) != 0) { return canDestroyOtherMessage_; } else { return CanDestroyOtherMessageDefaultValue; } }
       set {
@@ -1188,11 +1326,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_destroy_other_message" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanDestroyOtherMessage {
       get { return (_hasBits1 & 1024) != 0; }
     }
     /// <summary>Clears the value of the "can_destroy_other_message" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanDestroyOtherMessage() {
       _hasBits1 &= ~1024;
     }
@@ -1203,6 +1343,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canEditOwnMessage_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanEditOwnMessage {
       get { if ((_hasBits1 & 2048) != 0) { return canEditOwnMessage_; } else { return CanEditOwnMessageDefaultValue; } }
       set {
@@ -1212,11 +1353,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_edit_own_message" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanEditOwnMessage {
       get { return (_hasBits1 & 2048) != 0; }
     }
     /// <summary>Clears the value of the "can_edit_own_message" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanEditOwnMessage() {
       _hasBits1 &= ~2048;
     }
@@ -1227,6 +1370,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canPinMessage_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanPinMessage {
       get { if ((_hasBits1 & 4096) != 0) { return canPinMessage_; } else { return CanPinMessageDefaultValue; } }
       set {
@@ -1236,11 +1380,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_pin_message" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanPinMessage {
       get { return (_hasBits1 & 4096) != 0; }
     }
     /// <summary>Clears the value of the "can_pin_message" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanPinMessage() {
       _hasBits1 &= ~4096;
     }
@@ -1251,6 +1397,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canMentionAll_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanMentionAll {
       get { if ((_hasBits1 & 8192) != 0) { return canMentionAll_; } else { return CanMentionAllDefaultValue; } }
       set {
@@ -1260,11 +1407,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_mention_all" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanMentionAll {
       get { return (_hasBits1 & 8192) != 0; }
     }
     /// <summary>Clears the value of the "can_mention_all" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanMentionAll() {
       _hasBits1 &= ~8192;
     }
@@ -1275,6 +1424,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canMentionHere_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanMentionHere {
       get { if ((_hasBits1 & 16384) != 0) { return canMentionHere_; } else { return CanMentionHereDefaultValue; } }
       set {
@@ -1284,11 +1434,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_mention_here" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanMentionHere {
       get { return (_hasBits1 & 16384) != 0; }
     }
     /// <summary>Clears the value of the "can_mention_here" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanMentionHere() {
       _hasBits1 &= ~16384;
     }
@@ -1299,6 +1451,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canMentionMember_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanMentionMember {
       get { if ((_hasBits1 & 32768) != 0) { return canMentionMember_; } else { return CanMentionMemberDefaultValue; } }
       set {
@@ -1308,11 +1461,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_mention_member" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanMentionMember {
       get { return (_hasBits1 & 32768) != 0; }
     }
     /// <summary>Clears the value of the "can_mention_member" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanMentionMember() {
       _hasBits1 &= ~32768;
     }
@@ -1323,6 +1478,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool canMentionRole_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool CanMentionRole {
       get { if ((_hasBits1 & 65536) != 0) { return canMentionRole_; } else { return CanMentionRoleDefaultValue; } }
       set {
@@ -1332,21 +1488,25 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "can_mention_role" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCanMentionRole {
       get { return (_hasBits1 & 65536) != 0; }
     }
     /// <summary>Clears the value of the "can_mention_role" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCanMentionRole() {
       _hasBits1 &= ~65536;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ClubPrivilegeSet);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ClubPrivilegeSet other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1407,6 +1567,7 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasCanDestroy) hash ^= CanDestroy.GetHashCode();
@@ -1465,12 +1626,17 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasCanDestroy) {
         output.WriteRawTag(8);
         output.WriteBool(CanDestroy);
@@ -1670,9 +1836,217 @@ namespace Bgs.Protocol.Club.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasCanDestroy) {
+        output.WriteRawTag(8);
+        output.WriteBool(CanDestroy);
+      }
+      if (HasCanSetAttribute) {
+        output.WriteRawTag(80);
+        output.WriteBool(CanSetAttribute);
+      }
+      if (HasCanSetName) {
+        output.WriteRawTag(88);
+        output.WriteBool(CanSetName);
+      }
+      if (HasCanSetDescription) {
+        output.WriteRawTag(96);
+        output.WriteBool(CanSetDescription);
+      }
+      if (HasCanSetAvatar) {
+        output.WriteRawTag(104);
+        output.WriteBool(CanSetAvatar);
+      }
+      if (HasCanSetBroadcast) {
+        output.WriteRawTag(112);
+        output.WriteBool(CanSetBroadcast);
+      }
+      if (HasCanSetPrivacyLevel) {
+        output.WriteRawTag(120);
+        output.WriteBool(CanSetPrivacyLevel);
+      }
+      if (HasCanAddMember) {
+        output.WriteRawTag(232, 1);
+        output.WriteBool(CanAddMember);
+      }
+      if (HasCanKickMember) {
+        output.WriteRawTag(240, 1);
+        output.WriteBool(CanKickMember);
+      }
+      if (HasCanSetOwnMemberAttribute) {
+        output.WriteRawTag(248, 1);
+        output.WriteBool(CanSetOwnMemberAttribute);
+      }
+      if (HasCanSetOtherMemberAttribute) {
+        output.WriteRawTag(128, 2);
+        output.WriteBool(CanSetOtherMemberAttribute);
+      }
+      if (HasCanSetOwnVoiceState) {
+        output.WriteRawTag(136, 2);
+        output.WriteBool(CanSetOwnVoiceState);
+      }
+      if (HasCanSetOwnPresenceLevel) {
+        output.WriteRawTag(144, 2);
+        output.WriteBool(CanSetOwnPresenceLevel);
+      }
+      if (HasCanSetOwnWhisperLevel) {
+        output.WriteRawTag(152, 2);
+        output.WriteBool(CanSetOwnWhisperLevel);
+      }
+      if (HasCanSetOwnMemberNote) {
+        output.WriteRawTag(160, 2);
+        output.WriteBool(CanSetOwnMemberNote);
+      }
+      if (HasCanSetOtherMemberNote) {
+        output.WriteRawTag(168, 2);
+        output.WriteBool(CanSetOtherMemberNote);
+      }
+      if (HasCanUseVoice) {
+        output.WriteRawTag(144, 3);
+        output.WriteBool(CanUseVoice);
+      }
+      if (HasCanVoiceMuteMemberForAll) {
+        output.WriteRawTag(152, 3);
+        output.WriteBool(CanVoiceMuteMemberForAll);
+      }
+      if (HasCanGetInvitation) {
+        output.WriteRawTag(176, 4);
+        output.WriteBool(CanGetInvitation);
+      }
+      if (HasCanSendInvitation) {
+        output.WriteRawTag(184, 4);
+        output.WriteBool(CanSendInvitation);
+      }
+      if (HasCanSendGuestInvitation) {
+        output.WriteRawTag(192, 4);
+        output.WriteBool(CanSendGuestInvitation);
+      }
+      if (HasCanRevokeOwnInvitation) {
+        output.WriteRawTag(200, 4);
+        output.WriteBool(CanRevokeOwnInvitation);
+      }
+      if (HasCanRevokeOtherInvitation) {
+        output.WriteRawTag(208, 4);
+        output.WriteBool(CanRevokeOtherInvitation);
+      }
+      if (HasCanGetSuggestion) {
+        output.WriteRawTag(208, 5);
+        output.WriteBool(CanGetSuggestion);
+      }
+      if (HasCanSuggestMember) {
+        output.WriteRawTag(216, 5);
+        output.WriteBool(CanSuggestMember);
+      }
+      if (HasCanApproveMember) {
+        output.WriteRawTag(224, 5);
+        output.WriteBool(CanApproveMember);
+      }
+      if (HasCanGetTicket) {
+        output.WriteRawTag(240, 6);
+        output.WriteBool(CanGetTicket);
+      }
+      if (HasCanCreateTicket) {
+        output.WriteRawTag(248, 6);
+        output.WriteBool(CanCreateTicket);
+      }
+      if (HasCanDestroyTicket) {
+        output.WriteRawTag(128, 7);
+        output.WriteBool(CanDestroyTicket);
+      }
+      if (HasCanGetBan) {
+        output.WriteRawTag(144, 8);
+        output.WriteBool(CanGetBan);
+      }
+      if (HasCanAddBan) {
+        output.WriteRawTag(152, 8);
+        output.WriteBool(CanAddBan);
+      }
+      if (HasCanRemoveBan) {
+        output.WriteRawTag(160, 8);
+        output.WriteBool(CanRemoveBan);
+      }
+      if (HasCanCreateStream) {
+        output.WriteRawTag(224, 8);
+        output.WriteBool(CanCreateStream);
+      }
+      if (HasCanDestroyStream) {
+        output.WriteRawTag(232, 8);
+        output.WriteBool(CanDestroyStream);
+      }
+      if (HasCanSetStreamPosition) {
+        output.WriteRawTag(240, 8);
+        output.WriteBool(CanSetStreamPosition);
+      }
+      if (HasCanSetStreamAttribute) {
+        output.WriteRawTag(248, 8);
+        output.WriteBool(CanSetStreamAttribute);
+      }
+      if (HasCanSetStreamName) {
+        output.WriteRawTag(128, 9);
+        output.WriteBool(CanSetStreamName);
+      }
+      if (HasCanSetStreamSubject) {
+        output.WriteRawTag(136, 9);
+        output.WriteBool(CanSetStreamSubject);
+      }
+      if (HasCanSetStreamAccess) {
+        output.WriteRawTag(144, 9);
+        output.WriteBool(CanSetStreamAccess);
+      }
+      if (HasCanSetStreamVoiceLevel) {
+        output.WriteRawTag(152, 9);
+        output.WriteBool(CanSetStreamVoiceLevel);
+      }
+      if (HasCanCreateMessage) {
+        output.WriteRawTag(160, 11);
+        output.WriteBool(CanCreateMessage);
+      }
+      if (HasCanDestroyOwnMessage) {
+        output.WriteRawTag(168, 11);
+        output.WriteBool(CanDestroyOwnMessage);
+      }
+      if (HasCanDestroyOtherMessage) {
+        output.WriteRawTag(176, 11);
+        output.WriteBool(CanDestroyOtherMessage);
+      }
+      if (HasCanEditOwnMessage) {
+        output.WriteRawTag(184, 11);
+        output.WriteBool(CanEditOwnMessage);
+      }
+      if (HasCanPinMessage) {
+        output.WriteRawTag(192, 11);
+        output.WriteBool(CanPinMessage);
+      }
+      if (HasCanMentionAll) {
+        output.WriteRawTag(200, 11);
+        output.WriteBool(CanMentionAll);
+      }
+      if (HasCanMentionHere) {
+        output.WriteRawTag(208, 11);
+        output.WriteBool(CanMentionHere);
+      }
+      if (HasCanMentionMember) {
+        output.WriteRawTag(216, 11);
+        output.WriteBool(CanMentionMember);
+      }
+      if (HasCanMentionRole) {
+        output.WriteRawTag(224, 11);
+        output.WriteBool(CanMentionRole);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasCanDestroy) {
@@ -1829,6 +2203,7 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ClubPrivilegeSet other) {
       if (other == null) {
         return;
@@ -1984,7 +2359,11 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2189,28 +2568,249 @@ namespace Bgs.Protocol.Club.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            CanDestroy = input.ReadBool();
+            break;
+          }
+          case 80: {
+            CanSetAttribute = input.ReadBool();
+            break;
+          }
+          case 88: {
+            CanSetName = input.ReadBool();
+            break;
+          }
+          case 96: {
+            CanSetDescription = input.ReadBool();
+            break;
+          }
+          case 104: {
+            CanSetAvatar = input.ReadBool();
+            break;
+          }
+          case 112: {
+            CanSetBroadcast = input.ReadBool();
+            break;
+          }
+          case 120: {
+            CanSetPrivacyLevel = input.ReadBool();
+            break;
+          }
+          case 232: {
+            CanAddMember = input.ReadBool();
+            break;
+          }
+          case 240: {
+            CanKickMember = input.ReadBool();
+            break;
+          }
+          case 248: {
+            CanSetOwnMemberAttribute = input.ReadBool();
+            break;
+          }
+          case 256: {
+            CanSetOtherMemberAttribute = input.ReadBool();
+            break;
+          }
+          case 264: {
+            CanSetOwnVoiceState = input.ReadBool();
+            break;
+          }
+          case 272: {
+            CanSetOwnPresenceLevel = input.ReadBool();
+            break;
+          }
+          case 280: {
+            CanSetOwnWhisperLevel = input.ReadBool();
+            break;
+          }
+          case 288: {
+            CanSetOwnMemberNote = input.ReadBool();
+            break;
+          }
+          case 296: {
+            CanSetOtherMemberNote = input.ReadBool();
+            break;
+          }
+          case 400: {
+            CanUseVoice = input.ReadBool();
+            break;
+          }
+          case 408: {
+            CanVoiceMuteMemberForAll = input.ReadBool();
+            break;
+          }
+          case 560: {
+            CanGetInvitation = input.ReadBool();
+            break;
+          }
+          case 568: {
+            CanSendInvitation = input.ReadBool();
+            break;
+          }
+          case 576: {
+            CanSendGuestInvitation = input.ReadBool();
+            break;
+          }
+          case 584: {
+            CanRevokeOwnInvitation = input.ReadBool();
+            break;
+          }
+          case 592: {
+            CanRevokeOtherInvitation = input.ReadBool();
+            break;
+          }
+          case 720: {
+            CanGetSuggestion = input.ReadBool();
+            break;
+          }
+          case 728: {
+            CanSuggestMember = input.ReadBool();
+            break;
+          }
+          case 736: {
+            CanApproveMember = input.ReadBool();
+            break;
+          }
+          case 880: {
+            CanGetTicket = input.ReadBool();
+            break;
+          }
+          case 888: {
+            CanCreateTicket = input.ReadBool();
+            break;
+          }
+          case 896: {
+            CanDestroyTicket = input.ReadBool();
+            break;
+          }
+          case 1040: {
+            CanGetBan = input.ReadBool();
+            break;
+          }
+          case 1048: {
+            CanAddBan = input.ReadBool();
+            break;
+          }
+          case 1056: {
+            CanRemoveBan = input.ReadBool();
+            break;
+          }
+          case 1120: {
+            CanCreateStream = input.ReadBool();
+            break;
+          }
+          case 1128: {
+            CanDestroyStream = input.ReadBool();
+            break;
+          }
+          case 1136: {
+            CanSetStreamPosition = input.ReadBool();
+            break;
+          }
+          case 1144: {
+            CanSetStreamAttribute = input.ReadBool();
+            break;
+          }
+          case 1152: {
+            CanSetStreamName = input.ReadBool();
+            break;
+          }
+          case 1160: {
+            CanSetStreamSubject = input.ReadBool();
+            break;
+          }
+          case 1168: {
+            CanSetStreamAccess = input.ReadBool();
+            break;
+          }
+          case 1176: {
+            CanSetStreamVoiceLevel = input.ReadBool();
+            break;
+          }
+          case 1440: {
+            CanCreateMessage = input.ReadBool();
+            break;
+          }
+          case 1448: {
+            CanDestroyOwnMessage = input.ReadBool();
+            break;
+          }
+          case 1456: {
+            CanDestroyOtherMessage = input.ReadBool();
+            break;
+          }
+          case 1464: {
+            CanEditOwnMessage = input.ReadBool();
+            break;
+          }
+          case 1472: {
+            CanPinMessage = input.ReadBool();
+            break;
+          }
+          case 1480: {
+            CanMentionAll = input.ReadBool();
+            break;
+          }
+          case 1488: {
+            CanMentionHere = input.ReadBool();
+            break;
+          }
+          case 1496: {
+            CanMentionMember = input.ReadBool();
+            break;
+          }
+          case 1504: {
+            CanMentionRole = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class ClubRole : pb::IMessage<ClubRole> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ClubRole : pb::IMessage<ClubRole>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ClubRole> _parser = new pb::MessageParser<ClubRole>(() => new ClubRole());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ClubRole> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Club.V1.ClubRoleReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubRole() {
       OnConstruction();
     }
@@ -2218,17 +2818,19 @@ namespace Bgs.Protocol.Club.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubRole(ClubRole other) : this() {
       _hasBits0 = other._hasBits0;
       id_ = other.id_;
-      state_ = other.HasState ? other.state_.Clone() : null;
-      privilege_ = other.HasPrivilege ? other.privilege_.Clone() : null;
+      state_ = other.state_ != null ? other.state_.Clone() : null;
+      privilege_ = other.privilege_ != null ? other.privilege_.Clone() : null;
       alwaysGrantStreamAccess_ = other.alwaysGrantStreamAccess_;
       allowInClubSlot_ = other.allowInClubSlot_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubRole Clone() {
       return new ClubRole(this);
     }
@@ -2239,6 +2841,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private uint id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Id {
       get { if ((_hasBits0 & 1) != 0) { return id_; } else { return IdDefaultValue; } }
       set {
@@ -2248,11 +2851,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasId {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearId() {
       _hasBits0 &= ~1;
     }
@@ -2261,42 +2866,24 @@ namespace Bgs.Protocol.Club.V1 {
     public const int StateFieldNumber = 2;
     private global::Bgs.Protocol.RoleState state_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.RoleState State {
       get { return state_; }
       set {
         state_ = value;
       }
     }
-    /// <summary>Gets whether the state field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasState {
-      get { return state_ != null; }
-    }
-    /// <summary>Clears the value of the state field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearState() {
-      state_ = null;
-    }
 
     /// <summary>Field number for the "privilege" field.</summary>
     public const int PrivilegeFieldNumber = 3;
     private global::Bgs.Protocol.Club.V1.ClubPrivilegeSet privilege_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Club.V1.ClubPrivilegeSet Privilege {
       get { return privilege_; }
       set {
         privilege_ = value;
       }
-    }
-    /// <summary>Gets whether the privilege field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasPrivilege {
-      get { return privilege_ != null; }
-    }
-    /// <summary>Clears the value of the privilege field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearPrivilege() {
-      privilege_ = null;
     }
 
     /// <summary>Field number for the "always_grant_stream_access" field.</summary>
@@ -2305,6 +2892,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool alwaysGrantStreamAccess_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool AlwaysGrantStreamAccess {
       get { if ((_hasBits0 & 2) != 0) { return alwaysGrantStreamAccess_; } else { return AlwaysGrantStreamAccessDefaultValue; } }
       set {
@@ -2314,11 +2902,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "always_grant_stream_access" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAlwaysGrantStreamAccess {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "always_grant_stream_access" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAlwaysGrantStreamAccess() {
       _hasBits0 &= ~2;
     }
@@ -2329,6 +2919,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool allowInClubSlot_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool AllowInClubSlot {
       get { if ((_hasBits0 & 4) != 0) { return allowInClubSlot_; } else { return AllowInClubSlotDefaultValue; } }
       set {
@@ -2338,21 +2929,25 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "allow_in_club_slot" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAllowInClubSlot {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "allow_in_club_slot" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAllowInClubSlot() {
       _hasBits0 &= ~4;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ClubRole);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ClubRole other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2369,11 +2964,12 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasId) hash ^= Id.GetHashCode();
-      if (HasState) hash ^= State.GetHashCode();
-      if (HasPrivilege) hash ^= Privilege.GetHashCode();
+      if (state_ != null) hash ^= State.GetHashCode();
+      if (privilege_ != null) hash ^= Privilege.GetHashCode();
       if (HasAlwaysGrantStreamAccess) hash ^= AlwaysGrantStreamAccess.GetHashCode();
       if (HasAllowInClubSlot) hash ^= AllowInClubSlot.GetHashCode();
       if (_unknownFields != null) {
@@ -2383,21 +2979,26 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasId) {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
       }
-      if (HasState) {
+      if (state_ != null) {
         output.WriteRawTag(18);
         output.WriteMessage(State);
       }
-      if (HasPrivilege) {
+      if (privilege_ != null) {
         output.WriteRawTag(26);
         output.WriteMessage(Privilege);
       }
@@ -2412,18 +3013,50 @@ namespace Bgs.Protocol.Club.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (state_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(State);
+      }
+      if (privilege_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Privilege);
+      }
+      if (HasAlwaysGrantStreamAccess) {
+        output.WriteRawTag(32);
+        output.WriteBool(AlwaysGrantStreamAccess);
+      }
+      if (HasAllowInClubSlot) {
+        output.WriteRawTag(40);
+        output.WriteBool(AllowInClubSlot);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasId) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
       }
-      if (HasState) {
+      if (state_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(State);
       }
-      if (HasPrivilege) {
+      if (privilege_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Privilege);
       }
       if (HasAlwaysGrantStreamAccess) {
@@ -2439,6 +3072,7 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ClubRole other) {
       if (other == null) {
         return;
@@ -2446,14 +3080,14 @@ namespace Bgs.Protocol.Club.V1 {
       if (other.HasId) {
         Id = other.Id;
       }
-      if (other.HasState) {
-        if (!HasState) {
+      if (other.state_ != null) {
+        if (state_ == null) {
           State = new global::Bgs.Protocol.RoleState();
         }
         State.MergeFrom(other.State);
       }
-      if (other.HasPrivilege) {
-        if (!HasPrivilege) {
+      if (other.privilege_ != null) {
+        if (privilege_ == null) {
           Privilege = new global::Bgs.Protocol.Club.V1.ClubPrivilegeSet();
         }
         Privilege.MergeFrom(other.Privilege);
@@ -2468,7 +3102,11 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2480,14 +3118,55 @@ namespace Bgs.Protocol.Club.V1 {
             break;
           }
           case 18: {
-            if (!HasState) {
+            if (state_ == null) {
               State = new global::Bgs.Protocol.RoleState();
             }
             input.ReadMessage(State);
             break;
           }
           case 26: {
-            if (!HasPrivilege) {
+            if (privilege_ == null) {
+              Privilege = new global::Bgs.Protocol.Club.V1.ClubPrivilegeSet();
+            }
+            input.ReadMessage(Privilege);
+            break;
+          }
+          case 32: {
+            AlwaysGrantStreamAccess = input.ReadBool();
+            break;
+          }
+          case 40: {
+            AllowInClubSlot = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            if (state_ == null) {
+              State = new global::Bgs.Protocol.RoleState();
+            }
+            input.ReadMessage(State);
+            break;
+          }
+          case 26: {
+            if (privilege_ == null) {
               Privilege = new global::Bgs.Protocol.Club.V1.ClubPrivilegeSet();
             }
             input.ReadMessage(Privilege);
@@ -2504,27 +3183,37 @@ namespace Bgs.Protocol.Club.V1 {
         }
       }
     }
+    #endif
 
   }
 
-  public sealed partial class ClubRoleSet : pb::IMessage<ClubRoleSet> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ClubRoleSet : pb::IMessage<ClubRoleSet>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ClubRoleSet> _parser = new pb::MessageParser<ClubRoleSet>(() => new ClubRoleSet());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ClubRoleSet> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Club.V1.ClubRoleReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubRoleSet() {
       OnConstruction();
     }
@@ -2532,6 +3221,7 @@ namespace Bgs.Protocol.Club.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubRoleSet(ClubRoleSet other) : this() {
       _hasBits0 = other._hasBits0;
       role_ = other.role_.Clone();
@@ -2542,6 +3232,7 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubRoleSet Clone() {
       return new ClubRoleSet(this);
     }
@@ -2552,6 +3243,7 @@ namespace Bgs.Protocol.Club.V1 {
         = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Club.V1.ClubRole.Parser);
     private readonly pbc::RepeatedField<global::Bgs.Protocol.Club.V1.ClubRole> role_ = new pbc::RepeatedField<global::Bgs.Protocol.Club.V1.ClubRole>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Bgs.Protocol.Club.V1.ClubRole> Role {
       get { return role_; }
     }
@@ -2562,6 +3254,7 @@ namespace Bgs.Protocol.Club.V1 {
         = pb::FieldCodec.ForUInt32(42);
     private readonly pbc::RepeatedField<uint> defaultRole_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<uint> DefaultRole {
       get { return defaultRole_; }
     }
@@ -2572,6 +3265,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private bool assignmentRespectsRelegationChain_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool AssignmentRespectsRelegationChain {
       get { if ((_hasBits0 & 1) != 0) { return assignmentRespectsRelegationChain_; } else { return AssignmentRespectsRelegationChainDefaultValue; } }
       set {
@@ -2581,11 +3275,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "assignment_respects_relegation_chain" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAssignmentRespectsRelegationChain {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "assignment_respects_relegation_chain" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAssignmentRespectsRelegationChain() {
       _hasBits0 &= ~1;
     }
@@ -2596,6 +3292,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private string subtype_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Subtype {
       get { return subtype_ ?? SubtypeDefaultValue; }
       set {
@@ -2604,21 +3301,25 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "subtype" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasSubtype {
       get { return subtype_ != null; }
     }
     /// <summary>Clears the value of the "subtype" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearSubtype() {
       subtype_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ClubRoleSet);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ClubRoleSet other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2634,6 +3335,7 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= role_.GetHashCode();
@@ -2647,12 +3349,17 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       role_.WriteTo(output, _repeated_role_codec);
       defaultRole_.WriteTo(output, _repeated_defaultRole_codec);
       if (HasAssignmentRespectsRelegationChain) {
@@ -2666,9 +3373,31 @@ namespace Bgs.Protocol.Club.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      role_.WriteTo(ref output, _repeated_role_codec);
+      defaultRole_.WriteTo(ref output, _repeated_defaultRole_codec);
+      if (HasAssignmentRespectsRelegationChain) {
+        output.WriteRawTag(48);
+        output.WriteBool(AssignmentRespectsRelegationChain);
+      }
+      if (HasSubtype) {
+        output.WriteRawTag(58);
+        output.WriteString(Subtype);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += role_.CalculateSize(_repeated_role_codec);
@@ -2686,6 +3415,7 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ClubRoleSet other) {
       if (other == null) {
         return;
@@ -2702,7 +3432,11 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2728,7 +3462,40 @@ namespace Bgs.Protocol.Club.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            role_.AddEntriesFrom(ref input, _repeated_role_codec);
+            break;
+          }
+          case 42:
+          case 40: {
+            defaultRole_.AddEntriesFrom(ref input, _repeated_defaultRole_codec);
+            break;
+          }
+          case 48: {
+            AssignmentRespectsRelegationChain = input.ReadBool();
+            break;
+          }
+          case 58: {
+            Subtype = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

@@ -38,14 +38,14 @@ namespace Bgs.Protocol.Resources.V1 {
             "ZXF1ZXN0EhUKCXRpdGxlX2lkcxgBIAMoDUICEAESDQoFdXNhZ2UYAiABKA0S",
             "DwoHdmVyc2lvbhgDIAEoDSJhChVHZXRUaXRsZUljb25zUmVzcG9uc2USSAoa",
             "dGl0bGVfaWNvbl9jb250ZW50X2hhbmRsZXMYASADKAsyJC5iZ3MucHJvdG9j",
-            "b2wuVGl0bGVJY29uQ29udGVudEhhbmRsZTK2AgoQUmVzb3VyY2VzU2Vydmlj",
+            "b2wuVGl0bGVJY29uQ29udGVudEhhbmRsZTKyAgoQUmVzb3VyY2VzU2Vydmlj",
             "ZRJoChBHZXRDb250ZW50SGFuZGxlEi8uYmdzLnByb3RvY29sLnJlc291cmNl",
             "cy52MS5Db250ZW50SGFuZGxlUmVxdWVzdBobLmJncy5wcm90b2NvbC5Db250",
             "ZW50SGFuZGxlIgaC+SsCCAESegoNR2V0VGl0bGVJY29ucxIvLmJncy5wcm90",
             "b2NvbC5yZXNvdXJjZXMudjEuR2V0VGl0bGVJY29uc1JlcXVlc3QaMC5iZ3Mu",
             "cHJvdG9jb2wucmVzb3VyY2VzLnYxLkdldFRpdGxlSWNvbnNSZXNwb25zZSIG",
-            "gvkrAggCGjyC+SsjCiFibmV0LnByb3RvY29sLnJlc291cmNlcy5SZXNvdXJj",
-            "ZXOC+SsLKglyZXNvdXJjZXOK+SsCEAFCA4ABAA=="));
+            "gvkrAggCGjiC+SsuCiFibmV0LnByb3RvY29sLnJlc291cmNlcy5SZXNvdXJj",
+            "ZXMqCXJlc291cmNlc4r5KwIQAUIDgAEA"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Bgs.Protocol.ContentHandleTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, global::Bgs.Protocol.FieldOptionsReflection.Descriptor, global::Bgs.Protocol.MessageOptionsReflection.Descriptor, global::Bgs.Protocol.MethodOptionsReflection.Descriptor, global::Bgs.Protocol.ServiceOptionsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -58,24 +58,33 @@ namespace Bgs.Protocol.Resources.V1 {
 
   }
   #region Messages
-  public sealed partial class ContentHandleRequest : pb::IMessage<ContentHandleRequest> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ContentHandleRequest : pb::IMessage<ContentHandleRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ContentHandleRequest> _parser = new pb::MessageParser<ContentHandleRequest>(() => new ContentHandleRequest());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ContentHandleRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Resources.V1.ResourceServiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ContentHandleRequest() {
       OnConstruction();
     }
@@ -83,6 +92,7 @@ namespace Bgs.Protocol.Resources.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ContentHandleRequest(ContentHandleRequest other) : this() {
       _hasBits0 = other._hasBits0;
       program_ = other.program_;
@@ -92,6 +102,7 @@ namespace Bgs.Protocol.Resources.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ContentHandleRequest Clone() {
       return new ContentHandleRequest(this);
     }
@@ -102,6 +113,7 @@ namespace Bgs.Protocol.Resources.V1 {
 
     private uint program_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Program {
       get { if ((_hasBits0 & 1) != 0) { return program_; } else { return ProgramDefaultValue; } }
       set {
@@ -111,11 +123,13 @@ namespace Bgs.Protocol.Resources.V1 {
     }
     /// <summary>Gets whether the "program" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasProgram {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "program" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearProgram() {
       _hasBits0 &= ~1;
     }
@@ -126,6 +140,7 @@ namespace Bgs.Protocol.Resources.V1 {
 
     private uint stream_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Stream {
       get { if ((_hasBits0 & 2) != 0) { return stream_; } else { return StreamDefaultValue; } }
       set {
@@ -135,11 +150,13 @@ namespace Bgs.Protocol.Resources.V1 {
     }
     /// <summary>Gets whether the "stream" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasStream {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "stream" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearStream() {
       _hasBits0 &= ~2;
     }
@@ -150,6 +167,7 @@ namespace Bgs.Protocol.Resources.V1 {
 
     private uint version_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Version {
       get { if ((_hasBits0 & 4) != 0) { return version_; } else { return VersionDefaultValue; } }
       set {
@@ -159,21 +177,25 @@ namespace Bgs.Protocol.Resources.V1 {
     }
     /// <summary>Gets whether the "version" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasVersion {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "version" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearVersion() {
       _hasBits0 &= ~4;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ContentHandleRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ContentHandleRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -188,6 +210,7 @@ namespace Bgs.Protocol.Resources.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasProgram) hash ^= Program.GetHashCode();
@@ -200,12 +223,17 @@ namespace Bgs.Protocol.Resources.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasProgram) {
         output.WriteRawTag(13);
         output.WriteFixed32(Program);
@@ -221,9 +249,33 @@ namespace Bgs.Protocol.Resources.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasProgram) {
+        output.WriteRawTag(13);
+        output.WriteFixed32(Program);
+      }
+      if (HasStream) {
+        output.WriteRawTag(21);
+        output.WriteFixed32(Stream);
+      }
+      if (HasVersion) {
+        output.WriteRawTag(29);
+        output.WriteFixed32(Version);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasProgram) {
@@ -242,6 +294,7 @@ namespace Bgs.Protocol.Resources.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ContentHandleRequest other) {
       if (other == null) {
         return;
@@ -259,7 +312,11 @@ namespace Bgs.Protocol.Resources.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -280,28 +337,65 @@ namespace Bgs.Protocol.Resources.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 13: {
+            Program = input.ReadFixed32();
+            break;
+          }
+          case 21: {
+            Stream = input.ReadFixed32();
+            break;
+          }
+          case 29: {
+            Version = input.ReadFixed32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class GetTitleIconsRequest : pb::IMessage<GetTitleIconsRequest> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GetTitleIconsRequest : pb::IMessage<GetTitleIconsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetTitleIconsRequest> _parser = new pb::MessageParser<GetTitleIconsRequest>(() => new GetTitleIconsRequest());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GetTitleIconsRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Resources.V1.ResourceServiceReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetTitleIconsRequest() {
       OnConstruction();
     }
@@ -309,6 +403,7 @@ namespace Bgs.Protocol.Resources.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetTitleIconsRequest(GetTitleIconsRequest other) : this() {
       _hasBits0 = other._hasBits0;
       titleIds_ = other.titleIds_.Clone();
@@ -318,6 +413,7 @@ namespace Bgs.Protocol.Resources.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetTitleIconsRequest Clone() {
       return new GetTitleIconsRequest(this);
     }
@@ -328,6 +424,7 @@ namespace Bgs.Protocol.Resources.V1 {
         = pb::FieldCodec.ForUInt32(10);
     private readonly pbc::RepeatedField<uint> titleIds_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<uint> TitleIds {
       get { return titleIds_; }
     }
@@ -338,6 +435,7 @@ namespace Bgs.Protocol.Resources.V1 {
 
     private uint usage_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Usage {
       get { if ((_hasBits0 & 1) != 0) { return usage_; } else { return UsageDefaultValue; } }
       set {
@@ -347,11 +445,13 @@ namespace Bgs.Protocol.Resources.V1 {
     }
     /// <summary>Gets whether the "usage" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasUsage {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "usage" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearUsage() {
       _hasBits0 &= ~1;
     }
@@ -362,6 +462,7 @@ namespace Bgs.Protocol.Resources.V1 {
 
     private uint version_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Version {
       get { if ((_hasBits0 & 2) != 0) { return version_; } else { return VersionDefaultValue; } }
       set {
@@ -371,21 +472,25 @@ namespace Bgs.Protocol.Resources.V1 {
     }
     /// <summary>Gets whether the "version" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasVersion {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "version" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearVersion() {
       _hasBits0 &= ~2;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GetTitleIconsRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GetTitleIconsRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -400,6 +505,7 @@ namespace Bgs.Protocol.Resources.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= titleIds_.GetHashCode();
@@ -412,12 +518,17 @@ namespace Bgs.Protocol.Resources.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       titleIds_.WriteTo(output, _repeated_titleIds_codec);
       if (HasUsage) {
         output.WriteRawTag(16);
@@ -430,9 +541,30 @@ namespace Bgs.Protocol.Resources.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      titleIds_.WriteTo(ref output, _repeated_titleIds_codec);
+      if (HasUsage) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Usage);
+      }
+      if (HasVersion) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(Version);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += titleIds_.CalculateSize(_repeated_titleIds_codec);
@@ -449,6 +581,7 @@ namespace Bgs.Protocol.Resources.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GetTitleIconsRequest other) {
       if (other == null) {
         return;
@@ -464,7 +597,11 @@ namespace Bgs.Protocol.Resources.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -486,27 +623,65 @@ namespace Bgs.Protocol.Resources.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10:
+          case 8: {
+            titleIds_.AddEntriesFrom(ref input, _repeated_titleIds_codec);
+            break;
+          }
+          case 16: {
+            Usage = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            Version = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class GetTitleIconsResponse : pb::IMessage<GetTitleIconsResponse> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GetTitleIconsResponse : pb::IMessage<GetTitleIconsResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetTitleIconsResponse> _parser = new pb::MessageParser<GetTitleIconsResponse>(() => new GetTitleIconsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GetTitleIconsResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Resources.V1.ResourceServiceReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetTitleIconsResponse() {
       OnConstruction();
     }
@@ -514,12 +689,14 @@ namespace Bgs.Protocol.Resources.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetTitleIconsResponse(GetTitleIconsResponse other) : this() {
       titleIconContentHandles_ = other.titleIconContentHandles_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetTitleIconsResponse Clone() {
       return new GetTitleIconsResponse(this);
     }
@@ -530,16 +707,19 @@ namespace Bgs.Protocol.Resources.V1 {
         = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.TitleIconContentHandle.Parser);
     private readonly pbc::RepeatedField<global::Bgs.Protocol.TitleIconContentHandle> titleIconContentHandles_ = new pbc::RepeatedField<global::Bgs.Protocol.TitleIconContentHandle>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Bgs.Protocol.TitleIconContentHandle> TitleIconContentHandles {
       get { return titleIconContentHandles_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GetTitleIconsResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GetTitleIconsResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -552,6 +732,7 @@ namespace Bgs.Protocol.Resources.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= titleIconContentHandles_.GetHashCode();
@@ -562,19 +743,37 @@ namespace Bgs.Protocol.Resources.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       titleIconContentHandles_.WriteTo(output, _repeated_titleIconContentHandles_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      titleIconContentHandles_.WriteTo(ref output, _repeated_titleIconContentHandles_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += titleIconContentHandles_.CalculateSize(_repeated_titleIconContentHandles_codec);
@@ -585,6 +784,7 @@ namespace Bgs.Protocol.Resources.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GetTitleIconsResponse other) {
       if (other == null) {
         return;
@@ -594,7 +794,11 @@ namespace Bgs.Protocol.Resources.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -607,7 +811,27 @@ namespace Bgs.Protocol.Resources.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            titleIconContentHandles_.AddEntriesFrom(ref input, _repeated_titleIconContentHandles_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

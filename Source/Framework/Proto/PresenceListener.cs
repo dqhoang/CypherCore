@@ -33,48 +33,59 @@ namespace Bgs.Protocol.Presence.V1 {
             "ZW5zaW9ucy9tZXNzYWdlX29wdGlvbnMucHJvdG8aOGJncy9sb3cvcGIvY2xp",
             "ZW50L2dsb2JhbF9leHRlbnNpb25zL21ldGhvZF9vcHRpb25zLnByb3RvGjli",
             "Z3MvbG93L3BiL2NsaWVudC9nbG9iYWxfZXh0ZW5zaW9ucy9zZXJ2aWNlX29w",
-            "dGlvbnMucHJvdG8iigEKFVN1YnNjcmliZU5vdGlmaWNhdGlvbhI5Cg1zdWJz",
+            "dGlvbnMucHJvdG8ipgEKFVN1YnNjcmliZU5vdGlmaWNhdGlvbhI5Cg1zdWJz",
             "Y3JpYmVyX2lkGAEgASgLMiIuYmdzLnByb3RvY29sLmFjY291bnQudjEuQWNj",
             "b3VudElkEjYKBXN0YXRlGAIgAygLMicuYmdzLnByb3RvY29sLnByZXNlbmNl",
-            "LnYxLlByZXNlbmNlU3RhdGUijQEKGFN0YXRlQ2hhbmdlZE5vdGlmaWNhdGlv",
-            "bhI5Cg1zdWJzY3JpYmVyX2lkGAEgASgLMiIuYmdzLnByb3RvY29sLmFjY291",
-            "bnQudjEuQWNjb3VudElkEjYKBXN0YXRlGAIgAygLMicuYmdzLnByb3RvY29s",
-            "LnByZXNlbmNlLnYxLlByZXNlbmNlU3RhdGUyqAIKEFByZXNlbmNlTGlzdGVu",
-            "ZXISZwoLT25TdWJzY3JpYmUSLy5iZ3MucHJvdG9jb2wucHJlc2VuY2UudjEu",
-            "U3Vic2NyaWJlTm90aWZpY2F0aW9uGhkuYmdzLnByb3RvY29sLk5PX1JFU1BP",
-            "TlNFIgyC+SsCCAGC+SsCOAESbQoOT25TdGF0ZUNoYW5nZWQSMi5iZ3MucHJv",
-            "dG9jb2wucHJlc2VuY2UudjEuU3RhdGVDaGFuZ2VkTm90aWZpY2F0aW9uGhku",
-            "YmdzLnByb3RvY29sLk5PX1JFU1BPTlNFIgyC+SsCCAKC+SsCOAEaPIL5KywK",
-            "KmJuZXQucHJvdG9jb2wucHJlc2VuY2UudjEuUHJlc2VuY2VMaXN0ZW5lcoL5",
-            "KwI4AYr5KwIIAQ=="));
+            "LnYxLlByZXNlbmNlU3RhdGUSGgoSc3Vic2NyaWJlcl9wcm9ncmFtGAMgASgN",
+            "IqkBChhTdGF0ZUNoYW5nZWROb3RpZmljYXRpb24SOQoNc3Vic2NyaWJlcl9p",
+            "ZBgBIAEoCzIiLmJncy5wcm90b2NvbC5hY2NvdW50LnYxLkFjY291bnRJZBI2",
+            "CgVzdGF0ZRgCIAMoCzInLmJncy5wcm90b2NvbC5wcmVzZW5jZS52MS5QcmVz",
+            "ZW5jZVN0YXRlEhoKEnN1YnNjcmliZXJfcHJvZ3JhbRgDIAEoDTKcAgoQUHJl",
+            "c2VuY2VMaXN0ZW5lchJjCgtPblN1YnNjcmliZRIvLmJncy5wcm90b2NvbC5w",
+            "cmVzZW5jZS52MS5TdWJzY3JpYmVOb3RpZmljYXRpb24aGS5iZ3MucHJvdG9j",
+            "b2wuTk9fUkVTUE9OU0UiCIL5KwQIATgBEmkKDk9uU3RhdGVDaGFuZ2VkEjIu",
+            "YmdzLnByb3RvY29sLnByZXNlbmNlLnYxLlN0YXRlQ2hhbmdlZE5vdGlmaWNh",
+            "dGlvbhoZLmJncy5wcm90b2NvbC5OT19SRVNQT05TRSIIgvkrBAgCOAEaOIL5",
+            "Ky4KKmJuZXQucHJvdG9jb2wucHJlc2VuY2UudjEuUHJlc2VuY2VMaXN0ZW5l",
+            "cjgBivkrAggB"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Bgs.Protocol.Presence.V1.PresenceTypesReflection.Descriptor, global::Bgs.Protocol.Account.V1.AccountTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, global::Bgs.Protocol.FieldOptionsReflection.Descriptor, global::Bgs.Protocol.MessageOptionsReflection.Descriptor, global::Bgs.Protocol.MethodOptionsReflection.Descriptor, global::Bgs.Protocol.ServiceOptionsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Presence.V1.SubscribeNotification), global::Bgs.Protocol.Presence.V1.SubscribeNotification.Parser, new[]{ "SubscriberId", "State" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Presence.V1.StateChangedNotification), global::Bgs.Protocol.Presence.V1.StateChangedNotification.Parser, new[]{ "SubscriberId", "State" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Presence.V1.SubscribeNotification), global::Bgs.Protocol.Presence.V1.SubscribeNotification.Parser, new[]{ "SubscriberId", "State", "SubscriberProgram" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Presence.V1.StateChangedNotification), global::Bgs.Protocol.Presence.V1.StateChangedNotification.Parser, new[]{ "SubscriberId", "State", "SubscriberProgram" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class SubscribeNotification : pb::IMessage<SubscribeNotification> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SubscribeNotification : pb::IMessage<SubscribeNotification>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SubscribeNotification> _parser = new pb::MessageParser<SubscribeNotification>(() => new SubscribeNotification());
     private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SubscribeNotification> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Presence.V1.PresenceListenerReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SubscribeNotification() {
       OnConstruction();
     }
@@ -82,13 +93,17 @@ namespace Bgs.Protocol.Presence.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SubscribeNotification(SubscribeNotification other) : this() {
-      subscriberId_ = other.HasSubscriberId ? other.subscriberId_.Clone() : null;
+      _hasBits0 = other._hasBits0;
+      subscriberId_ = other.subscriberId_ != null ? other.subscriberId_.Clone() : null;
       state_ = other.state_.Clone();
+      subscriberProgram_ = other.subscriberProgram_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SubscribeNotification Clone() {
       return new SubscribeNotification(this);
     }
@@ -97,21 +112,12 @@ namespace Bgs.Protocol.Presence.V1 {
     public const int SubscriberIdFieldNumber = 1;
     private global::Bgs.Protocol.Account.V1.AccountId subscriberId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Account.V1.AccountId SubscriberId {
       get { return subscriberId_; }
       set {
         subscriberId_ = value;
       }
-    }
-    /// <summary>Gets whether the subscriber_id field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasSubscriberId {
-      get { return subscriberId_ != null; }
-    }
-    /// <summary>Clears the value of the subscriber_id field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearSubscriberId() {
-      subscriberId_ = null;
     }
 
     /// <summary>Field number for the "state" field.</summary>
@@ -120,16 +126,46 @@ namespace Bgs.Protocol.Presence.V1 {
         = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Presence.V1.PresenceState.Parser);
     private readonly pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.PresenceState> state_ = new pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.PresenceState>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.PresenceState> State {
       get { return state_; }
     }
 
+    /// <summary>Field number for the "subscriber_program" field.</summary>
+    public const int SubscriberProgramFieldNumber = 3;
+    private readonly static uint SubscriberProgramDefaultValue = 0;
+
+    private uint subscriberProgram_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint SubscriberProgram {
+      get { if ((_hasBits0 & 1) != 0) { return subscriberProgram_; } else { return SubscriberProgramDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        subscriberProgram_ = value;
+      }
+    }
+    /// <summary>Gets whether the "subscriber_program" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSubscriberProgram {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "subscriber_program" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSubscriberProgram() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SubscribeNotification);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SubscribeNotification other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -139,14 +175,17 @@ namespace Bgs.Protocol.Presence.V1 {
       }
       if (!object.Equals(SubscriberId, other.SubscriberId)) return false;
       if(!state_.Equals(other.state_)) return false;
+      if (SubscriberProgram != other.SubscriberProgram) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasSubscriberId) hash ^= SubscriberId.GetHashCode();
+      if (subscriberId_ != null) hash ^= SubscriberId.GetHashCode();
       hash ^= state_.GetHashCode();
+      if (HasSubscriberProgram) hash ^= SubscriberProgram.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -154,29 +193,62 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasSubscriberId) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (subscriberId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(SubscriberId);
       }
       state_.WriteTo(output, _repeated_state_codec);
+      if (HasSubscriberProgram) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(SubscriberProgram);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (subscriberId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(SubscriberId);
+      }
+      state_.WriteTo(ref output, _repeated_state_codec);
+      if (HasSubscriberProgram) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(SubscriberProgram);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasSubscriberId) {
+      if (subscriberId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(SubscriberId);
       }
       size += state_.CalculateSize(_repeated_state_codec);
+      if (HasSubscriberProgram) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SubscriberProgram);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -184,22 +256,30 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SubscribeNotification other) {
       if (other == null) {
         return;
       }
-      if (other.HasSubscriberId) {
-        if (!HasSubscriberId) {
+      if (other.subscriberId_ != null) {
+        if (subscriberId_ == null) {
           SubscriberId = new global::Bgs.Protocol.Account.V1.AccountId();
         }
         SubscriberId.MergeFrom(other.SubscriberId);
       }
       state_.Add(other.state_);
+      if (other.HasSubscriberProgram) {
+        SubscriberProgram = other.SubscriberProgram;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -207,7 +287,7 @@ namespace Bgs.Protocol.Presence.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasSubscriberId) {
+            if (subscriberId_ == null) {
               SubscriberId = new global::Bgs.Protocol.Account.V1.AccountId();
             }
             input.ReadMessage(SubscriberId);
@@ -217,29 +297,74 @@ namespace Bgs.Protocol.Presence.V1 {
             state_.AddEntriesFrom(input, _repeated_state_codec);
             break;
           }
+          case 24: {
+            SubscriberProgram = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (subscriberId_ == null) {
+              SubscriberId = new global::Bgs.Protocol.Account.V1.AccountId();
+            }
+            input.ReadMessage(SubscriberId);
+            break;
+          }
+          case 18: {
+            state_.AddEntriesFrom(ref input, _repeated_state_codec);
+            break;
+          }
+          case 24: {
+            SubscriberProgram = input.ReadUInt32();
+            break;
+          }
         }
       }
     }
+    #endif
 
   }
 
-  public sealed partial class StateChangedNotification : pb::IMessage<StateChangedNotification> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class StateChangedNotification : pb::IMessage<StateChangedNotification>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<StateChangedNotification> _parser = new pb::MessageParser<StateChangedNotification>(() => new StateChangedNotification());
     private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<StateChangedNotification> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Presence.V1.PresenceListenerReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public StateChangedNotification() {
       OnConstruction();
     }
@@ -247,13 +372,17 @@ namespace Bgs.Protocol.Presence.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public StateChangedNotification(StateChangedNotification other) : this() {
-      subscriberId_ = other.HasSubscriberId ? other.subscriberId_.Clone() : null;
+      _hasBits0 = other._hasBits0;
+      subscriberId_ = other.subscriberId_ != null ? other.subscriberId_.Clone() : null;
       state_ = other.state_.Clone();
+      subscriberProgram_ = other.subscriberProgram_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public StateChangedNotification Clone() {
       return new StateChangedNotification(this);
     }
@@ -262,21 +391,12 @@ namespace Bgs.Protocol.Presence.V1 {
     public const int SubscriberIdFieldNumber = 1;
     private global::Bgs.Protocol.Account.V1.AccountId subscriberId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Account.V1.AccountId SubscriberId {
       get { return subscriberId_; }
       set {
         subscriberId_ = value;
       }
-    }
-    /// <summary>Gets whether the subscriber_id field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasSubscriberId {
-      get { return subscriberId_ != null; }
-    }
-    /// <summary>Clears the value of the subscriber_id field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearSubscriberId() {
-      subscriberId_ = null;
     }
 
     /// <summary>Field number for the "state" field.</summary>
@@ -285,16 +405,46 @@ namespace Bgs.Protocol.Presence.V1 {
         = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Presence.V1.PresenceState.Parser);
     private readonly pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.PresenceState> state_ = new pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.PresenceState>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.PresenceState> State {
       get { return state_; }
     }
 
+    /// <summary>Field number for the "subscriber_program" field.</summary>
+    public const int SubscriberProgramFieldNumber = 3;
+    private readonly static uint SubscriberProgramDefaultValue = 0;
+
+    private uint subscriberProgram_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint SubscriberProgram {
+      get { if ((_hasBits0 & 1) != 0) { return subscriberProgram_; } else { return SubscriberProgramDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        subscriberProgram_ = value;
+      }
+    }
+    /// <summary>Gets whether the "subscriber_program" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSubscriberProgram {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "subscriber_program" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSubscriberProgram() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as StateChangedNotification);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(StateChangedNotification other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -304,14 +454,17 @@ namespace Bgs.Protocol.Presence.V1 {
       }
       if (!object.Equals(SubscriberId, other.SubscriberId)) return false;
       if(!state_.Equals(other.state_)) return false;
+      if (SubscriberProgram != other.SubscriberProgram) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasSubscriberId) hash ^= SubscriberId.GetHashCode();
+      if (subscriberId_ != null) hash ^= SubscriberId.GetHashCode();
       hash ^= state_.GetHashCode();
+      if (HasSubscriberProgram) hash ^= SubscriberProgram.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -319,29 +472,62 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasSubscriberId) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (subscriberId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(SubscriberId);
       }
       state_.WriteTo(output, _repeated_state_codec);
+      if (HasSubscriberProgram) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(SubscriberProgram);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (subscriberId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(SubscriberId);
+      }
+      state_.WriteTo(ref output, _repeated_state_codec);
+      if (HasSubscriberProgram) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(SubscriberProgram);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasSubscriberId) {
+      if (subscriberId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(SubscriberId);
       }
       size += state_.CalculateSize(_repeated_state_codec);
+      if (HasSubscriberProgram) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SubscriberProgram);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -349,22 +535,30 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(StateChangedNotification other) {
       if (other == null) {
         return;
       }
-      if (other.HasSubscriberId) {
-        if (!HasSubscriberId) {
+      if (other.subscriberId_ != null) {
+        if (subscriberId_ == null) {
           SubscriberId = new global::Bgs.Protocol.Account.V1.AccountId();
         }
         SubscriberId.MergeFrom(other.SubscriberId);
       }
       state_.Add(other.state_);
+      if (other.HasSubscriberProgram) {
+        SubscriberProgram = other.SubscriberProgram;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -372,7 +566,7 @@ namespace Bgs.Protocol.Presence.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasSubscriberId) {
+            if (subscriberId_ == null) {
               SubscriberId = new global::Bgs.Protocol.Account.V1.AccountId();
             }
             input.ReadMessage(SubscriberId);
@@ -382,9 +576,44 @@ namespace Bgs.Protocol.Presence.V1 {
             state_.AddEntriesFrom(input, _repeated_state_codec);
             break;
           }
+          case 24: {
+            SubscriberProgram = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (subscriberId_ == null) {
+              SubscriberId = new global::Bgs.Protocol.Account.V1.AccountId();
+            }
+            input.ReadMessage(SubscriberId);
+            break;
+          }
+          case 18: {
+            state_.AddEntriesFrom(ref input, _repeated_state_codec);
+            break;
+          }
+          case 24: {
+            SubscriberProgram = input.ReadUInt32();
+            break;
+          }
         }
       }
     }
+    #endif
 
   }
 

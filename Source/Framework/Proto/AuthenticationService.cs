@@ -32,64 +32,64 @@ namespace Bgs.Protocol.Authentication.V1 {
             "aWVudC9nbG9iYWxfZXh0ZW5zaW9ucy9tZXNzYWdlX29wdGlvbnMucHJvdG8a",
             "OGJncy9sb3cvcGIvY2xpZW50L2dsb2JhbF9leHRlbnNpb25zL21ldGhvZF9v",
             "cHRpb25zLnByb3RvGjliZ3MvbG93L3BiL2NsaWVudC9nbG9iYWxfZXh0ZW5z",
-            "aW9ucy9zZXJ2aWNlX29wdGlvbnMucHJvdG8itAIKDExvZ29uUmVxdWVzdBIP",
+            "aW9ucy9zZXJ2aWNlX29wdGlvbnMucHJvdG8iywIKDExvZ29uUmVxdWVzdBIP",
             "Cgdwcm9ncmFtGAEgASgJEhAKCHBsYXRmb3JtGAIgASgJEg4KBmxvY2FsZRgD",
             "IAEoCRIVCgVlbWFpbBgEIAEoCUIGgvkrAggBEg8KB3ZlcnNpb24YBSABKAkS",
             "GwoTYXBwbGljYXRpb25fdmVyc2lvbhgGIAEoBRIXCg9wdWJsaWNfY29tcHV0",
             "ZXIYByABKAgSLgofYWxsb3dfbG9nb25fcXVldWVfbm90aWZpY2F0aW9ucxgK",
             "IAEoCDoFZmFsc2USHgoWY2FjaGVkX3dlYl9jcmVkZW50aWFscxgMIAEoDBIS",
             "Cgp1c2VyX2FnZW50GA4gASgJEhEKCWRldmljZV9pZBgPIAEoCRIcCgxwaG9u",
-            "ZV9udW1iZXIYECABKAlCBoL5KwIIASK9AgoLTG9nb25SZXN1bHQSEgoKZXJy",
-            "b3JfY29kZRgBIAIoDRIqCgphY2NvdW50X2lkGAIgASgLMhYuYmdzLnByb3Rv",
-            "Y29sLkVudGl0eUlkEi8KD2dhbWVfYWNjb3VudF9pZBgDIAMoCzIWLmJncy5w",
-            "cm90b2NvbC5FbnRpdHlJZBIVCgVlbWFpbBgEIAEoCUIGgvkrAggBEhgKEGF2",
-            "YWlsYWJsZV9yZWdpb24YBSADKA0SGAoQY29ubmVjdGVkX3JlZ2lvbhgGIAEo",
-            "DRIaCgpiYXR0bGVfdGFnGAcgASgJQgaC+SsCCAESFQoNZ2VvaXBfY291bnRy",
-            "eRgIIAEoCRITCgtzZXNzaW9uX2tleRgJIAEoDBIXCg9yZXN0cmljdGVkX21v",
-            "ZGUYCiABKAgSEQoJY2xpZW50X2lkGAsgASgJIigKEkxvZ29uVXBkYXRlUmVx",
-            "dWVzdBISCgplcnJvcl9jb2RlGAEgAigNImEKF0xvZ29uUXVldWVVcGRhdGVS",
-            "ZXF1ZXN0EhAKCHBvc2l0aW9uGAEgAigNEhYKDmVzdGltYXRlZF90aW1lGAIg",
-            "AigEEhwKFGV0YV9kZXZpYXRpb25faW5fc2VjGAMgAigEIj0KGFNlcnZlclN0",
-            "YXRlQ2hhbmdlUmVxdWVzdBINCgVzdGF0ZRgBIAIoDRISCgpldmVudF90aW1l",
-            "GAIgAigEIlQKC1ZlcnNpb25JbmZvEg4KBm51bWJlchgBIAEoDRINCgVwYXRj",
-            "aBgCIAEoCRITCgtpc19vcHRpb25hbBgDIAEoCBIRCglraWNrX3RpbWUYBCAB",
-            "KAQiXAoXVmVyc2lvbkluZm9Ob3RpZmljYXRpb24SQQoMdmVyc2lvbl9pbmZv",
-            "GAEgASgLMisuYmdzLnByb3RvY29sLmF1dGhlbnRpY2F0aW9uLnYxLlZlcnNp",
-            "b25JbmZvIjAKHUdlbmVyYXRlV2ViQ3JlZGVudGlhbHNSZXF1ZXN0Eg8KB3By",
-            "b2dyYW0YASABKAciOQoeR2VuZXJhdGVXZWJDcmVkZW50aWFsc1Jlc3BvbnNl",
-            "EhcKD3dlYl9jcmVkZW50aWFscxgBIAEoDCI2ChtWZXJpZnlXZWJDcmVkZW50",
-            "aWFsc1JlcXVlc3QSFwoPd2ViX2NyZWRlbnRpYWxzGAEgASgMMs4FChZBdXRo",
-            "ZW50aWNhdGlvbkxpc3RlbmVyEnIKE09uU2VydmVyU3RhdGVDaGFuZ2USOC5i",
-            "Z3MucHJvdG9jb2wuYXV0aGVudGljYXRpb24udjEuU2VydmVyU3RhdGVDaGFu",
-            "Z2VSZXF1ZXN0GhkuYmdzLnByb3RvY29sLk5PX1JFU1BPTlNFIgaC+SsCCAQS",
-            "YQoPT25Mb2dvbkNvbXBsZXRlEisuYmdzLnByb3RvY29sLmF1dGhlbnRpY2F0",
-            "aW9uLnYxLkxvZ29uUmVzdWx0GhkuYmdzLnByb3RvY29sLk5PX1JFU1BPTlNF",
-            "IgaC+SsCCAUSZgoNT25Mb2dvblVwZGF0ZRIyLmJncy5wcm90b2NvbC5hdXRo",
-            "ZW50aWNhdGlvbi52MS5Mb2dvblVwZGF0ZVJlcXVlc3QaGS5iZ3MucHJvdG9j",
-            "b2wuTk9fUkVTUE9OU0UiBoL5KwIIChJyChRPblZlcnNpb25JbmZvVXBkYXRl",
-            "ZBI3LmJncy5wcm90b2NvbC5hdXRoZW50aWNhdGlvbi52MS5WZXJzaW9uSW5m",
-            "b05vdGlmaWNhdGlvbhoZLmJncy5wcm90b2NvbC5OT19SRVNQT05TRSIGgvkr",
-            "AggLEnAKEk9uTG9nb25RdWV1ZVVwZGF0ZRI3LmJncy5wcm90b2NvbC5hdXRo",
-            "ZW50aWNhdGlvbi52MS5Mb2dvblF1ZXVlVXBkYXRlUmVxdWVzdBoZLmJncy5w",
-            "cm90b2NvbC5OT19SRVNQT05TRSIGgvkrAggMEkoKD09uTG9nb25RdWV1ZUVu",
-            "ZBIULmJncy5wcm90b2NvbC5Ob0RhdGEaGS5iZ3MucHJvdG9jb2wuTk9fUkVT",
-            "UE9OU0UiBoL5KwIIDRpDgvkrMwoxYm5ldC5wcm90b2NvbC5hdXRoZW50aWNh",
-            "dGlvbi5BdXRoZW50aWNhdGlvbkNsaWVudIL5KwI4AYr5KwIIATLGAwoVQXV0",
-            "aGVudGljYXRpb25TZXJ2aWNlElMKBUxvZ29uEiwuYmdzLnByb3RvY29sLmF1",
-            "dGhlbnRpY2F0aW9uLnYxLkxvZ29uUmVxdWVzdBoULmJncy5wcm90b2NvbC5O",
-            "b0RhdGEiBoL5KwIIARJxChRWZXJpZnlXZWJDcmVkZW50aWFscxI7LmJncy5w",
-            "cm90b2NvbC5hdXRoZW50aWNhdGlvbi52MS5WZXJpZnlXZWJDcmVkZW50aWFs",
-            "c1JlcXVlc3QaFC5iZ3MucHJvdG9jb2wuTm9EYXRhIgaC+SsCCAcSnwEKFkdl",
-            "bmVyYXRlV2ViQ3JlZGVudGlhbHMSPS5iZ3MucHJvdG9jb2wuYXV0aGVudGlj",
-            "YXRpb24udjEuR2VuZXJhdGVXZWJDcmVkZW50aWFsc1JlcXVlc3QaPi5iZ3Mu",
-            "cHJvdG9jb2wuYXV0aGVudGljYXRpb24udjEuR2VuZXJhdGVXZWJDcmVkZW50",
-            "aWFsc1Jlc3BvbnNlIgaC+SsCCAgaQ4L5KzMKMWJuZXQucHJvdG9jb2wuYXV0",
-            "aGVudGljYXRpb24uQXV0aGVudGljYXRpb25TZXJ2ZXKC+SsCOAGK+SsCEAFC",
-            "A4ABAA=="));
+            "ZV9udW1iZXIYECABKAlCBoL5KwIIARIVCg1hdXRoX3BsYXRmb3JtGBEgASgJ",
+            "Ir0CCgtMb2dvblJlc3VsdBISCgplcnJvcl9jb2RlGAEgAigNEioKCmFjY291",
+            "bnRfaWQYAiABKAsyFi5iZ3MucHJvdG9jb2wuRW50aXR5SWQSLwoPZ2FtZV9h",
+            "Y2NvdW50X2lkGAMgAygLMhYuYmdzLnByb3RvY29sLkVudGl0eUlkEhUKBWVt",
+            "YWlsGAQgASgJQgaC+SsCCAESGAoQYXZhaWxhYmxlX3JlZ2lvbhgFIAMoDRIY",
+            "ChBjb25uZWN0ZWRfcmVnaW9uGAYgASgNEhoKCmJhdHRsZV90YWcYByABKAlC",
+            "BoL5KwIIARIVCg1nZW9pcF9jb3VudHJ5GAggASgJEhMKC3Nlc3Npb25fa2V5",
+            "GAkgASgMEhcKD3Jlc3RyaWN0ZWRfbW9kZRgKIAEoCBIRCgljbGllbnRfaWQY",
+            "CyABKAkiKAoSTG9nb25VcGRhdGVSZXF1ZXN0EhIKCmVycm9yX2NvZGUYASAC",
+            "KA0iYQoXTG9nb25RdWV1ZVVwZGF0ZVJlcXVlc3QSEAoIcG9zaXRpb24YASAC",
+            "KA0SFgoOZXN0aW1hdGVkX3RpbWUYAiACKAQSHAoUZXRhX2RldmlhdGlvbl9p",
+            "bl9zZWMYAyACKAQiPQoYU2VydmVyU3RhdGVDaGFuZ2VSZXF1ZXN0Eg0KBXN0",
+            "YXRlGAEgAigNEhIKCmV2ZW50X3RpbWUYAiACKAQiVAoLVmVyc2lvbkluZm8S",
+            "DgoGbnVtYmVyGAEgASgNEg0KBXBhdGNoGAIgASgJEhMKC2lzX29wdGlvbmFs",
+            "GAMgASgIEhEKCWtpY2tfdGltZRgEIAEoBCJcChdWZXJzaW9uSW5mb05vdGlm",
+            "aWNhdGlvbhJBCgx2ZXJzaW9uX2luZm8YASABKAsyKy5iZ3MucHJvdG9jb2wu",
+            "YXV0aGVudGljYXRpb24udjEuVmVyc2lvbkluZm8iMAodR2VuZXJhdGVXZWJD",
+            "cmVkZW50aWFsc1JlcXVlc3QSDwoHcHJvZ3JhbRgBIAEoByI5Ch5HZW5lcmF0",
+            "ZVdlYkNyZWRlbnRpYWxzUmVzcG9uc2USFwoPd2ViX2NyZWRlbnRpYWxzGAEg",
+            "ASgMIjYKG1ZlcmlmeVdlYkNyZWRlbnRpYWxzUmVxdWVzdBIXCg93ZWJfY3Jl",
+            "ZGVudGlhbHMYASABKAwyygUKFkF1dGhlbnRpY2F0aW9uTGlzdGVuZXIScgoT",
+            "T25TZXJ2ZXJTdGF0ZUNoYW5nZRI4LmJncy5wcm90b2NvbC5hdXRoZW50aWNh",
+            "dGlvbi52MS5TZXJ2ZXJTdGF0ZUNoYW5nZVJlcXVlc3QaGS5iZ3MucHJvdG9j",
+            "b2wuTk9fUkVTUE9OU0UiBoL5KwIIBBJhCg9PbkxvZ29uQ29tcGxldGUSKy5i",
+            "Z3MucHJvdG9jb2wuYXV0aGVudGljYXRpb24udjEuTG9nb25SZXN1bHQaGS5i",
+            "Z3MucHJvdG9jb2wuTk9fUkVTUE9OU0UiBoL5KwIIBRJmCg1PbkxvZ29uVXBk",
+            "YXRlEjIuYmdzLnByb3RvY29sLmF1dGhlbnRpY2F0aW9uLnYxLkxvZ29uVXBk",
+            "YXRlUmVxdWVzdBoZLmJncy5wcm90b2NvbC5OT19SRVNQT05TRSIGgvkrAggK",
+            "EnIKFE9uVmVyc2lvbkluZm9VcGRhdGVkEjcuYmdzLnByb3RvY29sLmF1dGhl",
+            "bnRpY2F0aW9uLnYxLlZlcnNpb25JbmZvTm90aWZpY2F0aW9uGhkuYmdzLnBy",
+            "b3RvY29sLk5PX1JFU1BPTlNFIgaC+SsCCAsScAoST25Mb2dvblF1ZXVlVXBk",
+            "YXRlEjcuYmdzLnByb3RvY29sLmF1dGhlbnRpY2F0aW9uLnYxLkxvZ29uUXVl",
+            "dWVVcGRhdGVSZXF1ZXN0GhkuYmdzLnByb3RvY29sLk5PX1JFU1BPTlNFIgaC",
+            "+SsCCAwSSgoPT25Mb2dvblF1ZXVlRW5kEhQuYmdzLnByb3RvY29sLk5vRGF0",
+            "YRoZLmJncy5wcm90b2NvbC5OT19SRVNQT05TRSIGgvkrAggNGj+C+Ss1CjFi",
+            "bmV0LnByb3RvY29sLmF1dGhlbnRpY2F0aW9uLkF1dGhlbnRpY2F0aW9uQ2xp",
+            "ZW50OAGK+SsCCAEywgMKFUF1dGhlbnRpY2F0aW9uU2VydmljZRJTCgVMb2dv",
+            "bhIsLmJncy5wcm90b2NvbC5hdXRoZW50aWNhdGlvbi52MS5Mb2dvblJlcXVl",
+            "c3QaFC5iZ3MucHJvdG9jb2wuTm9EYXRhIgaC+SsCCAEScQoUVmVyaWZ5V2Vi",
+            "Q3JlZGVudGlhbHMSOy5iZ3MucHJvdG9jb2wuYXV0aGVudGljYXRpb24udjEu",
+            "VmVyaWZ5V2ViQ3JlZGVudGlhbHNSZXF1ZXN0GhQuYmdzLnByb3RvY29sLk5v",
+            "RGF0YSIGgvkrAggHEp8BChZHZW5lcmF0ZVdlYkNyZWRlbnRpYWxzEj0uYmdz",
+            "LnByb3RvY29sLmF1dGhlbnRpY2F0aW9uLnYxLkdlbmVyYXRlV2ViQ3JlZGVu",
+            "dGlhbHNSZXF1ZXN0Gj4uYmdzLnByb3RvY29sLmF1dGhlbnRpY2F0aW9uLnYx",
+            "LkdlbmVyYXRlV2ViQ3JlZGVudGlhbHNSZXNwb25zZSIGgvkrAggIGj+C+Ss1",
+            "CjFibmV0LnByb3RvY29sLmF1dGhlbnRpY2F0aW9uLkF1dGhlbnRpY2F0aW9u",
+            "U2VydmVyOAGK+SsCEAFCA4ABAA=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Bgs.Protocol.EntityTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, global::Bgs.Protocol.FieldOptionsReflection.Descriptor, global::Bgs.Protocol.MessageOptionsReflection.Descriptor, global::Bgs.Protocol.MethodOptionsReflection.Descriptor, global::Bgs.Protocol.ServiceOptionsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.LogonRequest), global::Bgs.Protocol.Authentication.V1.LogonRequest.Parser, new[]{ "Program", "Platform", "Locale", "Email", "Version", "ApplicationVersion", "PublicComputer", "AllowLogonQueueNotifications", "CachedWebCredentials", "UserAgent", "DeviceId", "PhoneNumber" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.LogonRequest), global::Bgs.Protocol.Authentication.V1.LogonRequest.Parser, new[]{ "Program", "Platform", "Locale", "Email", "Version", "ApplicationVersion", "PublicComputer", "AllowLogonQueueNotifications", "CachedWebCredentials", "UserAgent", "DeviceId", "PhoneNumber", "AuthPlatform" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.LogonResult), global::Bgs.Protocol.Authentication.V1.LogonResult.Parser, new[]{ "ErrorCode", "AccountId", "GameAccountId", "Email", "AvailableRegion", "ConnectedRegion", "BattleTag", "GeoipCountry", "SessionKey", "RestrictedMode", "ClientId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.LogonUpdateRequest), global::Bgs.Protocol.Authentication.V1.LogonUpdateRequest.Parser, new[]{ "ErrorCode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.LogonQueueUpdateRequest), global::Bgs.Protocol.Authentication.V1.LogonQueueUpdateRequest.Parser, new[]{ "Position", "EstimatedTime", "EtaDeviationInSec" }, null, null, null, null),
@@ -105,24 +105,33 @@ namespace Bgs.Protocol.Authentication.V1 {
 
   }
   #region Messages
-  public sealed partial class LogonRequest : pb::IMessage<LogonRequest> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class LogonRequest : pb::IMessage<LogonRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<LogonRequest> _parser = new pb::MessageParser<LogonRequest>(() => new LogonRequest());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<LogonRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogonRequest() {
       OnConstruction();
     }
@@ -130,6 +139,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogonRequest(LogonRequest other) : this() {
       _hasBits0 = other._hasBits0;
       program_ = other.program_;
@@ -144,10 +154,12 @@ namespace Bgs.Protocol.Authentication.V1 {
       userAgent_ = other.userAgent_;
       deviceId_ = other.deviceId_;
       phoneNumber_ = other.phoneNumber_;
+      authPlatform_ = other.authPlatform_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogonRequest Clone() {
       return new LogonRequest(this);
     }
@@ -158,6 +170,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private string program_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Program {
       get { return program_ ?? ProgramDefaultValue; }
       set {
@@ -166,11 +179,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "program" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasProgram {
       get { return program_ != null; }
     }
     /// <summary>Clears the value of the "program" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearProgram() {
       program_ = null;
     }
@@ -181,6 +196,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private string platform_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Platform {
       get { return platform_ ?? PlatformDefaultValue; }
       set {
@@ -189,11 +205,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "platform" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasPlatform {
       get { return platform_ != null; }
     }
     /// <summary>Clears the value of the "platform" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearPlatform() {
       platform_ = null;
     }
@@ -204,6 +222,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private string locale_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Locale {
       get { return locale_ ?? LocaleDefaultValue; }
       set {
@@ -212,11 +231,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "locale" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasLocale {
       get { return locale_ != null; }
     }
     /// <summary>Clears the value of the "locale" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearLocale() {
       locale_ = null;
     }
@@ -227,6 +248,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private string email_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Email {
       get { return email_ ?? EmailDefaultValue; }
       set {
@@ -235,11 +257,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "email" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasEmail {
       get { return email_ != null; }
     }
     /// <summary>Clears the value of the "email" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearEmail() {
       email_ = null;
     }
@@ -250,6 +274,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private string version_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Version {
       get { return version_ ?? VersionDefaultValue; }
       set {
@@ -258,11 +283,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "version" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasVersion {
       get { return version_ != null; }
     }
     /// <summary>Clears the value of the "version" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearVersion() {
       version_ = null;
     }
@@ -273,6 +300,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private int applicationVersion_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ApplicationVersion {
       get { if ((_hasBits0 & 1) != 0) { return applicationVersion_; } else { return ApplicationVersionDefaultValue; } }
       set {
@@ -282,11 +310,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "application_version" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasApplicationVersion {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "application_version" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearApplicationVersion() {
       _hasBits0 &= ~1;
     }
@@ -297,6 +327,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private bool publicComputer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool PublicComputer {
       get { if ((_hasBits0 & 2) != 0) { return publicComputer_; } else { return PublicComputerDefaultValue; } }
       set {
@@ -306,11 +337,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "public_computer" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasPublicComputer {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "public_computer" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearPublicComputer() {
       _hasBits0 &= ~2;
     }
@@ -321,6 +354,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private bool allowLogonQueueNotifications_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool AllowLogonQueueNotifications {
       get { if ((_hasBits0 & 4) != 0) { return allowLogonQueueNotifications_; } else { return AllowLogonQueueNotificationsDefaultValue; } }
       set {
@@ -330,11 +364,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "allow_logon_queue_notifications" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAllowLogonQueueNotifications {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "allow_logon_queue_notifications" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAllowLogonQueueNotifications() {
       _hasBits0 &= ~4;
     }
@@ -345,6 +381,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private pb::ByteString cachedWebCredentials_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString CachedWebCredentials {
       get { return cachedWebCredentials_ ?? CachedWebCredentialsDefaultValue; }
       set {
@@ -353,11 +390,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "cached_web_credentials" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCachedWebCredentials {
       get { return cachedWebCredentials_ != null; }
     }
     /// <summary>Clears the value of the "cached_web_credentials" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCachedWebCredentials() {
       cachedWebCredentials_ = null;
     }
@@ -368,6 +407,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private string userAgent_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string UserAgent {
       get { return userAgent_ ?? UserAgentDefaultValue; }
       set {
@@ -376,11 +416,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "user_agent" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasUserAgent {
       get { return userAgent_ != null; }
     }
     /// <summary>Clears the value of the "user_agent" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearUserAgent() {
       userAgent_ = null;
     }
@@ -391,6 +433,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private string deviceId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DeviceId {
       get { return deviceId_ ?? DeviceIdDefaultValue; }
       set {
@@ -399,11 +442,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "device_id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasDeviceId {
       get { return deviceId_ != null; }
     }
     /// <summary>Clears the value of the "device_id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearDeviceId() {
       deviceId_ = null;
     }
@@ -414,6 +459,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private string phoneNumber_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PhoneNumber {
       get { return phoneNumber_ ?? PhoneNumberDefaultValue; }
       set {
@@ -422,21 +468,51 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "phone_number" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasPhoneNumber {
       get { return phoneNumber_ != null; }
     }
     /// <summary>Clears the value of the "phone_number" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearPhoneNumber() {
       phoneNumber_ = null;
     }
 
+    /// <summary>Field number for the "auth_platform" field.</summary>
+    public const int AuthPlatformFieldNumber = 17;
+    private readonly static string AuthPlatformDefaultValue = "";
+
+    private string authPlatform_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AuthPlatform {
+      get { return authPlatform_ ?? AuthPlatformDefaultValue; }
+      set {
+        authPlatform_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "auth_platform" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAuthPlatform {
+      get { return authPlatform_ != null; }
+    }
+    /// <summary>Clears the value of the "auth_platform" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAuthPlatform() {
+      authPlatform_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as LogonRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(LogonRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -456,10 +532,12 @@ namespace Bgs.Protocol.Authentication.V1 {
       if (UserAgent != other.UserAgent) return false;
       if (DeviceId != other.DeviceId) return false;
       if (PhoneNumber != other.PhoneNumber) return false;
+      if (AuthPlatform != other.AuthPlatform) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasProgram) hash ^= Program.GetHashCode();
@@ -474,6 +552,7 @@ namespace Bgs.Protocol.Authentication.V1 {
       if (HasUserAgent) hash ^= UserAgent.GetHashCode();
       if (HasDeviceId) hash ^= DeviceId.GetHashCode();
       if (HasPhoneNumber) hash ^= PhoneNumber.GetHashCode();
+      if (HasAuthPlatform) hash ^= AuthPlatform.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -481,12 +560,17 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasProgram) {
         output.WriteRawTag(10);
         output.WriteString(Program);
@@ -535,12 +619,80 @@ namespace Bgs.Protocol.Authentication.V1 {
         output.WriteRawTag(130, 1);
         output.WriteString(PhoneNumber);
       }
+      if (HasAuthPlatform) {
+        output.WriteRawTag(138, 1);
+        output.WriteString(AuthPlatform);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasProgram) {
+        output.WriteRawTag(10);
+        output.WriteString(Program);
+      }
+      if (HasPlatform) {
+        output.WriteRawTag(18);
+        output.WriteString(Platform);
+      }
+      if (HasLocale) {
+        output.WriteRawTag(26);
+        output.WriteString(Locale);
+      }
+      if (HasEmail) {
+        output.WriteRawTag(34);
+        output.WriteString(Email);
+      }
+      if (HasVersion) {
+        output.WriteRawTag(42);
+        output.WriteString(Version);
+      }
+      if (HasApplicationVersion) {
+        output.WriteRawTag(48);
+        output.WriteInt32(ApplicationVersion);
+      }
+      if (HasPublicComputer) {
+        output.WriteRawTag(56);
+        output.WriteBool(PublicComputer);
+      }
+      if (HasAllowLogonQueueNotifications) {
+        output.WriteRawTag(80);
+        output.WriteBool(AllowLogonQueueNotifications);
+      }
+      if (HasCachedWebCredentials) {
+        output.WriteRawTag(98);
+        output.WriteBytes(CachedWebCredentials);
+      }
+      if (HasUserAgent) {
+        output.WriteRawTag(114);
+        output.WriteString(UserAgent);
+      }
+      if (HasDeviceId) {
+        output.WriteRawTag(122);
+        output.WriteString(DeviceId);
+      }
+      if (HasPhoneNumber) {
+        output.WriteRawTag(130, 1);
+        output.WriteString(PhoneNumber);
+      }
+      if (HasAuthPlatform) {
+        output.WriteRawTag(138, 1);
+        output.WriteString(AuthPlatform);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasProgram) {
@@ -579,6 +731,9 @@ namespace Bgs.Protocol.Authentication.V1 {
       if (HasPhoneNumber) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(PhoneNumber);
       }
+      if (HasAuthPlatform) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(AuthPlatform);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -586,6 +741,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(LogonRequest other) {
       if (other == null) {
         return;
@@ -626,11 +782,18 @@ namespace Bgs.Protocol.Authentication.V1 {
       if (other.HasPhoneNumber) {
         PhoneNumber = other.PhoneNumber;
       }
+      if (other.HasAuthPlatform) {
+        AuthPlatform = other.AuthPlatform;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -685,30 +848,111 @@ namespace Bgs.Protocol.Authentication.V1 {
             PhoneNumber = input.ReadString();
             break;
           }
+          case 138: {
+            AuthPlatform = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Program = input.ReadString();
+            break;
+          }
+          case 18: {
+            Platform = input.ReadString();
+            break;
+          }
+          case 26: {
+            Locale = input.ReadString();
+            break;
+          }
+          case 34: {
+            Email = input.ReadString();
+            break;
+          }
+          case 42: {
+            Version = input.ReadString();
+            break;
+          }
+          case 48: {
+            ApplicationVersion = input.ReadInt32();
+            break;
+          }
+          case 56: {
+            PublicComputer = input.ReadBool();
+            break;
+          }
+          case 80: {
+            AllowLogonQueueNotifications = input.ReadBool();
+            break;
+          }
+          case 98: {
+            CachedWebCredentials = input.ReadBytes();
+            break;
+          }
+          case 114: {
+            UserAgent = input.ReadString();
+            break;
+          }
+          case 122: {
+            DeviceId = input.ReadString();
+            break;
+          }
+          case 130: {
+            PhoneNumber = input.ReadString();
+            break;
+          }
+          case 138: {
+            AuthPlatform = input.ReadString();
+            break;
+          }
         }
       }
     }
+    #endif
 
   }
 
-  public sealed partial class LogonResult : pb::IMessage<LogonResult> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class LogonResult : pb::IMessage<LogonResult>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<LogonResult> _parser = new pb::MessageParser<LogonResult>(() => new LogonResult());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<LogonResult> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogonResult() {
       OnConstruction();
     }
@@ -716,10 +960,11 @@ namespace Bgs.Protocol.Authentication.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogonResult(LogonResult other) : this() {
       _hasBits0 = other._hasBits0;
       errorCode_ = other.errorCode_;
-      accountId_ = other.HasAccountId ? other.accountId_.Clone() : null;
+      accountId_ = other.accountId_ != null ? other.accountId_.Clone() : null;
       gameAccountId_ = other.gameAccountId_.Clone();
       email_ = other.email_;
       availableRegion_ = other.availableRegion_.Clone();
@@ -733,6 +978,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogonResult Clone() {
       return new LogonResult(this);
     }
@@ -743,6 +989,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private uint errorCode_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint ErrorCode {
       get { if ((_hasBits0 & 1) != 0) { return errorCode_; } else { return ErrorCodeDefaultValue; } }
       set {
@@ -752,11 +999,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "error_code" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasErrorCode {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "error_code" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearErrorCode() {
       _hasBits0 &= ~1;
     }
@@ -765,21 +1014,12 @@ namespace Bgs.Protocol.Authentication.V1 {
     public const int AccountIdFieldNumber = 2;
     private global::Bgs.Protocol.EntityId accountId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.EntityId AccountId {
       get { return accountId_; }
       set {
         accountId_ = value;
       }
-    }
-    /// <summary>Gets whether the account_id field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasAccountId {
-      get { return accountId_ != null; }
-    }
-    /// <summary>Clears the value of the account_id field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearAccountId() {
-      accountId_ = null;
     }
 
     /// <summary>Field number for the "game_account_id" field.</summary>
@@ -788,6 +1028,7 @@ namespace Bgs.Protocol.Authentication.V1 {
         = pb::FieldCodec.ForMessage(26, global::Bgs.Protocol.EntityId.Parser);
     private readonly pbc::RepeatedField<global::Bgs.Protocol.EntityId> gameAccountId_ = new pbc::RepeatedField<global::Bgs.Protocol.EntityId>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Bgs.Protocol.EntityId> GameAccountId {
       get { return gameAccountId_; }
     }
@@ -798,6 +1039,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private string email_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Email {
       get { return email_ ?? EmailDefaultValue; }
       set {
@@ -806,11 +1048,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "email" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasEmail {
       get { return email_ != null; }
     }
     /// <summary>Clears the value of the "email" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearEmail() {
       email_ = null;
     }
@@ -821,6 +1065,7 @@ namespace Bgs.Protocol.Authentication.V1 {
         = pb::FieldCodec.ForUInt32(40);
     private readonly pbc::RepeatedField<uint> availableRegion_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<uint> AvailableRegion {
       get { return availableRegion_; }
     }
@@ -831,6 +1076,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private uint connectedRegion_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint ConnectedRegion {
       get { if ((_hasBits0 & 2) != 0) { return connectedRegion_; } else { return ConnectedRegionDefaultValue; } }
       set {
@@ -840,11 +1086,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "connected_region" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasConnectedRegion {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "connected_region" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearConnectedRegion() {
       _hasBits0 &= ~2;
     }
@@ -855,6 +1103,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private string battleTag_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string BattleTag {
       get { return battleTag_ ?? BattleTagDefaultValue; }
       set {
@@ -863,11 +1112,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "battle_tag" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasBattleTag {
       get { return battleTag_ != null; }
     }
     /// <summary>Clears the value of the "battle_tag" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearBattleTag() {
       battleTag_ = null;
     }
@@ -878,6 +1129,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private string geoipCountry_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string GeoipCountry {
       get { return geoipCountry_ ?? GeoipCountryDefaultValue; }
       set {
@@ -886,11 +1138,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "geoip_country" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasGeoipCountry {
       get { return geoipCountry_ != null; }
     }
     /// <summary>Clears the value of the "geoip_country" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearGeoipCountry() {
       geoipCountry_ = null;
     }
@@ -901,6 +1155,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private pb::ByteString sessionKey_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString SessionKey {
       get { return sessionKey_ ?? SessionKeyDefaultValue; }
       set {
@@ -909,11 +1164,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "session_key" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasSessionKey {
       get { return sessionKey_ != null; }
     }
     /// <summary>Clears the value of the "session_key" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearSessionKey() {
       sessionKey_ = null;
     }
@@ -924,6 +1181,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private bool restrictedMode_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool RestrictedMode {
       get { if ((_hasBits0 & 4) != 0) { return restrictedMode_; } else { return RestrictedModeDefaultValue; } }
       set {
@@ -933,11 +1191,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "restricted_mode" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRestrictedMode {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "restricted_mode" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRestrictedMode() {
       _hasBits0 &= ~4;
     }
@@ -948,6 +1208,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private string clientId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ClientId {
       get { return clientId_ ?? ClientIdDefaultValue; }
       set {
@@ -956,21 +1217,25 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "client_id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasClientId {
       get { return clientId_ != null; }
     }
     /// <summary>Clears the value of the "client_id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearClientId() {
       clientId_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as LogonResult);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(LogonResult other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -993,10 +1258,11 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasErrorCode) hash ^= ErrorCode.GetHashCode();
-      if (HasAccountId) hash ^= AccountId.GetHashCode();
+      if (accountId_ != null) hash ^= AccountId.GetHashCode();
       hash ^= gameAccountId_.GetHashCode();
       if (HasEmail) hash ^= Email.GetHashCode();
       hash ^= availableRegion_.GetHashCode();
@@ -1013,17 +1279,22 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasErrorCode) {
         output.WriteRawTag(8);
         output.WriteUInt32(ErrorCode);
       }
-      if (HasAccountId) {
+      if (accountId_ != null) {
         output.WriteRawTag(18);
         output.WriteMessage(AccountId);
       }
@@ -1060,15 +1331,65 @@ namespace Bgs.Protocol.Authentication.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasErrorCode) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ErrorCode);
+      }
+      if (accountId_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(AccountId);
+      }
+      gameAccountId_.WriteTo(ref output, _repeated_gameAccountId_codec);
+      if (HasEmail) {
+        output.WriteRawTag(34);
+        output.WriteString(Email);
+      }
+      availableRegion_.WriteTo(ref output, _repeated_availableRegion_codec);
+      if (HasConnectedRegion) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(ConnectedRegion);
+      }
+      if (HasBattleTag) {
+        output.WriteRawTag(58);
+        output.WriteString(BattleTag);
+      }
+      if (HasGeoipCountry) {
+        output.WriteRawTag(66);
+        output.WriteString(GeoipCountry);
+      }
+      if (HasSessionKey) {
+        output.WriteRawTag(74);
+        output.WriteBytes(SessionKey);
+      }
+      if (HasRestrictedMode) {
+        output.WriteRawTag(80);
+        output.WriteBool(RestrictedMode);
+      }
+      if (HasClientId) {
+        output.WriteRawTag(90);
+        output.WriteString(ClientId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasErrorCode) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ErrorCode);
       }
-      if (HasAccountId) {
+      if (accountId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AccountId);
       }
       size += gameAccountId_.CalculateSize(_repeated_gameAccountId_codec);
@@ -1101,6 +1422,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(LogonResult other) {
       if (other == null) {
         return;
@@ -1108,8 +1430,8 @@ namespace Bgs.Protocol.Authentication.V1 {
       if (other.HasErrorCode) {
         ErrorCode = other.ErrorCode;
       }
-      if (other.HasAccountId) {
-        if (!HasAccountId) {
+      if (other.accountId_ != null) {
+        if (accountId_ == null) {
           AccountId = new global::Bgs.Protocol.EntityId();
         }
         AccountId.MergeFrom(other.AccountId);
@@ -1141,7 +1463,11 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1153,7 +1479,7 @@ namespace Bgs.Protocol.Authentication.V1 {
             break;
           }
           case 18: {
-            if (!HasAccountId) {
+            if (accountId_ == null) {
               AccountId = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(AccountId);
@@ -1198,28 +1524,101 @@ namespace Bgs.Protocol.Authentication.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ErrorCode = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            if (accountId_ == null) {
+              AccountId = new global::Bgs.Protocol.EntityId();
+            }
+            input.ReadMessage(AccountId);
+            break;
+          }
+          case 26: {
+            gameAccountId_.AddEntriesFrom(ref input, _repeated_gameAccountId_codec);
+            break;
+          }
+          case 34: {
+            Email = input.ReadString();
+            break;
+          }
+          case 42:
+          case 40: {
+            availableRegion_.AddEntriesFrom(ref input, _repeated_availableRegion_codec);
+            break;
+          }
+          case 48: {
+            ConnectedRegion = input.ReadUInt32();
+            break;
+          }
+          case 58: {
+            BattleTag = input.ReadString();
+            break;
+          }
+          case 66: {
+            GeoipCountry = input.ReadString();
+            break;
+          }
+          case 74: {
+            SessionKey = input.ReadBytes();
+            break;
+          }
+          case 80: {
+            RestrictedMode = input.ReadBool();
+            break;
+          }
+          case 90: {
+            ClientId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class LogonUpdateRequest : pb::IMessage<LogonUpdateRequest> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class LogonUpdateRequest : pb::IMessage<LogonUpdateRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<LogonUpdateRequest> _parser = new pb::MessageParser<LogonUpdateRequest>(() => new LogonUpdateRequest());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<LogonUpdateRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogonUpdateRequest() {
       OnConstruction();
     }
@@ -1227,6 +1626,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogonUpdateRequest(LogonUpdateRequest other) : this() {
       _hasBits0 = other._hasBits0;
       errorCode_ = other.errorCode_;
@@ -1234,6 +1634,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogonUpdateRequest Clone() {
       return new LogonUpdateRequest(this);
     }
@@ -1244,6 +1645,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private uint errorCode_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint ErrorCode {
       get { if ((_hasBits0 & 1) != 0) { return errorCode_; } else { return ErrorCodeDefaultValue; } }
       set {
@@ -1253,21 +1655,25 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "error_code" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasErrorCode {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "error_code" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearErrorCode() {
       _hasBits0 &= ~1;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as LogonUpdateRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(LogonUpdateRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1280,6 +1686,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasErrorCode) hash ^= ErrorCode.GetHashCode();
@@ -1290,12 +1697,17 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasErrorCode) {
         output.WriteRawTag(8);
         output.WriteUInt32(ErrorCode);
@@ -1303,9 +1715,25 @@ namespace Bgs.Protocol.Authentication.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasErrorCode) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ErrorCode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasErrorCode) {
@@ -1318,6 +1746,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(LogonUpdateRequest other) {
       if (other == null) {
         return;
@@ -1329,7 +1758,11 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1342,28 +1775,57 @@ namespace Bgs.Protocol.Authentication.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ErrorCode = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class LogonQueueUpdateRequest : pb::IMessage<LogonQueueUpdateRequest> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class LogonQueueUpdateRequest : pb::IMessage<LogonQueueUpdateRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<LogonQueueUpdateRequest> _parser = new pb::MessageParser<LogonQueueUpdateRequest>(() => new LogonQueueUpdateRequest());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<LogonQueueUpdateRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogonQueueUpdateRequest() {
       OnConstruction();
     }
@@ -1371,6 +1833,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogonQueueUpdateRequest(LogonQueueUpdateRequest other) : this() {
       _hasBits0 = other._hasBits0;
       position_ = other.position_;
@@ -1380,6 +1843,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogonQueueUpdateRequest Clone() {
       return new LogonQueueUpdateRequest(this);
     }
@@ -1390,6 +1854,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private uint position_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Position {
       get { if ((_hasBits0 & 1) != 0) { return position_; } else { return PositionDefaultValue; } }
       set {
@@ -1399,11 +1864,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "position" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasPosition {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "position" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearPosition() {
       _hasBits0 &= ~1;
     }
@@ -1414,6 +1881,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private ulong estimatedTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong EstimatedTime {
       get { if ((_hasBits0 & 2) != 0) { return estimatedTime_; } else { return EstimatedTimeDefaultValue; } }
       set {
@@ -1423,11 +1891,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "estimated_time" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasEstimatedTime {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "estimated_time" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearEstimatedTime() {
       _hasBits0 &= ~2;
     }
@@ -1438,6 +1908,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private ulong etaDeviationInSec_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong EtaDeviationInSec {
       get { if ((_hasBits0 & 4) != 0) { return etaDeviationInSec_; } else { return EtaDeviationInSecDefaultValue; } }
       set {
@@ -1447,21 +1918,25 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "eta_deviation_in_sec" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasEtaDeviationInSec {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "eta_deviation_in_sec" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearEtaDeviationInSec() {
       _hasBits0 &= ~4;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as LogonQueueUpdateRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(LogonQueueUpdateRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1476,6 +1951,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasPosition) hash ^= Position.GetHashCode();
@@ -1488,12 +1964,17 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasPosition) {
         output.WriteRawTag(8);
         output.WriteUInt32(Position);
@@ -1509,9 +1990,33 @@ namespace Bgs.Protocol.Authentication.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasPosition) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Position);
+      }
+      if (HasEstimatedTime) {
+        output.WriteRawTag(16);
+        output.WriteUInt64(EstimatedTime);
+      }
+      if (HasEtaDeviationInSec) {
+        output.WriteRawTag(24);
+        output.WriteUInt64(EtaDeviationInSec);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasPosition) {
@@ -1530,6 +2035,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(LogonQueueUpdateRequest other) {
       if (other == null) {
         return;
@@ -1547,7 +2053,11 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1568,28 +2078,65 @@ namespace Bgs.Protocol.Authentication.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Position = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            EstimatedTime = input.ReadUInt64();
+            break;
+          }
+          case 24: {
+            EtaDeviationInSec = input.ReadUInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class ServerStateChangeRequest : pb::IMessage<ServerStateChangeRequest> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ServerStateChangeRequest : pb::IMessage<ServerStateChangeRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ServerStateChangeRequest> _parser = new pb::MessageParser<ServerStateChangeRequest>(() => new ServerStateChangeRequest());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ServerStateChangeRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ServerStateChangeRequest() {
       OnConstruction();
     }
@@ -1597,6 +2144,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ServerStateChangeRequest(ServerStateChangeRequest other) : this() {
       _hasBits0 = other._hasBits0;
       state_ = other.state_;
@@ -1605,6 +2153,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ServerStateChangeRequest Clone() {
       return new ServerStateChangeRequest(this);
     }
@@ -1615,6 +2164,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private uint state_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint State {
       get { if ((_hasBits0 & 1) != 0) { return state_; } else { return StateDefaultValue; } }
       set {
@@ -1624,11 +2174,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "state" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasState {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "state" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearState() {
       _hasBits0 &= ~1;
     }
@@ -1639,6 +2191,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private ulong eventTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong EventTime {
       get { if ((_hasBits0 & 2) != 0) { return eventTime_; } else { return EventTimeDefaultValue; } }
       set {
@@ -1648,21 +2201,25 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "event_time" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasEventTime {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "event_time" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearEventTime() {
       _hasBits0 &= ~2;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ServerStateChangeRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ServerStateChangeRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1676,6 +2233,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasState) hash ^= State.GetHashCode();
@@ -1687,12 +2245,17 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasState) {
         output.WriteRawTag(8);
         output.WriteUInt32(State);
@@ -1704,9 +2267,29 @@ namespace Bgs.Protocol.Authentication.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasState) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(State);
+      }
+      if (HasEventTime) {
+        output.WriteRawTag(16);
+        output.WriteUInt64(EventTime);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasState) {
@@ -1722,6 +2305,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ServerStateChangeRequest other) {
       if (other == null) {
         return;
@@ -1736,7 +2320,11 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1753,28 +2341,61 @@ namespace Bgs.Protocol.Authentication.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            State = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            EventTime = input.ReadUInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class VersionInfo : pb::IMessage<VersionInfo> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class VersionInfo : pb::IMessage<VersionInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<VersionInfo> _parser = new pb::MessageParser<VersionInfo>(() => new VersionInfo());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<VersionInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VersionInfo() {
       OnConstruction();
     }
@@ -1782,6 +2403,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VersionInfo(VersionInfo other) : this() {
       _hasBits0 = other._hasBits0;
       number_ = other.number_;
@@ -1792,6 +2414,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VersionInfo Clone() {
       return new VersionInfo(this);
     }
@@ -1802,6 +2425,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private uint number_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Number {
       get { if ((_hasBits0 & 1) != 0) { return number_; } else { return NumberDefaultValue; } }
       set {
@@ -1811,11 +2435,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "number" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasNumber {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "number" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearNumber() {
       _hasBits0 &= ~1;
     }
@@ -1826,6 +2452,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private string patch_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Patch {
       get { return patch_ ?? PatchDefaultValue; }
       set {
@@ -1834,11 +2461,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "patch" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasPatch {
       get { return patch_ != null; }
     }
     /// <summary>Clears the value of the "patch" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearPatch() {
       patch_ = null;
     }
@@ -1849,6 +2478,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private bool isOptional_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsOptional {
       get { if ((_hasBits0 & 2) != 0) { return isOptional_; } else { return IsOptionalDefaultValue; } }
       set {
@@ -1858,11 +2488,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "is_optional" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIsOptional {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "is_optional" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIsOptional() {
       _hasBits0 &= ~2;
     }
@@ -1873,6 +2505,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private ulong kickTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong KickTime {
       get { if ((_hasBits0 & 4) != 0) { return kickTime_; } else { return KickTimeDefaultValue; } }
       set {
@@ -1882,21 +2515,25 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "kick_time" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasKickTime {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "kick_time" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearKickTime() {
       _hasBits0 &= ~4;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as VersionInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(VersionInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1912,6 +2549,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasNumber) hash ^= Number.GetHashCode();
@@ -1925,12 +2563,17 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasNumber) {
         output.WriteRawTag(8);
         output.WriteUInt32(Number);
@@ -1950,9 +2593,37 @@ namespace Bgs.Protocol.Authentication.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasNumber) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Number);
+      }
+      if (HasPatch) {
+        output.WriteRawTag(18);
+        output.WriteString(Patch);
+      }
+      if (HasIsOptional) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsOptional);
+      }
+      if (HasKickTime) {
+        output.WriteRawTag(32);
+        output.WriteUInt64(KickTime);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasNumber) {
@@ -1974,6 +2645,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(VersionInfo other) {
       if (other == null) {
         return;
@@ -1994,7 +2666,11 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2019,27 +2695,68 @@ namespace Bgs.Protocol.Authentication.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Number = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            Patch = input.ReadString();
+            break;
+          }
+          case 24: {
+            IsOptional = input.ReadBool();
+            break;
+          }
+          case 32: {
+            KickTime = input.ReadUInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class VersionInfoNotification : pb::IMessage<VersionInfoNotification> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class VersionInfoNotification : pb::IMessage<VersionInfoNotification>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<VersionInfoNotification> _parser = new pb::MessageParser<VersionInfoNotification>(() => new VersionInfoNotification());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<VersionInfoNotification> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VersionInfoNotification() {
       OnConstruction();
     }
@@ -2047,12 +2764,14 @@ namespace Bgs.Protocol.Authentication.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VersionInfoNotification(VersionInfoNotification other) : this() {
-      versionInfo_ = other.HasVersionInfo ? other.versionInfo_.Clone() : null;
+      versionInfo_ = other.versionInfo_ != null ? other.versionInfo_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VersionInfoNotification Clone() {
       return new VersionInfoNotification(this);
     }
@@ -2061,29 +2780,22 @@ namespace Bgs.Protocol.Authentication.V1 {
     public const int VersionInfoFieldNumber = 1;
     private global::Bgs.Protocol.Authentication.V1.VersionInfo versionInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Authentication.V1.VersionInfo VersionInfo {
       get { return versionInfo_; }
       set {
         versionInfo_ = value;
       }
     }
-    /// <summary>Gets whether the version_info field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasVersionInfo {
-      get { return versionInfo_ != null; }
-    }
-    /// <summary>Clears the value of the version_info field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearVersionInfo() {
-      versionInfo_ = null;
-    }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as VersionInfoNotification);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(VersionInfoNotification other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2096,9 +2808,10 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasVersionInfo) hash ^= VersionInfo.GetHashCode();
+      if (versionInfo_ != null) hash ^= VersionInfo.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2106,25 +2819,46 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasVersionInfo) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (versionInfo_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(VersionInfo);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (versionInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(VersionInfo);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasVersionInfo) {
+      if (versionInfo_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(VersionInfo);
       }
       if (_unknownFields != null) {
@@ -2134,12 +2868,13 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(VersionInfoNotification other) {
       if (other == null) {
         return;
       }
-      if (other.HasVersionInfo) {
-        if (!HasVersionInfo) {
+      if (other.versionInfo_ != null) {
+        if (versionInfo_ == null) {
           VersionInfo = new global::Bgs.Protocol.Authentication.V1.VersionInfo();
         }
         VersionInfo.MergeFrom(other.VersionInfo);
@@ -2148,7 +2883,11 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2156,7 +2895,29 @@ namespace Bgs.Protocol.Authentication.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasVersionInfo) {
+            if (versionInfo_ == null) {
+              VersionInfo = new global::Bgs.Protocol.Authentication.V1.VersionInfo();
+            }
+            input.ReadMessage(VersionInfo);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (versionInfo_ == null) {
               VersionInfo = new global::Bgs.Protocol.Authentication.V1.VersionInfo();
             }
             input.ReadMessage(VersionInfo);
@@ -2165,27 +2926,37 @@ namespace Bgs.Protocol.Authentication.V1 {
         }
       }
     }
+    #endif
 
   }
 
-  public sealed partial class GenerateWebCredentialsRequest : pb::IMessage<GenerateWebCredentialsRequest> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GenerateWebCredentialsRequest : pb::IMessage<GenerateWebCredentialsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GenerateWebCredentialsRequest> _parser = new pb::MessageParser<GenerateWebCredentialsRequest>(() => new GenerateWebCredentialsRequest());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerateWebCredentialsRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerateWebCredentialsRequest() {
       OnConstruction();
     }
@@ -2193,6 +2964,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerateWebCredentialsRequest(GenerateWebCredentialsRequest other) : this() {
       _hasBits0 = other._hasBits0;
       program_ = other.program_;
@@ -2200,6 +2972,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerateWebCredentialsRequest Clone() {
       return new GenerateWebCredentialsRequest(this);
     }
@@ -2210,6 +2983,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private uint program_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Program {
       get { if ((_hasBits0 & 1) != 0) { return program_; } else { return ProgramDefaultValue; } }
       set {
@@ -2219,21 +2993,25 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "program" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasProgram {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "program" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearProgram() {
       _hasBits0 &= ~1;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerateWebCredentialsRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerateWebCredentialsRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2246,6 +3024,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasProgram) hash ^= Program.GetHashCode();
@@ -2256,12 +3035,17 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasProgram) {
         output.WriteRawTag(13);
         output.WriteFixed32(Program);
@@ -2269,9 +3053,25 @@ namespace Bgs.Protocol.Authentication.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasProgram) {
+        output.WriteRawTag(13);
+        output.WriteFixed32(Program);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasProgram) {
@@ -2284,6 +3084,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerateWebCredentialsRequest other) {
       if (other == null) {
         return;
@@ -2295,7 +3096,11 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2308,27 +3113,56 @@ namespace Bgs.Protocol.Authentication.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 13: {
+            Program = input.ReadFixed32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class GenerateWebCredentialsResponse : pb::IMessage<GenerateWebCredentialsResponse> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GenerateWebCredentialsResponse : pb::IMessage<GenerateWebCredentialsResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GenerateWebCredentialsResponse> _parser = new pb::MessageParser<GenerateWebCredentialsResponse>(() => new GenerateWebCredentialsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerateWebCredentialsResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerateWebCredentialsResponse() {
       OnConstruction();
     }
@@ -2336,12 +3170,14 @@ namespace Bgs.Protocol.Authentication.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerateWebCredentialsResponse(GenerateWebCredentialsResponse other) : this() {
       webCredentials_ = other.webCredentials_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerateWebCredentialsResponse Clone() {
       return new GenerateWebCredentialsResponse(this);
     }
@@ -2352,6 +3188,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private pb::ByteString webCredentials_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString WebCredentials {
       get { return webCredentials_ ?? WebCredentialsDefaultValue; }
       set {
@@ -2360,21 +3197,25 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "web_credentials" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasWebCredentials {
       get { return webCredentials_ != null; }
     }
     /// <summary>Clears the value of the "web_credentials" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearWebCredentials() {
       webCredentials_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerateWebCredentialsResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerateWebCredentialsResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2387,6 +3228,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasWebCredentials) hash ^= WebCredentials.GetHashCode();
@@ -2397,12 +3239,17 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasWebCredentials) {
         output.WriteRawTag(10);
         output.WriteBytes(WebCredentials);
@@ -2410,9 +3257,25 @@ namespace Bgs.Protocol.Authentication.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasWebCredentials) {
+        output.WriteRawTag(10);
+        output.WriteBytes(WebCredentials);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasWebCredentials) {
@@ -2425,6 +3288,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerateWebCredentialsResponse other) {
       if (other == null) {
         return;
@@ -2436,7 +3300,11 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2449,27 +3317,56 @@ namespace Bgs.Protocol.Authentication.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            WebCredentials = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class VerifyWebCredentialsRequest : pb::IMessage<VerifyWebCredentialsRequest> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class VerifyWebCredentialsRequest : pb::IMessage<VerifyWebCredentialsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<VerifyWebCredentialsRequest> _parser = new pb::MessageParser<VerifyWebCredentialsRequest>(() => new VerifyWebCredentialsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<VerifyWebCredentialsRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VerifyWebCredentialsRequest() {
       OnConstruction();
     }
@@ -2477,12 +3374,14 @@ namespace Bgs.Protocol.Authentication.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VerifyWebCredentialsRequest(VerifyWebCredentialsRequest other) : this() {
       webCredentials_ = other.webCredentials_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VerifyWebCredentialsRequest Clone() {
       return new VerifyWebCredentialsRequest(this);
     }
@@ -2493,6 +3392,7 @@ namespace Bgs.Protocol.Authentication.V1 {
 
     private pb::ByteString webCredentials_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString WebCredentials {
       get { return webCredentials_ ?? WebCredentialsDefaultValue; }
       set {
@@ -2501,21 +3401,25 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
     /// <summary>Gets whether the "web_credentials" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasWebCredentials {
       get { return webCredentials_ != null; }
     }
     /// <summary>Clears the value of the "web_credentials" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearWebCredentials() {
       webCredentials_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as VerifyWebCredentialsRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(VerifyWebCredentialsRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2528,6 +3432,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasWebCredentials) hash ^= WebCredentials.GetHashCode();
@@ -2538,12 +3443,17 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasWebCredentials) {
         output.WriteRawTag(10);
         output.WriteBytes(WebCredentials);
@@ -2551,9 +3461,25 @@ namespace Bgs.Protocol.Authentication.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasWebCredentials) {
+        output.WriteRawTag(10);
+        output.WriteBytes(WebCredentials);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasWebCredentials) {
@@ -2566,6 +3492,7 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(VerifyWebCredentialsRequest other) {
       if (other == null) {
         return;
@@ -2577,7 +3504,11 @@ namespace Bgs.Protocol.Authentication.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2590,7 +3521,27 @@ namespace Bgs.Protocol.Authentication.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            WebCredentials = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

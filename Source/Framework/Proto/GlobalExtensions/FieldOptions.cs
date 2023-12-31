@@ -104,24 +104,33 @@ namespace Bgs.Protocol {
   #endregion
 
   #region Messages
-  public sealed partial class BGSFieldOptions : pb::IMessage<BGSFieldOptions> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class BGSFieldOptions : pb::IMessage<BGSFieldOptions>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<BGSFieldOptions> _parser = new pb::MessageParser<BGSFieldOptions>(() => new BGSFieldOptions());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<BGSFieldOptions> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.FieldOptionsReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BGSFieldOptions() {
       OnConstruction();
     }
@@ -129,6 +138,7 @@ namespace Bgs.Protocol {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BGSFieldOptions(BGSFieldOptions other) : this() {
       _hasBits0 = other._hasBits0;
       log_ = other.log_;
@@ -140,6 +150,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BGSFieldOptions Clone() {
       return new BGSFieldOptions(this);
     }
@@ -150,6 +161,7 @@ namespace Bgs.Protocol {
 
     private global::Bgs.Protocol.LogOption log_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.LogOption Log {
       get { if ((_hasBits0 & 1) != 0) { return log_; } else { return LogDefaultValue; } }
       set {
@@ -159,11 +171,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "log" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasLog {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "log" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearLog() {
       _hasBits0 &= ~1;
     }
@@ -174,6 +188,7 @@ namespace Bgs.Protocol {
 
     private bool shardKey_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ShardKey {
       get { if ((_hasBits0 & 2) != 0) { return shardKey_; } else { return ShardKeyDefaultValue; } }
       set {
@@ -183,11 +198,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "shard_key" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasShardKey {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "shard_key" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearShardKey() {
       _hasBits0 &= ~2;
     }
@@ -198,6 +215,7 @@ namespace Bgs.Protocol {
 
     private bool fanoutKey_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool FanoutKey {
       get { if ((_hasBits0 & 4) != 0) { return fanoutKey_; } else { return FanoutKeyDefaultValue; } }
       set {
@@ -207,11 +225,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "fanout_key" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasFanoutKey {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "fanout_key" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearFanoutKey() {
       _hasBits0 &= ~4;
     }
@@ -222,6 +242,7 @@ namespace Bgs.Protocol {
 
     private bool clientInstanceKey_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ClientInstanceKey {
       get { if ((_hasBits0 & 8) != 0) { return clientInstanceKey_; } else { return ClientInstanceKeyDefaultValue; } }
       set {
@@ -231,11 +252,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "client_instance_key" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasClientInstanceKey {
       get { return (_hasBits0 & 8) != 0; }
     }
     /// <summary>Clears the value of the "client_instance_key" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearClientInstanceKey() {
       _hasBits0 &= ~8;
     }
@@ -246,6 +269,7 @@ namespace Bgs.Protocol {
 
     private string realizedEnum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string RealizedEnum {
       get { return realizedEnum_ ?? RealizedEnumDefaultValue; }
       set {
@@ -254,21 +278,25 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "realized_enum" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRealizedEnum {
       get { return realizedEnum_ != null; }
     }
     /// <summary>Clears the value of the "realized_enum" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRealizedEnum() {
       realizedEnum_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as BGSFieldOptions);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(BGSFieldOptions other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -285,6 +313,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasLog) hash ^= Log.GetHashCode();
@@ -299,12 +328,17 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasLog) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Log);
@@ -328,9 +362,41 @@ namespace Bgs.Protocol {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasLog) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Log);
+      }
+      if (HasShardKey) {
+        output.WriteRawTag(16);
+        output.WriteBool(ShardKey);
+      }
+      if (HasFanoutKey) {
+        output.WriteRawTag(24);
+        output.WriteBool(FanoutKey);
+      }
+      if (HasClientInstanceKey) {
+        output.WriteRawTag(32);
+        output.WriteBool(ClientInstanceKey);
+      }
+      if (HasRealizedEnum) {
+        output.WriteRawTag(42);
+        output.WriteString(RealizedEnum);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasLog) {
@@ -355,6 +421,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(BGSFieldOptions other) {
       if (other == null) {
         return;
@@ -378,7 +445,11 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -407,27 +478,72 @@ namespace Bgs.Protocol {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Log = (global::Bgs.Protocol.LogOption) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            ShardKey = input.ReadBool();
+            break;
+          }
+          case 24: {
+            FanoutKey = input.ReadBool();
+            break;
+          }
+          case 32: {
+            ClientInstanceKey = input.ReadBool();
+            break;
+          }
+          case 42: {
+            RealizedEnum = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class FieldRestriction : pb::IMessage<FieldRestriction> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class FieldRestriction : pb::IMessage<FieldRestriction>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<FieldRestriction> _parser = new pb::MessageParser<FieldRestriction>(() => new FieldRestriction());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<FieldRestriction> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.FieldOptionsReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FieldRestriction() {
       OnConstruction();
     }
@@ -435,6 +551,7 @@ namespace Bgs.Protocol {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FieldRestriction(FieldRestriction other) : this() {
       switch (other.TypeCase) {
         case TypeOneofCase.Signed:
@@ -467,6 +584,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FieldRestriction Clone() {
       return new FieldRestriction(this);
     }
@@ -474,184 +592,96 @@ namespace Bgs.Protocol {
     /// <summary>Field number for the "signed" field.</summary>
     public const int SignedFieldNumber = 1;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.SignedFieldRestriction Signed {
-      get { return HasSigned ? (global::Bgs.Protocol.SignedFieldRestriction) type_ : null; }
+      get { return typeCase_ == TypeOneofCase.Signed ? (global::Bgs.Protocol.SignedFieldRestriction) type_ : null; }
       set {
         type_ = value;
         typeCase_ = value == null ? TypeOneofCase.None : TypeOneofCase.Signed;
-      }
-    }
-    /// <summary>Gets whether the "signed" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasSigned {
-      get { return typeCase_ == TypeOneofCase.Signed; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "signed" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearSigned() {
-      if (HasSigned) {
-        ClearType();
       }
     }
 
     /// <summary>Field number for the "unsigned" field.</summary>
     public const int UnsignedFieldNumber = 2;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.UnsignedFieldRestriction Unsigned {
-      get { return HasUnsigned ? (global::Bgs.Protocol.UnsignedFieldRestriction) type_ : null; }
+      get { return typeCase_ == TypeOneofCase.Unsigned ? (global::Bgs.Protocol.UnsignedFieldRestriction) type_ : null; }
       set {
         type_ = value;
         typeCase_ = value == null ? TypeOneofCase.None : TypeOneofCase.Unsigned;
-      }
-    }
-    /// <summary>Gets whether the "unsigned" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasUnsigned {
-      get { return typeCase_ == TypeOneofCase.Unsigned; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "unsigned" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearUnsigned() {
-      if (HasUnsigned) {
-        ClearType();
       }
     }
 
     /// <summary>Field number for the "float" field.</summary>
     public const int FloatFieldNumber = 3;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.FloatFieldRestriction Float {
-      get { return HasFloat ? (global::Bgs.Protocol.FloatFieldRestriction) type_ : null; }
+      get { return typeCase_ == TypeOneofCase.Float ? (global::Bgs.Protocol.FloatFieldRestriction) type_ : null; }
       set {
         type_ = value;
         typeCase_ = value == null ? TypeOneofCase.None : TypeOneofCase.Float;
-      }
-    }
-    /// <summary>Gets whether the "float" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasFloat {
-      get { return typeCase_ == TypeOneofCase.Float; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "float" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearFloat() {
-      if (HasFloat) {
-        ClearType();
       }
     }
 
     /// <summary>Field number for the "string" field.</summary>
     public const int StringFieldNumber = 4;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.StringFieldRestriction String {
-      get { return HasString ? (global::Bgs.Protocol.StringFieldRestriction) type_ : null; }
+      get { return typeCase_ == TypeOneofCase.String ? (global::Bgs.Protocol.StringFieldRestriction) type_ : null; }
       set {
         type_ = value;
         typeCase_ = value == null ? TypeOneofCase.None : TypeOneofCase.String;
-      }
-    }
-    /// <summary>Gets whether the "string" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasString {
-      get { return typeCase_ == TypeOneofCase.String; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "string" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearString() {
-      if (HasString) {
-        ClearType();
       }
     }
 
     /// <summary>Field number for the "repeated" field.</summary>
     public const int RepeatedFieldNumber = 5;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.RepeatedFieldRestriction Repeated {
-      get { return HasRepeated ? (global::Bgs.Protocol.RepeatedFieldRestriction) type_ : null; }
+      get { return typeCase_ == TypeOneofCase.Repeated ? (global::Bgs.Protocol.RepeatedFieldRestriction) type_ : null; }
       set {
         type_ = value;
         typeCase_ = value == null ? TypeOneofCase.None : TypeOneofCase.Repeated;
-      }
-    }
-    /// <summary>Gets whether the "repeated" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasRepeated {
-      get { return typeCase_ == TypeOneofCase.Repeated; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "repeated" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearRepeated() {
-      if (HasRepeated) {
-        ClearType();
       }
     }
 
     /// <summary>Field number for the "message" field.</summary>
     public const int MessageFieldNumber = 6;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.MessageFieldRestriction Message {
-      get { return HasMessage ? (global::Bgs.Protocol.MessageFieldRestriction) type_ : null; }
+      get { return typeCase_ == TypeOneofCase.Message ? (global::Bgs.Protocol.MessageFieldRestriction) type_ : null; }
       set {
         type_ = value;
         typeCase_ = value == null ? TypeOneofCase.None : TypeOneofCase.Message;
-      }
-    }
-    /// <summary>Gets whether the "message" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasMessage {
-      get { return typeCase_ == TypeOneofCase.Message; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "message" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearMessage() {
-      if (HasMessage) {
-        ClearType();
       }
     }
 
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 7;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.EntityIdRestriction EntityId {
-      get { return HasEntityId ? (global::Bgs.Protocol.EntityIdRestriction) type_ : null; }
+      get { return typeCase_ == TypeOneofCase.EntityId ? (global::Bgs.Protocol.EntityIdRestriction) type_ : null; }
       set {
         type_ = value;
         typeCase_ = value == null ? TypeOneofCase.None : TypeOneofCase.EntityId;
-      }
-    }
-    /// <summary>Gets whether the "entity_id" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasEntityId {
-      get { return typeCase_ == TypeOneofCase.EntityId; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "entity_id" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearEntityId() {
-      if (HasEntityId) {
-        ClearType();
       }
     }
 
     /// <summary>Field number for the "bytes" field.</summary>
     public const int BytesFieldNumber = 8;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.StringFieldRestriction Bytes {
-      get { return HasBytes ? (global::Bgs.Protocol.StringFieldRestriction) type_ : null; }
+      get { return typeCase_ == TypeOneofCase.Bytes ? (global::Bgs.Protocol.StringFieldRestriction) type_ : null; }
       set {
         type_ = value;
         typeCase_ = value == null ? TypeOneofCase.None : TypeOneofCase.Bytes;
-      }
-    }
-    /// <summary>Gets whether the "bytes" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasBytes {
-      get { return typeCase_ == TypeOneofCase.Bytes; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "bytes" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearBytes() {
-      if (HasBytes) {
-        ClearType();
       }
     }
 
@@ -670,22 +700,26 @@ namespace Bgs.Protocol {
     }
     private TypeOneofCase typeCase_ = TypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TypeOneofCase TypeCase {
       get { return typeCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearType() {
       typeCase_ = TypeOneofCase.None;
       type_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as FieldRestriction);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(FieldRestriction other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -706,16 +740,17 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasSigned) hash ^= Signed.GetHashCode();
-      if (HasUnsigned) hash ^= Unsigned.GetHashCode();
-      if (HasFloat) hash ^= Float.GetHashCode();
-      if (HasString) hash ^= String.GetHashCode();
-      if (HasRepeated) hash ^= Repeated.GetHashCode();
-      if (HasMessage) hash ^= Message.GetHashCode();
-      if (HasEntityId) hash ^= EntityId.GetHashCode();
-      if (HasBytes) hash ^= Bytes.GetHashCode();
+      if (typeCase_ == TypeOneofCase.Signed) hash ^= Signed.GetHashCode();
+      if (typeCase_ == TypeOneofCase.Unsigned) hash ^= Unsigned.GetHashCode();
+      if (typeCase_ == TypeOneofCase.Float) hash ^= Float.GetHashCode();
+      if (typeCase_ == TypeOneofCase.String) hash ^= String.GetHashCode();
+      if (typeCase_ == TypeOneofCase.Repeated) hash ^= Repeated.GetHashCode();
+      if (typeCase_ == TypeOneofCase.Message) hash ^= Message.GetHashCode();
+      if (typeCase_ == TypeOneofCase.EntityId) hash ^= EntityId.GetHashCode();
+      if (typeCase_ == TypeOneofCase.Bytes) hash ^= Bytes.GetHashCode();
       hash ^= (int) typeCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -724,74 +759,123 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasSigned) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (typeCase_ == TypeOneofCase.Signed) {
         output.WriteRawTag(10);
         output.WriteMessage(Signed);
       }
-      if (HasUnsigned) {
+      if (typeCase_ == TypeOneofCase.Unsigned) {
         output.WriteRawTag(18);
         output.WriteMessage(Unsigned);
       }
-      if (HasFloat) {
+      if (typeCase_ == TypeOneofCase.Float) {
         output.WriteRawTag(26);
         output.WriteMessage(Float);
       }
-      if (HasString) {
+      if (typeCase_ == TypeOneofCase.String) {
         output.WriteRawTag(34);
         output.WriteMessage(String);
       }
-      if (HasRepeated) {
+      if (typeCase_ == TypeOneofCase.Repeated) {
         output.WriteRawTag(42);
         output.WriteMessage(Repeated);
       }
-      if (HasMessage) {
+      if (typeCase_ == TypeOneofCase.Message) {
         output.WriteRawTag(50);
         output.WriteMessage(Message);
       }
-      if (HasEntityId) {
+      if (typeCase_ == TypeOneofCase.EntityId) {
         output.WriteRawTag(58);
         output.WriteMessage(EntityId);
       }
-      if (HasBytes) {
+      if (typeCase_ == TypeOneofCase.Bytes) {
         output.WriteRawTag(66);
         output.WriteMessage(Bytes);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (typeCase_ == TypeOneofCase.Signed) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Signed);
+      }
+      if (typeCase_ == TypeOneofCase.Unsigned) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Unsigned);
+      }
+      if (typeCase_ == TypeOneofCase.Float) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Float);
+      }
+      if (typeCase_ == TypeOneofCase.String) {
+        output.WriteRawTag(34);
+        output.WriteMessage(String);
+      }
+      if (typeCase_ == TypeOneofCase.Repeated) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Repeated);
+      }
+      if (typeCase_ == TypeOneofCase.Message) {
+        output.WriteRawTag(50);
+        output.WriteMessage(Message);
+      }
+      if (typeCase_ == TypeOneofCase.EntityId) {
+        output.WriteRawTag(58);
+        output.WriteMessage(EntityId);
+      }
+      if (typeCase_ == TypeOneofCase.Bytes) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Bytes);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasSigned) {
+      if (typeCase_ == TypeOneofCase.Signed) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Signed);
       }
-      if (HasUnsigned) {
+      if (typeCase_ == TypeOneofCase.Unsigned) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Unsigned);
       }
-      if (HasFloat) {
+      if (typeCase_ == TypeOneofCase.Float) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Float);
       }
-      if (HasString) {
+      if (typeCase_ == TypeOneofCase.String) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(String);
       }
-      if (HasRepeated) {
+      if (typeCase_ == TypeOneofCase.Repeated) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Repeated);
       }
-      if (HasMessage) {
+      if (typeCase_ == TypeOneofCase.Message) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Message);
       }
-      if (HasEntityId) {
+      if (typeCase_ == TypeOneofCase.EntityId) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(EntityId);
       }
-      if (HasBytes) {
+      if (typeCase_ == TypeOneofCase.Bytes) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Bytes);
       }
       if (_unknownFields != null) {
@@ -801,6 +885,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(FieldRestriction other) {
       if (other == null) {
         return;
@@ -860,7 +945,11 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -869,7 +958,7 @@ namespace Bgs.Protocol {
             break;
           case 10: {
             global::Bgs.Protocol.SignedFieldRestriction subBuilder = new global::Bgs.Protocol.SignedFieldRestriction();
-            if (HasSigned) {
+            if (typeCase_ == TypeOneofCase.Signed) {
               subBuilder.MergeFrom(Signed);
             }
             input.ReadMessage(subBuilder);
@@ -878,7 +967,7 @@ namespace Bgs.Protocol {
           }
           case 18: {
             global::Bgs.Protocol.UnsignedFieldRestriction subBuilder = new global::Bgs.Protocol.UnsignedFieldRestriction();
-            if (HasUnsigned) {
+            if (typeCase_ == TypeOneofCase.Unsigned) {
               subBuilder.MergeFrom(Unsigned);
             }
             input.ReadMessage(subBuilder);
@@ -887,7 +976,7 @@ namespace Bgs.Protocol {
           }
           case 26: {
             global::Bgs.Protocol.FloatFieldRestriction subBuilder = new global::Bgs.Protocol.FloatFieldRestriction();
-            if (HasFloat) {
+            if (typeCase_ == TypeOneofCase.Float) {
               subBuilder.MergeFrom(Float);
             }
             input.ReadMessage(subBuilder);
@@ -896,7 +985,7 @@ namespace Bgs.Protocol {
           }
           case 34: {
             global::Bgs.Protocol.StringFieldRestriction subBuilder = new global::Bgs.Protocol.StringFieldRestriction();
-            if (HasString) {
+            if (typeCase_ == TypeOneofCase.String) {
               subBuilder.MergeFrom(String);
             }
             input.ReadMessage(subBuilder);
@@ -905,7 +994,7 @@ namespace Bgs.Protocol {
           }
           case 42: {
             global::Bgs.Protocol.RepeatedFieldRestriction subBuilder = new global::Bgs.Protocol.RepeatedFieldRestriction();
-            if (HasRepeated) {
+            if (typeCase_ == TypeOneofCase.Repeated) {
               subBuilder.MergeFrom(Repeated);
             }
             input.ReadMessage(subBuilder);
@@ -914,7 +1003,7 @@ namespace Bgs.Protocol {
           }
           case 50: {
             global::Bgs.Protocol.MessageFieldRestriction subBuilder = new global::Bgs.Protocol.MessageFieldRestriction();
-            if (HasMessage) {
+            if (typeCase_ == TypeOneofCase.Message) {
               subBuilder.MergeFrom(Message);
             }
             input.ReadMessage(subBuilder);
@@ -923,7 +1012,7 @@ namespace Bgs.Protocol {
           }
           case 58: {
             global::Bgs.Protocol.EntityIdRestriction subBuilder = new global::Bgs.Protocol.EntityIdRestriction();
-            if (HasEntityId) {
+            if (typeCase_ == TypeOneofCase.EntityId) {
               subBuilder.MergeFrom(EntityId);
             }
             input.ReadMessage(subBuilder);
@@ -932,7 +1021,94 @@ namespace Bgs.Protocol {
           }
           case 66: {
             global::Bgs.Protocol.StringFieldRestriction subBuilder = new global::Bgs.Protocol.StringFieldRestriction();
-            if (HasBytes) {
+            if (typeCase_ == TypeOneofCase.Bytes) {
+              subBuilder.MergeFrom(Bytes);
+            }
+            input.ReadMessage(subBuilder);
+            Bytes = subBuilder;
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            global::Bgs.Protocol.SignedFieldRestriction subBuilder = new global::Bgs.Protocol.SignedFieldRestriction();
+            if (typeCase_ == TypeOneofCase.Signed) {
+              subBuilder.MergeFrom(Signed);
+            }
+            input.ReadMessage(subBuilder);
+            Signed = subBuilder;
+            break;
+          }
+          case 18: {
+            global::Bgs.Protocol.UnsignedFieldRestriction subBuilder = new global::Bgs.Protocol.UnsignedFieldRestriction();
+            if (typeCase_ == TypeOneofCase.Unsigned) {
+              subBuilder.MergeFrom(Unsigned);
+            }
+            input.ReadMessage(subBuilder);
+            Unsigned = subBuilder;
+            break;
+          }
+          case 26: {
+            global::Bgs.Protocol.FloatFieldRestriction subBuilder = new global::Bgs.Protocol.FloatFieldRestriction();
+            if (typeCase_ == TypeOneofCase.Float) {
+              subBuilder.MergeFrom(Float);
+            }
+            input.ReadMessage(subBuilder);
+            Float = subBuilder;
+            break;
+          }
+          case 34: {
+            global::Bgs.Protocol.StringFieldRestriction subBuilder = new global::Bgs.Protocol.StringFieldRestriction();
+            if (typeCase_ == TypeOneofCase.String) {
+              subBuilder.MergeFrom(String);
+            }
+            input.ReadMessage(subBuilder);
+            String = subBuilder;
+            break;
+          }
+          case 42: {
+            global::Bgs.Protocol.RepeatedFieldRestriction subBuilder = new global::Bgs.Protocol.RepeatedFieldRestriction();
+            if (typeCase_ == TypeOneofCase.Repeated) {
+              subBuilder.MergeFrom(Repeated);
+            }
+            input.ReadMessage(subBuilder);
+            Repeated = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Bgs.Protocol.MessageFieldRestriction subBuilder = new global::Bgs.Protocol.MessageFieldRestriction();
+            if (typeCase_ == TypeOneofCase.Message) {
+              subBuilder.MergeFrom(Message);
+            }
+            input.ReadMessage(subBuilder);
+            Message = subBuilder;
+            break;
+          }
+          case 58: {
+            global::Bgs.Protocol.EntityIdRestriction subBuilder = new global::Bgs.Protocol.EntityIdRestriction();
+            if (typeCase_ == TypeOneofCase.EntityId) {
+              subBuilder.MergeFrom(EntityId);
+            }
+            input.ReadMessage(subBuilder);
+            EntityId = subBuilder;
+            break;
+          }
+          case 66: {
+            global::Bgs.Protocol.StringFieldRestriction subBuilder = new global::Bgs.Protocol.StringFieldRestriction();
+            if (typeCase_ == TypeOneofCase.Bytes) {
               subBuilder.MergeFrom(Bytes);
             }
             input.ReadMessage(subBuilder);
@@ -942,27 +1118,37 @@ namespace Bgs.Protocol {
         }
       }
     }
+    #endif
 
   }
 
-  public sealed partial class RepeatedFieldRestriction : pb::IMessage<RepeatedFieldRestriction> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class RepeatedFieldRestriction : pb::IMessage<RepeatedFieldRestriction>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<RepeatedFieldRestriction> _parser = new pb::MessageParser<RepeatedFieldRestriction>(() => new RepeatedFieldRestriction());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RepeatedFieldRestriction> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.FieldOptionsReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RepeatedFieldRestriction() {
       OnConstruction();
     }
@@ -970,9 +1156,10 @@ namespace Bgs.Protocol {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RepeatedFieldRestriction(RepeatedFieldRestriction other) : this() {
       _hasBits0 = other._hasBits0;
-      size_ = other.HasSize ? other.size_.Clone() : null;
+      size_ = other.size_ != null ? other.size_.Clone() : null;
       unique_ = other.unique_;
       switch (other.TypeCase) {
         case TypeOneofCase.Signed:
@@ -999,6 +1186,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RepeatedFieldRestriction Clone() {
       return new RepeatedFieldRestriction(this);
     }
@@ -1007,21 +1195,12 @@ namespace Bgs.Protocol {
     public const int SizeFieldNumber = 1;
     private global::Bgs.Protocol.UnsignedIntRange size_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.UnsignedIntRange Size {
       get { return size_; }
       set {
         size_ = value;
       }
-    }
-    /// <summary>Gets whether the size field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasSize {
-      get { return size_ != null; }
-    }
-    /// <summary>Clears the value of the size field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearSize() {
-      size_ = null;
     }
 
     /// <summary>Field number for the "unique" field.</summary>
@@ -1030,6 +1209,7 @@ namespace Bgs.Protocol {
 
     private bool unique_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Unique {
       get { if ((_hasBits0 & 1) != 0) { return unique_; } else { return UniqueDefaultValue; } }
       set {
@@ -1039,11 +1219,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "unique" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasUnique {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "unique" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearUnique() {
       _hasBits0 &= ~1;
     }
@@ -1051,138 +1233,72 @@ namespace Bgs.Protocol {
     /// <summary>Field number for the "signed" field.</summary>
     public const int SignedFieldNumber = 3;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.SignedFieldRestriction Signed {
-      get { return HasSigned ? (global::Bgs.Protocol.SignedFieldRestriction) type_ : null; }
+      get { return typeCase_ == TypeOneofCase.Signed ? (global::Bgs.Protocol.SignedFieldRestriction) type_ : null; }
       set {
         type_ = value;
         typeCase_ = value == null ? TypeOneofCase.None : TypeOneofCase.Signed;
-      }
-    }
-    /// <summary>Gets whether the "signed" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasSigned {
-      get { return typeCase_ == TypeOneofCase.Signed; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "signed" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearSigned() {
-      if (HasSigned) {
-        ClearType();
       }
     }
 
     /// <summary>Field number for the "unsigned" field.</summary>
     public const int UnsignedFieldNumber = 4;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.UnsignedFieldRestriction Unsigned {
-      get { return HasUnsigned ? (global::Bgs.Protocol.UnsignedFieldRestriction) type_ : null; }
+      get { return typeCase_ == TypeOneofCase.Unsigned ? (global::Bgs.Protocol.UnsignedFieldRestriction) type_ : null; }
       set {
         type_ = value;
         typeCase_ = value == null ? TypeOneofCase.None : TypeOneofCase.Unsigned;
-      }
-    }
-    /// <summary>Gets whether the "unsigned" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasUnsigned {
-      get { return typeCase_ == TypeOneofCase.Unsigned; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "unsigned" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearUnsigned() {
-      if (HasUnsigned) {
-        ClearType();
       }
     }
 
     /// <summary>Field number for the "float" field.</summary>
     public const int FloatFieldNumber = 5;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.FloatFieldRestriction Float {
-      get { return HasFloat ? (global::Bgs.Protocol.FloatFieldRestriction) type_ : null; }
+      get { return typeCase_ == TypeOneofCase.Float ? (global::Bgs.Protocol.FloatFieldRestriction) type_ : null; }
       set {
         type_ = value;
         typeCase_ = value == null ? TypeOneofCase.None : TypeOneofCase.Float;
-      }
-    }
-    /// <summary>Gets whether the "float" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasFloat {
-      get { return typeCase_ == TypeOneofCase.Float; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "float" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearFloat() {
-      if (HasFloat) {
-        ClearType();
       }
     }
 
     /// <summary>Field number for the "string" field.</summary>
     public const int StringFieldNumber = 6;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.StringFieldRestriction String {
-      get { return HasString ? (global::Bgs.Protocol.StringFieldRestriction) type_ : null; }
+      get { return typeCase_ == TypeOneofCase.String ? (global::Bgs.Protocol.StringFieldRestriction) type_ : null; }
       set {
         type_ = value;
         typeCase_ = value == null ? TypeOneofCase.None : TypeOneofCase.String;
-      }
-    }
-    /// <summary>Gets whether the "string" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasString {
-      get { return typeCase_ == TypeOneofCase.String; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "string" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearString() {
-      if (HasString) {
-        ClearType();
       }
     }
 
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 7;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.EntityIdRestriction EntityId {
-      get { return HasEntityId ? (global::Bgs.Protocol.EntityIdRestriction) type_ : null; }
+      get { return typeCase_ == TypeOneofCase.EntityId ? (global::Bgs.Protocol.EntityIdRestriction) type_ : null; }
       set {
         type_ = value;
         typeCase_ = value == null ? TypeOneofCase.None : TypeOneofCase.EntityId;
-      }
-    }
-    /// <summary>Gets whether the "entity_id" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasEntityId {
-      get { return typeCase_ == TypeOneofCase.EntityId; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "entity_id" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearEntityId() {
-      if (HasEntityId) {
-        ClearType();
       }
     }
 
     /// <summary>Field number for the "bytes" field.</summary>
     public const int BytesFieldNumber = 8;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.StringFieldRestriction Bytes {
-      get { return HasBytes ? (global::Bgs.Protocol.StringFieldRestriction) type_ : null; }
+      get { return typeCase_ == TypeOneofCase.Bytes ? (global::Bgs.Protocol.StringFieldRestriction) type_ : null; }
       set {
         type_ = value;
         typeCase_ = value == null ? TypeOneofCase.None : TypeOneofCase.Bytes;
-      }
-    }
-    /// <summary>Gets whether the "bytes" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasBytes {
-      get { return typeCase_ == TypeOneofCase.Bytes; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "bytes" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearBytes() {
-      if (HasBytes) {
-        ClearType();
       }
     }
 
@@ -1199,22 +1315,26 @@ namespace Bgs.Protocol {
     }
     private TypeOneofCase typeCase_ = TypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TypeOneofCase TypeCase {
       get { return typeCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearType() {
       typeCase_ = TypeOneofCase.None;
       type_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RepeatedFieldRestriction);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RepeatedFieldRestriction other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1235,16 +1355,17 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasSize) hash ^= Size.GetHashCode();
+      if (size_ != null) hash ^= Size.GetHashCode();
       if (HasUnique) hash ^= Unique.GetHashCode();
-      if (HasSigned) hash ^= Signed.GetHashCode();
-      if (HasUnsigned) hash ^= Unsigned.GetHashCode();
-      if (HasFloat) hash ^= Float.GetHashCode();
-      if (HasString) hash ^= String.GetHashCode();
-      if (HasEntityId) hash ^= EntityId.GetHashCode();
-      if (HasBytes) hash ^= Bytes.GetHashCode();
+      if (typeCase_ == TypeOneofCase.Signed) hash ^= Signed.GetHashCode();
+      if (typeCase_ == TypeOneofCase.Unsigned) hash ^= Unsigned.GetHashCode();
+      if (typeCase_ == TypeOneofCase.Float) hash ^= Float.GetHashCode();
+      if (typeCase_ == TypeOneofCase.String) hash ^= String.GetHashCode();
+      if (typeCase_ == TypeOneofCase.EntityId) hash ^= EntityId.GetHashCode();
+      if (typeCase_ == TypeOneofCase.Bytes) hash ^= Bytes.GetHashCode();
       hash ^= (int) typeCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1253,13 +1374,18 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasSize) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (size_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Size);
       }
@@ -1267,60 +1393,104 @@ namespace Bgs.Protocol {
         output.WriteRawTag(16);
         output.WriteBool(Unique);
       }
-      if (HasSigned) {
+      if (typeCase_ == TypeOneofCase.Signed) {
         output.WriteRawTag(26);
         output.WriteMessage(Signed);
       }
-      if (HasUnsigned) {
+      if (typeCase_ == TypeOneofCase.Unsigned) {
         output.WriteRawTag(34);
         output.WriteMessage(Unsigned);
       }
-      if (HasFloat) {
+      if (typeCase_ == TypeOneofCase.Float) {
         output.WriteRawTag(42);
         output.WriteMessage(Float);
       }
-      if (HasString) {
+      if (typeCase_ == TypeOneofCase.String) {
         output.WriteRawTag(50);
         output.WriteMessage(String);
       }
-      if (HasEntityId) {
+      if (typeCase_ == TypeOneofCase.EntityId) {
         output.WriteRawTag(58);
         output.WriteMessage(EntityId);
       }
-      if (HasBytes) {
+      if (typeCase_ == TypeOneofCase.Bytes) {
         output.WriteRawTag(66);
         output.WriteMessage(Bytes);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (size_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Size);
+      }
+      if (HasUnique) {
+        output.WriteRawTag(16);
+        output.WriteBool(Unique);
+      }
+      if (typeCase_ == TypeOneofCase.Signed) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Signed);
+      }
+      if (typeCase_ == TypeOneofCase.Unsigned) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Unsigned);
+      }
+      if (typeCase_ == TypeOneofCase.Float) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Float);
+      }
+      if (typeCase_ == TypeOneofCase.String) {
+        output.WriteRawTag(50);
+        output.WriteMessage(String);
+      }
+      if (typeCase_ == TypeOneofCase.EntityId) {
+        output.WriteRawTag(58);
+        output.WriteMessage(EntityId);
+      }
+      if (typeCase_ == TypeOneofCase.Bytes) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Bytes);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasSize) {
+      if (size_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Size);
       }
       if (HasUnique) {
         size += 1 + 1;
       }
-      if (HasSigned) {
+      if (typeCase_ == TypeOneofCase.Signed) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Signed);
       }
-      if (HasUnsigned) {
+      if (typeCase_ == TypeOneofCase.Unsigned) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Unsigned);
       }
-      if (HasFloat) {
+      if (typeCase_ == TypeOneofCase.Float) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Float);
       }
-      if (HasString) {
+      if (typeCase_ == TypeOneofCase.String) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(String);
       }
-      if (HasEntityId) {
+      if (typeCase_ == TypeOneofCase.EntityId) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(EntityId);
       }
-      if (HasBytes) {
+      if (typeCase_ == TypeOneofCase.Bytes) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Bytes);
       }
       if (_unknownFields != null) {
@@ -1330,12 +1500,13 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RepeatedFieldRestriction other) {
       if (other == null) {
         return;
       }
-      if (other.HasSize) {
-        if (!HasSize) {
+      if (other.size_ != null) {
+        if (size_ == null) {
           Size = new global::Bgs.Protocol.UnsignedIntRange();
         }
         Size.MergeFrom(other.Size);
@@ -1386,7 +1557,11 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1394,7 +1569,7 @@ namespace Bgs.Protocol {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasSize) {
+            if (size_ == null) {
               Size = new global::Bgs.Protocol.UnsignedIntRange();
             }
             input.ReadMessage(Size);
@@ -1406,7 +1581,7 @@ namespace Bgs.Protocol {
           }
           case 26: {
             global::Bgs.Protocol.SignedFieldRestriction subBuilder = new global::Bgs.Protocol.SignedFieldRestriction();
-            if (HasSigned) {
+            if (typeCase_ == TypeOneofCase.Signed) {
               subBuilder.MergeFrom(Signed);
             }
             input.ReadMessage(subBuilder);
@@ -1415,7 +1590,7 @@ namespace Bgs.Protocol {
           }
           case 34: {
             global::Bgs.Protocol.UnsignedFieldRestriction subBuilder = new global::Bgs.Protocol.UnsignedFieldRestriction();
-            if (HasUnsigned) {
+            if (typeCase_ == TypeOneofCase.Unsigned) {
               subBuilder.MergeFrom(Unsigned);
             }
             input.ReadMessage(subBuilder);
@@ -1424,7 +1599,7 @@ namespace Bgs.Protocol {
           }
           case 42: {
             global::Bgs.Protocol.FloatFieldRestriction subBuilder = new global::Bgs.Protocol.FloatFieldRestriction();
-            if (HasFloat) {
+            if (typeCase_ == TypeOneofCase.Float) {
               subBuilder.MergeFrom(Float);
             }
             input.ReadMessage(subBuilder);
@@ -1433,7 +1608,7 @@ namespace Bgs.Protocol {
           }
           case 50: {
             global::Bgs.Protocol.StringFieldRestriction subBuilder = new global::Bgs.Protocol.StringFieldRestriction();
-            if (HasString) {
+            if (typeCase_ == TypeOneofCase.String) {
               subBuilder.MergeFrom(String);
             }
             input.ReadMessage(subBuilder);
@@ -1442,7 +1617,7 @@ namespace Bgs.Protocol {
           }
           case 58: {
             global::Bgs.Protocol.EntityIdRestriction subBuilder = new global::Bgs.Protocol.EntityIdRestriction();
-            if (HasEntityId) {
+            if (typeCase_ == TypeOneofCase.EntityId) {
               subBuilder.MergeFrom(EntityId);
             }
             input.ReadMessage(subBuilder);
@@ -1451,7 +1626,87 @@ namespace Bgs.Protocol {
           }
           case 66: {
             global::Bgs.Protocol.StringFieldRestriction subBuilder = new global::Bgs.Protocol.StringFieldRestriction();
-            if (HasBytes) {
+            if (typeCase_ == TypeOneofCase.Bytes) {
+              subBuilder.MergeFrom(Bytes);
+            }
+            input.ReadMessage(subBuilder);
+            Bytes = subBuilder;
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (size_ == null) {
+              Size = new global::Bgs.Protocol.UnsignedIntRange();
+            }
+            input.ReadMessage(Size);
+            break;
+          }
+          case 16: {
+            Unique = input.ReadBool();
+            break;
+          }
+          case 26: {
+            global::Bgs.Protocol.SignedFieldRestriction subBuilder = new global::Bgs.Protocol.SignedFieldRestriction();
+            if (typeCase_ == TypeOneofCase.Signed) {
+              subBuilder.MergeFrom(Signed);
+            }
+            input.ReadMessage(subBuilder);
+            Signed = subBuilder;
+            break;
+          }
+          case 34: {
+            global::Bgs.Protocol.UnsignedFieldRestriction subBuilder = new global::Bgs.Protocol.UnsignedFieldRestriction();
+            if (typeCase_ == TypeOneofCase.Unsigned) {
+              subBuilder.MergeFrom(Unsigned);
+            }
+            input.ReadMessage(subBuilder);
+            Unsigned = subBuilder;
+            break;
+          }
+          case 42: {
+            global::Bgs.Protocol.FloatFieldRestriction subBuilder = new global::Bgs.Protocol.FloatFieldRestriction();
+            if (typeCase_ == TypeOneofCase.Float) {
+              subBuilder.MergeFrom(Float);
+            }
+            input.ReadMessage(subBuilder);
+            Float = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Bgs.Protocol.StringFieldRestriction subBuilder = new global::Bgs.Protocol.StringFieldRestriction();
+            if (typeCase_ == TypeOneofCase.String) {
+              subBuilder.MergeFrom(String);
+            }
+            input.ReadMessage(subBuilder);
+            String = subBuilder;
+            break;
+          }
+          case 58: {
+            global::Bgs.Protocol.EntityIdRestriction subBuilder = new global::Bgs.Protocol.EntityIdRestriction();
+            if (typeCase_ == TypeOneofCase.EntityId) {
+              subBuilder.MergeFrom(EntityId);
+            }
+            input.ReadMessage(subBuilder);
+            EntityId = subBuilder;
+            break;
+          }
+          case 66: {
+            global::Bgs.Protocol.StringFieldRestriction subBuilder = new global::Bgs.Protocol.StringFieldRestriction();
+            if (typeCase_ == TypeOneofCase.Bytes) {
               subBuilder.MergeFrom(Bytes);
             }
             input.ReadMessage(subBuilder);
@@ -1461,26 +1716,36 @@ namespace Bgs.Protocol {
         }
       }
     }
+    #endif
 
   }
 
-  public sealed partial class SignedFieldRestriction : pb::IMessage<SignedFieldRestriction> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SignedFieldRestriction : pb::IMessage<SignedFieldRestriction>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SignedFieldRestriction> _parser = new pb::MessageParser<SignedFieldRestriction>(() => new SignedFieldRestriction());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SignedFieldRestriction> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.FieldOptionsReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SignedFieldRestriction() {
       OnConstruction();
     }
@@ -1488,13 +1753,15 @@ namespace Bgs.Protocol {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SignedFieldRestriction(SignedFieldRestriction other) : this() {
-      limits_ = other.HasLimits ? other.limits_.Clone() : null;
+      limits_ = other.limits_ != null ? other.limits_.Clone() : null;
       exclude_ = other.exclude_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SignedFieldRestriction Clone() {
       return new SignedFieldRestriction(this);
     }
@@ -1503,21 +1770,12 @@ namespace Bgs.Protocol {
     public const int LimitsFieldNumber = 1;
     private global::Bgs.Protocol.SignedIntRange limits_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.SignedIntRange Limits {
       get { return limits_; }
       set {
         limits_ = value;
       }
-    }
-    /// <summary>Gets whether the limits field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasLimits {
-      get { return limits_ != null; }
-    }
-    /// <summary>Clears the value of the limits field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearLimits() {
-      limits_ = null;
     }
 
     /// <summary>Field number for the "exclude" field.</summary>
@@ -1526,16 +1784,19 @@ namespace Bgs.Protocol {
         = pb::FieldCodec.ForSInt64(16);
     private readonly pbc::RepeatedField<long> exclude_ = new pbc::RepeatedField<long>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<long> Exclude {
       get { return exclude_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SignedFieldRestriction);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SignedFieldRestriction other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1549,9 +1810,10 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasLimits) hash ^= Limits.GetHashCode();
+      if (limits_ != null) hash ^= Limits.GetHashCode();
       hash ^= exclude_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1560,13 +1822,18 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasLimits) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (limits_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Limits);
       }
@@ -1574,12 +1841,29 @@ namespace Bgs.Protocol {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (limits_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Limits);
+      }
+      exclude_.WriteTo(ref output, _repeated_exclude_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasLimits) {
+      if (limits_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Limits);
       }
       size += exclude_.CalculateSize(_repeated_exclude_codec);
@@ -1590,12 +1874,13 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SignedFieldRestriction other) {
       if (other == null) {
         return;
       }
-      if (other.HasLimits) {
-        if (!HasLimits) {
+      if (other.limits_ != null) {
+        if (limits_ == null) {
           Limits = new global::Bgs.Protocol.SignedIntRange();
         }
         Limits.MergeFrom(other.Limits);
@@ -1605,7 +1890,11 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1613,7 +1902,7 @@ namespace Bgs.Protocol {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasLimits) {
+            if (limits_ == null) {
               Limits = new global::Bgs.Protocol.SignedIntRange();
             }
             input.ReadMessage(Limits);
@@ -1626,27 +1915,64 @@ namespace Bgs.Protocol {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (limits_ == null) {
+              Limits = new global::Bgs.Protocol.SignedIntRange();
+            }
+            input.ReadMessage(Limits);
+            break;
+          }
+          case 18:
+          case 16: {
+            exclude_.AddEntriesFrom(ref input, _repeated_exclude_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class UnsignedFieldRestriction : pb::IMessage<UnsignedFieldRestriction> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class UnsignedFieldRestriction : pb::IMessage<UnsignedFieldRestriction>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UnsignedFieldRestriction> _parser = new pb::MessageParser<UnsignedFieldRestriction>(() => new UnsignedFieldRestriction());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<UnsignedFieldRestriction> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.FieldOptionsReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UnsignedFieldRestriction() {
       OnConstruction();
     }
@@ -1654,13 +1980,15 @@ namespace Bgs.Protocol {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UnsignedFieldRestriction(UnsignedFieldRestriction other) : this() {
-      limits_ = other.HasLimits ? other.limits_.Clone() : null;
+      limits_ = other.limits_ != null ? other.limits_.Clone() : null;
       exclude_ = other.exclude_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UnsignedFieldRestriction Clone() {
       return new UnsignedFieldRestriction(this);
     }
@@ -1669,21 +1997,12 @@ namespace Bgs.Protocol {
     public const int LimitsFieldNumber = 1;
     private global::Bgs.Protocol.UnsignedIntRange limits_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.UnsignedIntRange Limits {
       get { return limits_; }
       set {
         limits_ = value;
       }
-    }
-    /// <summary>Gets whether the limits field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasLimits {
-      get { return limits_ != null; }
-    }
-    /// <summary>Clears the value of the limits field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearLimits() {
-      limits_ = null;
     }
 
     /// <summary>Field number for the "exclude" field.</summary>
@@ -1692,16 +2011,19 @@ namespace Bgs.Protocol {
         = pb::FieldCodec.ForUInt64(16);
     private readonly pbc::RepeatedField<ulong> exclude_ = new pbc::RepeatedField<ulong>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<ulong> Exclude {
       get { return exclude_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as UnsignedFieldRestriction);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(UnsignedFieldRestriction other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1715,9 +2037,10 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasLimits) hash ^= Limits.GetHashCode();
+      if (limits_ != null) hash ^= Limits.GetHashCode();
       hash ^= exclude_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1726,13 +2049,18 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasLimits) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (limits_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Limits);
       }
@@ -1740,12 +2068,29 @@ namespace Bgs.Protocol {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (limits_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Limits);
+      }
+      exclude_.WriteTo(ref output, _repeated_exclude_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasLimits) {
+      if (limits_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Limits);
       }
       size += exclude_.CalculateSize(_repeated_exclude_codec);
@@ -1756,12 +2101,13 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(UnsignedFieldRestriction other) {
       if (other == null) {
         return;
       }
-      if (other.HasLimits) {
-        if (!HasLimits) {
+      if (other.limits_ != null) {
+        if (limits_ == null) {
           Limits = new global::Bgs.Protocol.UnsignedIntRange();
         }
         Limits.MergeFrom(other.Limits);
@@ -1771,7 +2117,11 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1779,7 +2129,7 @@ namespace Bgs.Protocol {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasLimits) {
+            if (limits_ == null) {
               Limits = new global::Bgs.Protocol.UnsignedIntRange();
             }
             input.ReadMessage(Limits);
@@ -1792,27 +2142,64 @@ namespace Bgs.Protocol {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (limits_ == null) {
+              Limits = new global::Bgs.Protocol.UnsignedIntRange();
+            }
+            input.ReadMessage(Limits);
+            break;
+          }
+          case 18:
+          case 16: {
+            exclude_.AddEntriesFrom(ref input, _repeated_exclude_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class FloatFieldRestriction : pb::IMessage<FloatFieldRestriction> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class FloatFieldRestriction : pb::IMessage<FloatFieldRestriction>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<FloatFieldRestriction> _parser = new pb::MessageParser<FloatFieldRestriction>(() => new FloatFieldRestriction());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<FloatFieldRestriction> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.FieldOptionsReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FloatFieldRestriction() {
       OnConstruction();
     }
@@ -1820,13 +2207,15 @@ namespace Bgs.Protocol {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FloatFieldRestriction(FloatFieldRestriction other) : this() {
-      limits_ = other.HasLimits ? other.limits_.Clone() : null;
+      limits_ = other.limits_ != null ? other.limits_.Clone() : null;
       exclude_ = other.exclude_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FloatFieldRestriction Clone() {
       return new FloatFieldRestriction(this);
     }
@@ -1835,21 +2224,12 @@ namespace Bgs.Protocol {
     public const int LimitsFieldNumber = 1;
     private global::Bgs.Protocol.FloatRange limits_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.FloatRange Limits {
       get { return limits_; }
       set {
         limits_ = value;
       }
-    }
-    /// <summary>Gets whether the limits field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasLimits {
-      get { return limits_ != null; }
-    }
-    /// <summary>Clears the value of the limits field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearLimits() {
-      limits_ = null;
     }
 
     /// <summary>Field number for the "exclude" field.</summary>
@@ -1858,16 +2238,19 @@ namespace Bgs.Protocol {
         = pb::FieldCodec.ForFloat(21);
     private readonly pbc::RepeatedField<float> exclude_ = new pbc::RepeatedField<float>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<float> Exclude {
       get { return exclude_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as FloatFieldRestriction);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(FloatFieldRestriction other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1881,9 +2264,10 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasLimits) hash ^= Limits.GetHashCode();
+      if (limits_ != null) hash ^= Limits.GetHashCode();
       hash ^= exclude_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1892,13 +2276,18 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasLimits) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (limits_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Limits);
       }
@@ -1906,12 +2295,29 @@ namespace Bgs.Protocol {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (limits_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Limits);
+      }
+      exclude_.WriteTo(ref output, _repeated_exclude_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasLimits) {
+      if (limits_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Limits);
       }
       size += exclude_.CalculateSize(_repeated_exclude_codec);
@@ -1922,12 +2328,13 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(FloatFieldRestriction other) {
       if (other == null) {
         return;
       }
-      if (other.HasLimits) {
-        if (!HasLimits) {
+      if (other.limits_ != null) {
+        if (limits_ == null) {
           Limits = new global::Bgs.Protocol.FloatRange();
         }
         Limits.MergeFrom(other.Limits);
@@ -1937,7 +2344,11 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1945,7 +2356,7 @@ namespace Bgs.Protocol {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasLimits) {
+            if (limits_ == null) {
               Limits = new global::Bgs.Protocol.FloatRange();
             }
             input.ReadMessage(Limits);
@@ -1958,27 +2369,64 @@ namespace Bgs.Protocol {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (limits_ == null) {
+              Limits = new global::Bgs.Protocol.FloatRange();
+            }
+            input.ReadMessage(Limits);
+            break;
+          }
+          case 18:
+          case 21: {
+            exclude_.AddEntriesFrom(ref input, _repeated_exclude_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class StringFieldRestriction : pb::IMessage<StringFieldRestriction> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class StringFieldRestriction : pb::IMessage<StringFieldRestriction>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<StringFieldRestriction> _parser = new pb::MessageParser<StringFieldRestriction>(() => new StringFieldRestriction());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<StringFieldRestriction> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.FieldOptionsReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public StringFieldRestriction() {
       OnConstruction();
     }
@@ -1986,13 +2434,15 @@ namespace Bgs.Protocol {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public StringFieldRestriction(StringFieldRestriction other) : this() {
-      size_ = other.HasSize ? other.size_.Clone() : null;
+      size_ = other.size_ != null ? other.size_.Clone() : null;
       exclude_ = other.exclude_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public StringFieldRestriction Clone() {
       return new StringFieldRestriction(this);
     }
@@ -2001,21 +2451,12 @@ namespace Bgs.Protocol {
     public const int SizeFieldNumber = 1;
     private global::Bgs.Protocol.UnsignedIntRange size_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.UnsignedIntRange Size {
       get { return size_; }
       set {
         size_ = value;
       }
-    }
-    /// <summary>Gets whether the size field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasSize {
-      get { return size_ != null; }
-    }
-    /// <summary>Clears the value of the size field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearSize() {
-      size_ = null;
     }
 
     /// <summary>Field number for the "exclude" field.</summary>
@@ -2024,16 +2465,19 @@ namespace Bgs.Protocol {
         = pb::FieldCodec.ForString(18);
     private readonly pbc::RepeatedField<string> exclude_ = new pbc::RepeatedField<string>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Exclude {
       get { return exclude_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as StringFieldRestriction);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(StringFieldRestriction other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2047,9 +2491,10 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasSize) hash ^= Size.GetHashCode();
+      if (size_ != null) hash ^= Size.GetHashCode();
       hash ^= exclude_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2058,13 +2503,18 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasSize) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (size_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Size);
       }
@@ -2072,12 +2522,29 @@ namespace Bgs.Protocol {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (size_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Size);
+      }
+      exclude_.WriteTo(ref output, _repeated_exclude_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasSize) {
+      if (size_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Size);
       }
       size += exclude_.CalculateSize(_repeated_exclude_codec);
@@ -2088,12 +2555,13 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(StringFieldRestriction other) {
       if (other == null) {
         return;
       }
-      if (other.HasSize) {
-        if (!HasSize) {
+      if (other.size_ != null) {
+        if (size_ == null) {
           Size = new global::Bgs.Protocol.UnsignedIntRange();
         }
         Size.MergeFrom(other.Size);
@@ -2103,7 +2571,11 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2111,7 +2583,7 @@ namespace Bgs.Protocol {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasSize) {
+            if (size_ == null) {
               Size = new global::Bgs.Protocol.UnsignedIntRange();
             }
             input.ReadMessage(Size);
@@ -2123,28 +2595,64 @@ namespace Bgs.Protocol {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (size_ == null) {
+              Size = new global::Bgs.Protocol.UnsignedIntRange();
+            }
+            input.ReadMessage(Size);
+            break;
+          }
+          case 18: {
+            exclude_.AddEntriesFrom(ref input, _repeated_exclude_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class EntityIdRestriction : pb::IMessage<EntityIdRestriction> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class EntityIdRestriction : pb::IMessage<EntityIdRestriction>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<EntityIdRestriction> _parser = new pb::MessageParser<EntityIdRestriction>(() => new EntityIdRestriction());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<EntityIdRestriction> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.FieldOptionsReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EntityIdRestriction() {
       OnConstruction();
     }
@@ -2152,6 +2660,7 @@ namespace Bgs.Protocol {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EntityIdRestriction(EntityIdRestriction other) : this() {
       _hasBits0 = other._hasBits0;
       needed_ = other.needed_;
@@ -2160,6 +2669,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EntityIdRestriction Clone() {
       return new EntityIdRestriction(this);
     }
@@ -2170,6 +2680,7 @@ namespace Bgs.Protocol {
 
     private bool needed_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Needed {
       get { if ((_hasBits0 & 1) != 0) { return needed_; } else { return NeededDefaultValue; } }
       set {
@@ -2179,11 +2690,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "needed" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasNeeded {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "needed" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearNeeded() {
       _hasBits0 &= ~1;
     }
@@ -2194,6 +2707,7 @@ namespace Bgs.Protocol {
 
     private global::Bgs.Protocol.EntityIdRestriction.Types.Kind kind_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.EntityIdRestriction.Types.Kind Kind {
       get { if ((_hasBits0 & 2) != 0) { return kind_; } else { return KindDefaultValue; } }
       set {
@@ -2203,21 +2717,25 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "kind" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasKind {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "kind" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearKind() {
       _hasBits0 &= ~2;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as EntityIdRestriction);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(EntityIdRestriction other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2231,6 +2749,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasNeeded) hash ^= Needed.GetHashCode();
@@ -2242,12 +2761,17 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasNeeded) {
         output.WriteRawTag(8);
         output.WriteBool(Needed);
@@ -2259,9 +2783,29 @@ namespace Bgs.Protocol {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasNeeded) {
+        output.WriteRawTag(8);
+        output.WriteBool(Needed);
+      }
+      if (HasKind) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Kind);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasNeeded) {
@@ -2277,6 +2821,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(EntityIdRestriction other) {
       if (other == null) {
         return;
@@ -2291,7 +2836,11 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2308,11 +2857,36 @@ namespace Bgs.Protocol {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Needed = input.ReadBool();
+            break;
+          }
+          case 16: {
+            Kind = (global::Bgs.Protocol.EntityIdRestriction.Types.Kind) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the EntityIdRestriction message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       public enum Kind {
         [pbr::OriginalName("ANY")] Any = 0,
@@ -2328,24 +2902,33 @@ namespace Bgs.Protocol {
 
   }
 
-  public sealed partial class MessageFieldRestriction : pb::IMessage<MessageFieldRestriction> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class MessageFieldRestriction : pb::IMessage<MessageFieldRestriction>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<MessageFieldRestriction> _parser = new pb::MessageParser<MessageFieldRestriction>(() => new MessageFieldRestriction());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MessageFieldRestriction> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.FieldOptionsReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MessageFieldRestriction() {
       OnConstruction();
     }
@@ -2353,6 +2936,7 @@ namespace Bgs.Protocol {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MessageFieldRestriction(MessageFieldRestriction other) : this() {
       _hasBits0 = other._hasBits0;
       needed_ = other.needed_;
@@ -2360,6 +2944,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MessageFieldRestriction Clone() {
       return new MessageFieldRestriction(this);
     }
@@ -2370,6 +2955,7 @@ namespace Bgs.Protocol {
 
     private bool needed_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Needed {
       get { if ((_hasBits0 & 1) != 0) { return needed_; } else { return NeededDefaultValue; } }
       set {
@@ -2379,21 +2965,25 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "needed" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasNeeded {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "needed" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearNeeded() {
       _hasBits0 &= ~1;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as MessageFieldRestriction);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(MessageFieldRestriction other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2406,6 +2996,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasNeeded) hash ^= Needed.GetHashCode();
@@ -2416,12 +3007,17 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasNeeded) {
         output.WriteRawTag(8);
         output.WriteBool(Needed);
@@ -2429,9 +3025,25 @@ namespace Bgs.Protocol {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasNeeded) {
+        output.WriteRawTag(8);
+        output.WriteBool(Needed);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasNeeded) {
@@ -2444,6 +3056,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(MessageFieldRestriction other) {
       if (other == null) {
         return;
@@ -2455,7 +3068,11 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2468,7 +3085,27 @@ namespace Bgs.Protocol {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Needed = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

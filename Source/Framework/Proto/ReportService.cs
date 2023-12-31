@@ -37,13 +37,13 @@ namespace Bgs.Protocol.Report.V1 {
             "Z3MucHJvdG9jb2wucmVwb3J0LnYxLlJlcG9ydCKMAQoTU3VibWl0UmVwb3J0",
             "UmVxdWVzdBI8CghhZ2VudF9pZBgBIAEoCzIqLmJncy5wcm90b2NvbC5hY2Nv",
             "dW50LnYxLkdhbWVBY2NvdW50SGFuZGxlEjcKC3JlcG9ydF90eXBlGAIgASgL",
-            "MiIuYmdzLnByb3RvY29sLnJlcG9ydC52MS5SZXBvcnRUeXBlMv0BCg1SZXBv",
+            "MiIuYmdzLnByb3RvY29sLnJlcG9ydC52MS5SZXBvcnRUeXBlMvkBCg1SZXBv",
             "cnRTZXJ2aWNlElUKClNlbmRSZXBvcnQSKS5iZ3MucHJvdG9jb2wucmVwb3J0",
             "LnYxLlNlbmRSZXBvcnRSZXF1ZXN0GhQuYmdzLnByb3RvY29sLk5vRGF0YSIG",
             "gvkrAggBElkKDFN1Ym1pdFJlcG9ydBIrLmJncy5wcm90b2NvbC5yZXBvcnQu",
             "djEuU3VibWl0UmVwb3J0UmVxdWVzdBoULmJncy5wcm90b2NvbC5Ob0RhdGEi",
-            "BoL5KwIIAho6gvkrJAoiYm5ldC5wcm90b2NvbC5yZXBvcnQuUmVwb3J0U2Vy",
-            "dmljZYL5KwgqBnJlcG9ydIr5KwIQAUIDgAEA"));
+            "BoL5KwIIAho2gvkrLAoiYm5ldC5wcm90b2NvbC5yZXBvcnQuUmVwb3J0U2Vy",
+            "dmljZSoGcmVwb3J0ivkrAhABQgOAAQA="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Bgs.Protocol.Account.V1.AccountTypesReflection.Descriptor, global::Bgs.Protocol.Report.V1.ReportTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, global::Bgs.Protocol.FieldOptionsReflection.Descriptor, global::Bgs.Protocol.MessageOptionsReflection.Descriptor, global::Bgs.Protocol.MethodOptionsReflection.Descriptor, global::Bgs.Protocol.ServiceOptionsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -55,23 +55,32 @@ namespace Bgs.Protocol.Report.V1 {
 
   }
   #region Messages
-  public sealed partial class SendReportRequest : pb::IMessage<SendReportRequest> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SendReportRequest : pb::IMessage<SendReportRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SendReportRequest> _parser = new pb::MessageParser<SendReportRequest>(() => new SendReportRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SendReportRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Report.V1.ReportServiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SendReportRequest() {
       OnConstruction();
     }
@@ -79,12 +88,14 @@ namespace Bgs.Protocol.Report.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SendReportRequest(SendReportRequest other) : this() {
-      report_ = other.HasReport ? other.report_.Clone() : null;
+      report_ = other.report_ != null ? other.report_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SendReportRequest Clone() {
       return new SendReportRequest(this);
     }
@@ -93,29 +104,22 @@ namespace Bgs.Protocol.Report.V1 {
     public const int ReportFieldNumber = 1;
     private global::Bgs.Protocol.Report.V1.Report report_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Report.V1.Report Report {
       get { return report_; }
       set {
         report_ = value;
       }
     }
-    /// <summary>Gets whether the report field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasReport {
-      get { return report_ != null; }
-    }
-    /// <summary>Clears the value of the report field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearReport() {
-      report_ = null;
-    }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SendReportRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SendReportRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -128,9 +132,10 @@ namespace Bgs.Protocol.Report.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasReport) hash ^= Report.GetHashCode();
+      if (report_ != null) hash ^= Report.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -138,25 +143,46 @@ namespace Bgs.Protocol.Report.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasReport) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (report_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Report);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (report_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Report);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasReport) {
+      if (report_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Report);
       }
       if (_unknownFields != null) {
@@ -166,12 +192,13 @@ namespace Bgs.Protocol.Report.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SendReportRequest other) {
       if (other == null) {
         return;
       }
-      if (other.HasReport) {
-        if (!HasReport) {
+      if (other.report_ != null) {
+        if (report_ == null) {
           Report = new global::Bgs.Protocol.Report.V1.Report();
         }
         Report.MergeFrom(other.Report);
@@ -180,7 +207,11 @@ namespace Bgs.Protocol.Report.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -188,7 +219,29 @@ namespace Bgs.Protocol.Report.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasReport) {
+            if (report_ == null) {
+              Report = new global::Bgs.Protocol.Report.V1.Report();
+            }
+            input.ReadMessage(Report);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (report_ == null) {
               Report = new global::Bgs.Protocol.Report.V1.Report();
             }
             input.ReadMessage(Report);
@@ -197,26 +250,36 @@ namespace Bgs.Protocol.Report.V1 {
         }
       }
     }
+    #endif
 
   }
 
-  public sealed partial class SubmitReportRequest : pb::IMessage<SubmitReportRequest> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SubmitReportRequest : pb::IMessage<SubmitReportRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SubmitReportRequest> _parser = new pb::MessageParser<SubmitReportRequest>(() => new SubmitReportRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SubmitReportRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Report.V1.ReportServiceReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SubmitReportRequest() {
       OnConstruction();
     }
@@ -224,13 +287,15 @@ namespace Bgs.Protocol.Report.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SubmitReportRequest(SubmitReportRequest other) : this() {
-      agentId_ = other.HasAgentId ? other.agentId_.Clone() : null;
-      reportType_ = other.HasReportType ? other.reportType_.Clone() : null;
+      agentId_ = other.agentId_ != null ? other.agentId_.Clone() : null;
+      reportType_ = other.reportType_ != null ? other.reportType_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SubmitReportRequest Clone() {
       return new SubmitReportRequest(this);
     }
@@ -239,50 +304,34 @@ namespace Bgs.Protocol.Report.V1 {
     public const int AgentIdFieldNumber = 1;
     private global::Bgs.Protocol.Account.V1.GameAccountHandle agentId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Account.V1.GameAccountHandle AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
       }
     }
-    /// <summary>Gets whether the agent_id field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasAgentId {
-      get { return agentId_ != null; }
-    }
-    /// <summary>Clears the value of the agent_id field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearAgentId() {
-      agentId_ = null;
-    }
 
     /// <summary>Field number for the "report_type" field.</summary>
     public const int ReportTypeFieldNumber = 2;
     private global::Bgs.Protocol.Report.V1.ReportType reportType_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Report.V1.ReportType ReportType {
       get { return reportType_; }
       set {
         reportType_ = value;
       }
     }
-    /// <summary>Gets whether the report_type field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasReportType {
-      get { return reportType_ != null; }
-    }
-    /// <summary>Clears the value of the report_type field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearReportType() {
-      reportType_ = null;
-    }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SubmitReportRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SubmitReportRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -296,10 +345,11 @@ namespace Bgs.Protocol.Report.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasAgentId) hash ^= AgentId.GetHashCode();
-      if (HasReportType) hash ^= ReportType.GetHashCode();
+      if (agentId_ != null) hash ^= AgentId.GetHashCode();
+      if (reportType_ != null) hash ^= ReportType.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -307,32 +357,57 @@ namespace Bgs.Protocol.Report.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasAgentId) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (agentId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(AgentId);
       }
-      if (HasReportType) {
+      if (reportType_ != null) {
         output.WriteRawTag(18);
         output.WriteMessage(ReportType);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (agentId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(AgentId);
+      }
+      if (reportType_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ReportType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasAgentId) {
+      if (agentId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AgentId);
       }
-      if (HasReportType) {
+      if (reportType_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReportType);
       }
       if (_unknownFields != null) {
@@ -342,18 +417,19 @@ namespace Bgs.Protocol.Report.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SubmitReportRequest other) {
       if (other == null) {
         return;
       }
-      if (other.HasAgentId) {
-        if (!HasAgentId) {
+      if (other.agentId_ != null) {
+        if (agentId_ == null) {
           AgentId = new global::Bgs.Protocol.Account.V1.GameAccountHandle();
         }
         AgentId.MergeFrom(other.AgentId);
       }
-      if (other.HasReportType) {
-        if (!HasReportType) {
+      if (other.reportType_ != null) {
+        if (reportType_ == null) {
           ReportType = new global::Bgs.Protocol.Report.V1.ReportType();
         }
         ReportType.MergeFrom(other.ReportType);
@@ -362,7 +438,11 @@ namespace Bgs.Protocol.Report.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -370,14 +450,43 @@ namespace Bgs.Protocol.Report.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasAgentId) {
+            if (agentId_ == null) {
               AgentId = new global::Bgs.Protocol.Account.V1.GameAccountHandle();
             }
             input.ReadMessage(AgentId);
             break;
           }
           case 18: {
-            if (!HasReportType) {
+            if (reportType_ == null) {
+              ReportType = new global::Bgs.Protocol.Report.V1.ReportType();
+            }
+            input.ReadMessage(ReportType);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (agentId_ == null) {
+              AgentId = new global::Bgs.Protocol.Account.V1.GameAccountHandle();
+            }
+            input.ReadMessage(AgentId);
+            break;
+          }
+          case 18: {
+            if (reportType_ == null) {
               ReportType = new global::Bgs.Protocol.Report.V1.ReportType();
             }
             input.ReadMessage(ReportType);
@@ -386,6 +495,7 @@ namespace Bgs.Protocol.Report.V1 {
         }
       }
     }
+    #endif
 
   }
 

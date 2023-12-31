@@ -47,24 +47,33 @@ namespace Bgs.Protocol.UserManager.V1 {
 
   }
   #region Messages
-  public sealed partial class RecentPlayer : pb::IMessage<RecentPlayer> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class RecentPlayer : pb::IMessage<RecentPlayer>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<RecentPlayer> _parser = new pb::MessageParser<RecentPlayer>(() => new RecentPlayer());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RecentPlayer> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.UserManager.V1.UserManagerTypesReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RecentPlayer() {
       OnConstruction();
     }
@@ -72,9 +81,10 @@ namespace Bgs.Protocol.UserManager.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RecentPlayer(RecentPlayer other) : this() {
       _hasBits0 = other._hasBits0;
-      entityId_ = other.HasEntityId ? other.entityId_.Clone() : null;
+      entityId_ = other.entityId_ != null ? other.entityId_.Clone() : null;
       program_ = other.program_;
       timestampPlayed_ = other.timestampPlayed_;
       attributes_ = other.attributes_.Clone();
@@ -83,6 +93,7 @@ namespace Bgs.Protocol.UserManager.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RecentPlayer Clone() {
       return new RecentPlayer(this);
     }
@@ -91,21 +102,12 @@ namespace Bgs.Protocol.UserManager.V1 {
     public const int EntityIdFieldNumber = 1;
     private global::Bgs.Protocol.EntityId entityId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.EntityId EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
       }
-    }
-    /// <summary>Gets whether the entity_id field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasEntityId {
-      get { return entityId_ != null; }
-    }
-    /// <summary>Clears the value of the entity_id field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearEntityId() {
-      entityId_ = null;
     }
 
     /// <summary>Field number for the "program" field.</summary>
@@ -114,6 +116,7 @@ namespace Bgs.Protocol.UserManager.V1 {
 
     private string program_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Program {
       get { return program_ ?? ProgramDefaultValue; }
       set {
@@ -122,11 +125,13 @@ namespace Bgs.Protocol.UserManager.V1 {
     }
     /// <summary>Gets whether the "program" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasProgram {
       get { return program_ != null; }
     }
     /// <summary>Clears the value of the "program" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearProgram() {
       program_ = null;
     }
@@ -137,6 +142,7 @@ namespace Bgs.Protocol.UserManager.V1 {
 
     private ulong timestampPlayed_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong TimestampPlayed {
       get { if ((_hasBits0 & 1) != 0) { return timestampPlayed_; } else { return TimestampPlayedDefaultValue; } }
       set {
@@ -146,11 +152,13 @@ namespace Bgs.Protocol.UserManager.V1 {
     }
     /// <summary>Gets whether the "timestamp_played" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasTimestampPlayed {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "timestamp_played" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearTimestampPlayed() {
       _hasBits0 &= ~1;
     }
@@ -161,6 +169,7 @@ namespace Bgs.Protocol.UserManager.V1 {
         = pb::FieldCodec.ForMessage(34, global::Bgs.Protocol.Attribute.Parser);
     private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attributes_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attributes {
       get { return attributes_; }
     }
@@ -171,6 +180,7 @@ namespace Bgs.Protocol.UserManager.V1 {
 
     private uint counter_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Counter {
       get { if ((_hasBits0 & 2) != 0) { return counter_; } else { return CounterDefaultValue; } }
       set {
@@ -180,21 +190,25 @@ namespace Bgs.Protocol.UserManager.V1 {
     }
     /// <summary>Gets whether the "counter" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCounter {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "counter" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCounter() {
       _hasBits0 &= ~2;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RecentPlayer);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RecentPlayer other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -211,9 +225,10 @@ namespace Bgs.Protocol.UserManager.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasEntityId) hash ^= EntityId.GetHashCode();
+      if (entityId_ != null) hash ^= EntityId.GetHashCode();
       if (HasProgram) hash ^= Program.GetHashCode();
       if (HasTimestampPlayed) hash ^= TimestampPlayed.GetHashCode();
       hash ^= attributes_.GetHashCode();
@@ -225,13 +240,18 @@ namespace Bgs.Protocol.UserManager.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasEntityId) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (entityId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(EntityId);
       }
@@ -251,12 +271,41 @@ namespace Bgs.Protocol.UserManager.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (entityId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(EntityId);
+      }
+      if (HasProgram) {
+        output.WriteRawTag(18);
+        output.WriteString(Program);
+      }
+      if (HasTimestampPlayed) {
+        output.WriteRawTag(25);
+        output.WriteFixed64(TimestampPlayed);
+      }
+      attributes_.WriteTo(ref output, _repeated_attributes_codec);
+      if (HasCounter) {
+        output.WriteRawTag(53);
+        output.WriteFixed32(Counter);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasEntityId) {
+      if (entityId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(EntityId);
       }
       if (HasProgram) {
@@ -276,12 +325,13 @@ namespace Bgs.Protocol.UserManager.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RecentPlayer other) {
       if (other == null) {
         return;
       }
-      if (other.HasEntityId) {
-        if (!HasEntityId) {
+      if (other.entityId_ != null) {
+        if (entityId_ == null) {
           EntityId = new global::Bgs.Protocol.EntityId();
         }
         EntityId.MergeFrom(other.EntityId);
@@ -300,7 +350,11 @@ namespace Bgs.Protocol.UserManager.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -308,7 +362,7 @@ namespace Bgs.Protocol.UserManager.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasEntityId) {
+            if (entityId_ == null) {
               EntityId = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(EntityId);
@@ -332,28 +386,76 @@ namespace Bgs.Protocol.UserManager.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (entityId_ == null) {
+              EntityId = new global::Bgs.Protocol.EntityId();
+            }
+            input.ReadMessage(EntityId);
+            break;
+          }
+          case 18: {
+            Program = input.ReadString();
+            break;
+          }
+          case 25: {
+            TimestampPlayed = input.ReadFixed64();
+            break;
+          }
+          case 34: {
+            attributes_.AddEntriesFrom(ref input, _repeated_attributes_codec);
+            break;
+          }
+          case 53: {
+            Counter = input.ReadFixed32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class BlockedPlayer : pb::IMessage<BlockedPlayer> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class BlockedPlayer : pb::IMessage<BlockedPlayer>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<BlockedPlayer> _parser = new pb::MessageParser<BlockedPlayer>(() => new BlockedPlayer());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<BlockedPlayer> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.UserManager.V1.UserManagerTypesReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BlockedPlayer() {
       OnConstruction();
     }
@@ -361,9 +463,10 @@ namespace Bgs.Protocol.UserManager.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BlockedPlayer(BlockedPlayer other) : this() {
       _hasBits0 = other._hasBits0;
-      accountId_ = other.HasAccountId ? other.accountId_.Clone() : null;
+      accountId_ = other.accountId_ != null ? other.accountId_.Clone() : null;
       battleTag_ = other.battleTag_;
       role_ = other.role_.Clone();
       privileges_ = other.privileges_;
@@ -371,6 +474,7 @@ namespace Bgs.Protocol.UserManager.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BlockedPlayer Clone() {
       return new BlockedPlayer(this);
     }
@@ -379,21 +483,12 @@ namespace Bgs.Protocol.UserManager.V1 {
     public const int AccountIdFieldNumber = 1;
     private global::Bgs.Protocol.EntityId accountId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.EntityId AccountId {
       get { return accountId_; }
       set {
         accountId_ = value;
       }
-    }
-    /// <summary>Gets whether the account_id field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasAccountId {
-      get { return accountId_ != null; }
-    }
-    /// <summary>Clears the value of the account_id field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearAccountId() {
-      accountId_ = null;
     }
 
     /// <summary>Field number for the "battle_tag" field.</summary>
@@ -402,6 +497,7 @@ namespace Bgs.Protocol.UserManager.V1 {
 
     private string battleTag_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string BattleTag {
       get { return battleTag_ ?? BattleTagDefaultValue; }
       set {
@@ -410,11 +506,13 @@ namespace Bgs.Protocol.UserManager.V1 {
     }
     /// <summary>Gets whether the "battle_tag" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasBattleTag {
       get { return battleTag_ != null; }
     }
     /// <summary>Clears the value of the "battle_tag" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearBattleTag() {
       battleTag_ = null;
     }
@@ -426,6 +524,7 @@ namespace Bgs.Protocol.UserManager.V1 {
     private readonly pbc::RepeatedField<uint> role_ = new pbc::RepeatedField<uint>();
     [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<uint> Role {
       get { return role_; }
     }
@@ -437,6 +536,7 @@ namespace Bgs.Protocol.UserManager.V1 {
     private ulong privileges_;
     [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong Privileges {
       get { if ((_hasBits0 & 1) != 0) { return privileges_; } else { return PrivilegesDefaultValue; } }
       set {
@@ -447,22 +547,26 @@ namespace Bgs.Protocol.UserManager.V1 {
     /// <summary>Gets whether the "privileges" field is set</summary>
     [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasPrivileges {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "privileges" field</summary>
     [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearPrivileges() {
       _hasBits0 &= ~1;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as BlockedPlayer);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(BlockedPlayer other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -478,9 +582,10 @@ namespace Bgs.Protocol.UserManager.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasAccountId) hash ^= AccountId.GetHashCode();
+      if (accountId_ != null) hash ^= AccountId.GetHashCode();
       if (HasBattleTag) hash ^= BattleTag.GetHashCode();
       hash ^= role_.GetHashCode();
       if (HasPrivileges) hash ^= Privileges.GetHashCode();
@@ -491,13 +596,18 @@ namespace Bgs.Protocol.UserManager.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasAccountId) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (accountId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(AccountId);
       }
@@ -513,12 +623,37 @@ namespace Bgs.Protocol.UserManager.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (accountId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(AccountId);
+      }
+      if (HasBattleTag) {
+        output.WriteRawTag(18);
+        output.WriteString(BattleTag);
+      }
+      role_.WriteTo(ref output, _repeated_role_codec);
+      if (HasPrivileges) {
+        output.WriteRawTag(32);
+        output.WriteUInt64(Privileges);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasAccountId) {
+      if (accountId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AccountId);
       }
       if (HasBattleTag) {
@@ -535,12 +670,13 @@ namespace Bgs.Protocol.UserManager.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(BlockedPlayer other) {
       if (other == null) {
         return;
       }
-      if (other.HasAccountId) {
-        if (!HasAccountId) {
+      if (other.accountId_ != null) {
+        if (accountId_ == null) {
           AccountId = new global::Bgs.Protocol.EntityId();
         }
         AccountId.MergeFrom(other.AccountId);
@@ -556,7 +692,11 @@ namespace Bgs.Protocol.UserManager.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -564,7 +704,7 @@ namespace Bgs.Protocol.UserManager.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasAccountId) {
+            if (accountId_ == null) {
               AccountId = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(AccountId);
@@ -585,7 +725,43 @@ namespace Bgs.Protocol.UserManager.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (accountId_ == null) {
+              AccountId = new global::Bgs.Protocol.EntityId();
+            }
+            input.ReadMessage(AccountId);
+            break;
+          }
+          case 18: {
+            BattleTag = input.ReadString();
+            break;
+          }
+          case 26:
+          case 24: {
+            role_.AddEntriesFrom(ref input, _repeated_role_codec);
+            break;
+          }
+          case 32: {
+            Privileges = input.ReadUInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

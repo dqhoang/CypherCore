@@ -26,27 +26,29 @@ namespace Bgs.Protocol {
           string.Concat(
             "CihiZ3MvbG93L3BiL2NsaWVudC9pbnZpdGF0aW9uX3R5cGVzLnByb3RvEgxi",
             "Z3MucHJvdG9jb2waJGJncy9sb3cvcGIvY2xpZW50L2VudGl0eV90eXBlcy5w",
-            "cm90byL7AQoKSW52aXRhdGlvbhIKCgJpZBgBIAIoBhIwChBpbnZpdGVyX2lk",
-            "ZW50aXR5GAIgAigLMhYuYmdzLnByb3RvY29sLklkZW50aXR5EjAKEGludml0",
-            "ZWVfaWRlbnRpdHkYAyACKAsyFi5iZ3MucHJvdG9jb2wuSWRlbnRpdHkSFAoM",
-            "aW52aXRlcl9uYW1lGAQgASgJEhQKDGludml0ZWVfbmFtZRgFIAEoCRIaChJp",
-            "bnZpdGF0aW9uX21lc3NhZ2UYBiABKAkSFQoNY3JlYXRpb25fdGltZRgHIAEo",
-            "BBIXCg9leHBpcmF0aW9uX3RpbWUYCCABKAQqBQhkEJFOIlIKEEludml0YXRp",
-            "b25QYXJhbXMSHgoSaW52aXRhdGlvbl9tZXNzYWdlGAEgASgJQgIYARIXCg9l",
-            "eHBpcmF0aW9uX3RpbWUYAiABKAQqBQhkEJFOKoYCChdJbnZpdGF0aW9uUmVt",
-            "b3ZlZFJlYXNvbhImCiJJTlZJVEFUSU9OX1JFTU9WRURfUkVBU09OX0FDQ0VQ",
-            "VEVEEAASJgoiSU5WSVRBVElPTl9SRU1PVkVEX1JFQVNPTl9ERUNMSU5FRBAB",
-            "EiUKIUlOVklUQVRJT05fUkVNT1ZFRF9SRUFTT05fUkVWT0tFRBACEiUKIUlO",
-            "VklUQVRJT05fUkVNT1ZFRF9SRUFTT05fSUdOT1JFRBADEiUKIUlOVklUQVRJ",
-            "T05fUkVNT1ZFRF9SRUFTT05fRVhQSVJFRBAEEiYKIklOVklUQVRJT05fUkVN",
-            "T1ZFRF9SRUFTT05fQ0FOQ0VMRUQQBSq4AQoXU3VnZ2VzdGlvblJlbW92ZWRS",
-            "ZWFzb24SJgoiU1VHR0VTVElPTl9SRU1PVkVEX1JFQVNPTl9BUFBST1ZFRBAA",
-            "EiYKIlNVR0dFU1RJT05fUkVNT1ZFRF9SRUFTT05fREVDTElORUQQARIlCiFT",
-            "VUdHRVNUSU9OX1JFTU9WRURfUkVBU09OX0VYUElSRUQQAhImCiJTVUdHRVNU",
-            "SU9OX1JFTU9WRURfUkVBU09OX0NBTkNFTEVEEANCJAoMYmdzLnByb3RvY29s",
-            "QhRJbnZpdGF0aW9uVHlwZXNQcm90bw=="));
+            "cm90bxo3YmdzL2xvdy9wYi9jbGllbnQvZ2xvYmFsX2V4dGVuc2lvbnMvZmll",
+            "bGRfb3B0aW9ucy5wcm90byKLAgoKSW52aXRhdGlvbhIKCgJpZBgBIAIoBhIw",
+            "ChBpbnZpdGVyX2lkZW50aXR5GAIgAigLMhYuYmdzLnByb3RvY29sLklkZW50",
+            "aXR5EjAKEGludml0ZWVfaWRlbnRpdHkYAyACKAsyFi5iZ3MucHJvdG9jb2wu",
+            "SWRlbnRpdHkSHAoMaW52aXRlcl9uYW1lGAQgASgJQgaC+SsCCAESHAoMaW52",
+            "aXRlZV9uYW1lGAUgASgJQgaC+SsCCAESGgoSaW52aXRhdGlvbl9tZXNzYWdl",
+            "GAYgASgJEhUKDWNyZWF0aW9uX3RpbWUYByABKAQSFwoPZXhwaXJhdGlvbl90",
+            "aW1lGAggASgEKgUIZBCRTiJSChBJbnZpdGF0aW9uUGFyYW1zEh4KEmludml0",
+            "YXRpb25fbWVzc2FnZRgBIAEoCUICGAESFwoPZXhwaXJhdGlvbl90aW1lGAIg",
+            "ASgEKgUIZBCRTiqGAgoXSW52aXRhdGlvblJlbW92ZWRSZWFzb24SJgoiSU5W",
+            "SVRBVElPTl9SRU1PVkVEX1JFQVNPTl9BQ0NFUFRFRBAAEiYKIklOVklUQVRJ",
+            "T05fUkVNT1ZFRF9SRUFTT05fREVDTElORUQQARIlCiFJTlZJVEFUSU9OX1JF",
+            "TU9WRURfUkVBU09OX1JFVk9LRUQQAhIlCiFJTlZJVEFUSU9OX1JFTU9WRURf",
+            "UkVBU09OX0lHTk9SRUQQAxIlCiFJTlZJVEFUSU9OX1JFTU9WRURfUkVBU09O",
+            "X0VYUElSRUQQBBImCiJJTlZJVEFUSU9OX1JFTU9WRURfUkVBU09OX0NBTkNF",
+            "TEVEEAUquAEKF1N1Z2dlc3Rpb25SZW1vdmVkUmVhc29uEiYKIlNVR0dFU1RJ",
+            "T05fUkVNT1ZFRF9SRUFTT05fQVBQUk9WRUQQABImCiJTVUdHRVNUSU9OX1JF",
+            "TU9WRURfUkVBU09OX0RFQ0xJTkVEEAESJQohU1VHR0VTVElPTl9SRU1PVkVE",
+            "X1JFQVNPTl9FWFBJUkVEEAISJgoiU1VHR0VTVElPTl9SRU1PVkVEX1JFQVNP",
+            "Tl9DQU5DRUxFRBADQiQKDGJncy5wcm90b2NvbEIUSW52aXRhdGlvblR5cGVz",
+            "UHJvdG8="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bgs.Protocol.EntityTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.EntityTypesReflection.Descriptor, global::Bgs.Protocol.FieldOptionsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Bgs.Protocol.InvitationRemovedReason), typeof(global::Bgs.Protocol.SuggestionRemovedReason), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Invitation), global::Bgs.Protocol.Invitation.Parser, new[]{ "Id", "InviterIdentity", "InviteeIdentity", "InviterName", "InviteeName", "InvitationMessage", "CreationTime", "ExpirationTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.InvitationParams), global::Bgs.Protocol.InvitationParams.Parser, new[]{ "InvitationMessage", "ExpirationTime" }, null, null, null, null)
@@ -75,26 +77,35 @@ namespace Bgs.Protocol {
   #endregion
 
   #region Messages
-  public sealed partial class Invitation : pb::IExtendableMessage<Invitation> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class Invitation : pb::IExtendableMessage<Invitation>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<Invitation> _parser = new pb::MessageParser<Invitation>(() => new Invitation());
     private pb::UnknownFieldSet _unknownFields;
     private pb::ExtensionSet<Invitation> _extensions;
-    private pb::ExtensionSet<Invitation> _Extensions => _extensions;
+    private pb::ExtensionSet<Invitation> _Extensions { get { return _extensions; } }
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Invitation> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.InvitationTypesReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Invitation() {
       OnConstruction();
     }
@@ -102,11 +113,12 @@ namespace Bgs.Protocol {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Invitation(Invitation other) : this() {
       _hasBits0 = other._hasBits0;
       id_ = other.id_;
-      inviterIdentity_ = other.HasInviterIdentity ? other.inviterIdentity_.Clone() : null;
-      inviteeIdentity_ = other.HasInviteeIdentity ? other.inviteeIdentity_.Clone() : null;
+      inviterIdentity_ = other.inviterIdentity_ != null ? other.inviterIdentity_.Clone() : null;
+      inviteeIdentity_ = other.inviteeIdentity_ != null ? other.inviteeIdentity_.Clone() : null;
       inviterName_ = other.inviterName_;
       inviteeName_ = other.inviteeName_;
       invitationMessage_ = other.invitationMessage_;
@@ -117,6 +129,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Invitation Clone() {
       return new Invitation(this);
     }
@@ -127,6 +140,7 @@ namespace Bgs.Protocol {
 
     private ulong id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong Id {
       get { if ((_hasBits0 & 1) != 0) { return id_; } else { return IdDefaultValue; } }
       set {
@@ -136,11 +150,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasId {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearId() {
       _hasBits0 &= ~1;
     }
@@ -149,42 +165,24 @@ namespace Bgs.Protocol {
     public const int InviterIdentityFieldNumber = 2;
     private global::Bgs.Protocol.Identity inviterIdentity_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Identity InviterIdentity {
       get { return inviterIdentity_; }
       set {
         inviterIdentity_ = value;
       }
     }
-    /// <summary>Gets whether the inviter_identity field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasInviterIdentity {
-      get { return inviterIdentity_ != null; }
-    }
-    /// <summary>Clears the value of the inviter_identity field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearInviterIdentity() {
-      inviterIdentity_ = null;
-    }
 
     /// <summary>Field number for the "invitee_identity" field.</summary>
     public const int InviteeIdentityFieldNumber = 3;
     private global::Bgs.Protocol.Identity inviteeIdentity_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Identity InviteeIdentity {
       get { return inviteeIdentity_; }
       set {
         inviteeIdentity_ = value;
       }
-    }
-    /// <summary>Gets whether the invitee_identity field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasInviteeIdentity {
-      get { return inviteeIdentity_ != null; }
-    }
-    /// <summary>Clears the value of the invitee_identity field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearInviteeIdentity() {
-      inviteeIdentity_ = null;
     }
 
     /// <summary>Field number for the "inviter_name" field.</summary>
@@ -193,6 +191,7 @@ namespace Bgs.Protocol {
 
     private string inviterName_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string InviterName {
       get { return inviterName_ ?? InviterNameDefaultValue; }
       set {
@@ -201,11 +200,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "inviter_name" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasInviterName {
       get { return inviterName_ != null; }
     }
     /// <summary>Clears the value of the "inviter_name" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearInviterName() {
       inviterName_ = null;
     }
@@ -216,6 +217,7 @@ namespace Bgs.Protocol {
 
     private string inviteeName_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string InviteeName {
       get { return inviteeName_ ?? InviteeNameDefaultValue; }
       set {
@@ -224,11 +226,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "invitee_name" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasInviteeName {
       get { return inviteeName_ != null; }
     }
     /// <summary>Clears the value of the "invitee_name" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearInviteeName() {
       inviteeName_ = null;
     }
@@ -239,6 +243,7 @@ namespace Bgs.Protocol {
 
     private string invitationMessage_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string InvitationMessage {
       get { return invitationMessage_ ?? InvitationMessageDefaultValue; }
       set {
@@ -247,11 +252,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "invitation_message" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasInvitationMessage {
       get { return invitationMessage_ != null; }
     }
     /// <summary>Clears the value of the "invitation_message" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearInvitationMessage() {
       invitationMessage_ = null;
     }
@@ -262,6 +269,7 @@ namespace Bgs.Protocol {
 
     private ulong creationTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong CreationTime {
       get { if ((_hasBits0 & 2) != 0) { return creationTime_; } else { return CreationTimeDefaultValue; } }
       set {
@@ -271,11 +279,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "creation_time" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCreationTime {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "creation_time" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCreationTime() {
       _hasBits0 &= ~2;
     }
@@ -286,6 +296,7 @@ namespace Bgs.Protocol {
 
     private ulong expirationTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong ExpirationTime {
       get { if ((_hasBits0 & 4) != 0) { return expirationTime_; } else { return ExpirationTimeDefaultValue; } }
       set {
@@ -295,21 +306,25 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "expiration_time" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasExpirationTime {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "expiration_time" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearExpirationTime() {
       _hasBits0 &= ~4;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Invitation);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Invitation other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -332,11 +347,12 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasId) hash ^= Id.GetHashCode();
-      if (HasInviterIdentity) hash ^= InviterIdentity.GetHashCode();
-      if (HasInviteeIdentity) hash ^= InviteeIdentity.GetHashCode();
+      if (inviterIdentity_ != null) hash ^= InviterIdentity.GetHashCode();
+      if (inviteeIdentity_ != null) hash ^= InviteeIdentity.GetHashCode();
       if (HasInviterName) hash ^= InviterName.GetHashCode();
       if (HasInviteeName) hash ^= InviteeName.GetHashCode();
       if (HasInvitationMessage) hash ^= InvitationMessage.GetHashCode();
@@ -352,21 +368,26 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasId) {
         output.WriteRawTag(9);
         output.WriteFixed64(Id);
       }
-      if (HasInviterIdentity) {
+      if (inviterIdentity_ != null) {
         output.WriteRawTag(18);
         output.WriteMessage(InviterIdentity);
       }
-      if (HasInviteeIdentity) {
+      if (inviteeIdentity_ != null) {
         output.WriteRawTag(26);
         output.WriteMessage(InviteeIdentity);
       }
@@ -396,18 +417,65 @@ namespace Bgs.Protocol {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasId) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(Id);
+      }
+      if (inviterIdentity_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(InviterIdentity);
+      }
+      if (inviteeIdentity_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(InviteeIdentity);
+      }
+      if (HasInviterName) {
+        output.WriteRawTag(34);
+        output.WriteString(InviterName);
+      }
+      if (HasInviteeName) {
+        output.WriteRawTag(42);
+        output.WriteString(InviteeName);
+      }
+      if (HasInvitationMessage) {
+        output.WriteRawTag(50);
+        output.WriteString(InvitationMessage);
+      }
+      if (HasCreationTime) {
+        output.WriteRawTag(56);
+        output.WriteUInt64(CreationTime);
+      }
+      if (HasExpirationTime) {
+        output.WriteRawTag(64);
+        output.WriteUInt64(ExpirationTime);
+      }
+      if (_extensions != null) {
+        _extensions.WriteTo(ref output);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasId) {
         size += 1 + 8;
       }
-      if (HasInviterIdentity) {
+      if (inviterIdentity_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(InviterIdentity);
       }
-      if (HasInviteeIdentity) {
+      if (inviteeIdentity_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(InviteeIdentity);
       }
       if (HasInviterName) {
@@ -435,6 +503,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Invitation other) {
       if (other == null) {
         return;
@@ -442,14 +511,14 @@ namespace Bgs.Protocol {
       if (other.HasId) {
         Id = other.Id;
       }
-      if (other.HasInviterIdentity) {
-        if (!HasInviterIdentity) {
+      if (other.inviterIdentity_ != null) {
+        if (inviterIdentity_ == null) {
           InviterIdentity = new global::Bgs.Protocol.Identity();
         }
         InviterIdentity.MergeFrom(other.InviterIdentity);
       }
-      if (other.HasInviteeIdentity) {
-        if (!HasInviteeIdentity) {
+      if (other.inviteeIdentity_ != null) {
+        if (inviteeIdentity_ == null) {
           InviteeIdentity = new global::Bgs.Protocol.Identity();
         }
         InviteeIdentity.MergeFrom(other.InviteeIdentity);
@@ -474,7 +543,11 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -488,14 +561,69 @@ namespace Bgs.Protocol {
             break;
           }
           case 18: {
-            if (!HasInviterIdentity) {
+            if (inviterIdentity_ == null) {
               InviterIdentity = new global::Bgs.Protocol.Identity();
             }
             input.ReadMessage(InviterIdentity);
             break;
           }
           case 26: {
-            if (!HasInviteeIdentity) {
+            if (inviteeIdentity_ == null) {
+              InviteeIdentity = new global::Bgs.Protocol.Identity();
+            }
+            input.ReadMessage(InviteeIdentity);
+            break;
+          }
+          case 34: {
+            InviterName = input.ReadString();
+            break;
+          }
+          case 42: {
+            InviteeName = input.ReadString();
+            break;
+          }
+          case 50: {
+            InvitationMessage = input.ReadString();
+            break;
+          }
+          case 56: {
+            CreationTime = input.ReadUInt64();
+            break;
+          }
+          case 64: {
+            ExpirationTime = input.ReadUInt64();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
+              _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            }
+            break;
+          case 9: {
+            Id = input.ReadFixed64();
+            break;
+          }
+          case 18: {
+            if (inviterIdentity_ == null) {
+              InviterIdentity = new global::Bgs.Protocol.Identity();
+            }
+            input.ReadMessage(InviterIdentity);
+            break;
+          }
+          case 26: {
+            if (inviteeIdentity_ == null) {
               InviteeIdentity = new global::Bgs.Protocol.Identity();
             }
             input.ReadMessage(InviteeIdentity);
@@ -524,6 +652,7 @@ namespace Bgs.Protocol {
         }
       }
     }
+    #endif
 
     public TValue GetExtension<TValue>(pb::Extension<Invitation, TValue> extension) {
       return pb::ExtensionSet.Get(ref _extensions, extension);
@@ -549,26 +678,35 @@ namespace Bgs.Protocol {
 
   }
 
-  public sealed partial class InvitationParams : pb::IExtendableMessage<InvitationParams> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class InvitationParams : pb::IExtendableMessage<InvitationParams>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<InvitationParams> _parser = new pb::MessageParser<InvitationParams>(() => new InvitationParams());
     private pb::UnknownFieldSet _unknownFields;
     private pb::ExtensionSet<InvitationParams> _extensions;
-    private pb::ExtensionSet<InvitationParams> _Extensions => _extensions;
+    private pb::ExtensionSet<InvitationParams> _Extensions { get { return _extensions; } }
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<InvitationParams> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.InvitationTypesReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InvitationParams() {
       OnConstruction();
     }
@@ -576,6 +714,7 @@ namespace Bgs.Protocol {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InvitationParams(InvitationParams other) : this() {
       _hasBits0 = other._hasBits0;
       invitationMessage_ = other.invitationMessage_;
@@ -585,6 +724,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InvitationParams Clone() {
       return new InvitationParams(this);
     }
@@ -596,6 +736,7 @@ namespace Bgs.Protocol {
     private string invitationMessage_;
     [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string InvitationMessage {
       get { return invitationMessage_ ?? InvitationMessageDefaultValue; }
       set {
@@ -605,12 +746,14 @@ namespace Bgs.Protocol {
     /// <summary>Gets whether the "invitation_message" field is set</summary>
     [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasInvitationMessage {
       get { return invitationMessage_ != null; }
     }
     /// <summary>Clears the value of the "invitation_message" field</summary>
     [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearInvitationMessage() {
       invitationMessage_ = null;
     }
@@ -621,6 +764,7 @@ namespace Bgs.Protocol {
 
     private ulong expirationTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong ExpirationTime {
       get { if ((_hasBits0 & 1) != 0) { return expirationTime_; } else { return ExpirationTimeDefaultValue; } }
       set {
@@ -630,21 +774,25 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "expiration_time" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasExpirationTime {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "expiration_time" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearExpirationTime() {
       _hasBits0 &= ~1;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as InvitationParams);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(InvitationParams other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -661,6 +809,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasInvitationMessage) hash ^= InvitationMessage.GetHashCode();
@@ -675,12 +824,17 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasInvitationMessage) {
         output.WriteRawTag(10);
         output.WriteString(InvitationMessage);
@@ -695,9 +849,32 @@ namespace Bgs.Protocol {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasInvitationMessage) {
+        output.WriteRawTag(10);
+        output.WriteString(InvitationMessage);
+      }
+      if (HasExpirationTime) {
+        output.WriteRawTag(16);
+        output.WriteUInt64(ExpirationTime);
+      }
+      if (_extensions != null) {
+        _extensions.WriteTo(ref output);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasInvitationMessage) {
@@ -716,6 +893,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(InvitationParams other) {
       if (other == null) {
         return;
@@ -731,7 +909,11 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -750,7 +932,33 @@ namespace Bgs.Protocol {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            if (!pb::ExtensionSet.TryMergeFieldFrom(ref _extensions, ref input)) {
+              _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            }
+            break;
+          case 10: {
+            InvitationMessage = input.ReadString();
+            break;
+          }
+          case 16: {
+            ExpirationTime = input.ReadUInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
     public TValue GetExtension<TValue>(pb::Extension<InvitationParams, TValue> extension) {
       return pb::ExtensionSet.Get(ref _extensions, extension);

@@ -35,14 +35,13 @@ namespace Bgs.Protocol.Challenge.V1 {
             "ZXF1ZXN0EhUKDXJlcXVlc3RfdG9rZW4YASABKAkSFAoMcGF5bG9hZF90eXBl",
             "GAIgASgJEg8KB3BheWxvYWQYAyABKAwiRgoXQ2hhbGxlbmdlRXh0ZXJuYWxS",
             "ZXN1bHQSFQoNcmVxdWVzdF90b2tlbhgBIAEoCRIUCgZwYXNzZWQYAiABKAg6",
-            "BHRydWUysQIKEUNoYWxsZW5nZUxpc3RlbmVyEm0KE09uRXh0ZXJuYWxDaGFs",
+            "BHRydWUyrQIKEUNoYWxsZW5nZUxpc3RlbmVyEm0KE09uRXh0ZXJuYWxDaGFs",
             "bGVuZ2USMy5iZ3MucHJvdG9jb2wuY2hhbGxlbmdlLnYxLkNoYWxsZW5nZUV4",
             "dGVybmFsUmVxdWVzdBoZLmJncy5wcm90b2NvbC5OT19SRVNQT05TRSIGgvkr",
             "AggDEnIKGU9uRXh0ZXJuYWxDaGFsbGVuZ2VSZXN1bHQSMi5iZ3MucHJvdG9j",
             "b2wuY2hhbGxlbmdlLnYxLkNoYWxsZW5nZUV4dGVybmFsUmVzdWx0GhkuYmdz",
-            "LnByb3RvY29sLk5PX1JFU1BPTlNFIgaC+SsCCAQaOYL5KykKJ2JuZXQucHJv",
-            "dG9jb2wuY2hhbGxlbmdlLkNoYWxsZW5nZU5vdGlmeYL5KwI4AYr5KwIIAUID",
-            "gAEA"));
+            "LnByb3RvY29sLk5PX1JFU1BPTlNFIgaC+SsCCAQaNYL5KysKJ2JuZXQucHJv",
+            "dG9jb2wuY2hhbGxlbmdlLkNoYWxsZW5nZU5vdGlmeTgBivkrAggBQgOAAQA="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Bgs.Protocol.RpcTypesReflection.Descriptor, global::Bgs.Protocol.FieldOptionsReflection.Descriptor, global::Bgs.Protocol.MessageOptionsReflection.Descriptor, global::Bgs.Protocol.MethodOptionsReflection.Descriptor, global::Bgs.Protocol.ServiceOptionsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -54,23 +53,32 @@ namespace Bgs.Protocol.Challenge.V1 {
 
   }
   #region Messages
-  public sealed partial class ChallengeExternalRequest : pb::IMessage<ChallengeExternalRequest> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ChallengeExternalRequest : pb::IMessage<ChallengeExternalRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ChallengeExternalRequest> _parser = new pb::MessageParser<ChallengeExternalRequest>(() => new ChallengeExternalRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ChallengeExternalRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChallengeExternalRequest() {
       OnConstruction();
     }
@@ -78,6 +86,7 @@ namespace Bgs.Protocol.Challenge.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChallengeExternalRequest(ChallengeExternalRequest other) : this() {
       requestToken_ = other.requestToken_;
       payloadType_ = other.payloadType_;
@@ -86,6 +95,7 @@ namespace Bgs.Protocol.Challenge.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChallengeExternalRequest Clone() {
       return new ChallengeExternalRequest(this);
     }
@@ -96,6 +106,7 @@ namespace Bgs.Protocol.Challenge.V1 {
 
     private string requestToken_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string RequestToken {
       get { return requestToken_ ?? RequestTokenDefaultValue; }
       set {
@@ -104,11 +115,13 @@ namespace Bgs.Protocol.Challenge.V1 {
     }
     /// <summary>Gets whether the "request_token" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRequestToken {
       get { return requestToken_ != null; }
     }
     /// <summary>Clears the value of the "request_token" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRequestToken() {
       requestToken_ = null;
     }
@@ -119,6 +132,7 @@ namespace Bgs.Protocol.Challenge.V1 {
 
     private string payloadType_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PayloadType {
       get { return payloadType_ ?? PayloadTypeDefaultValue; }
       set {
@@ -127,11 +141,13 @@ namespace Bgs.Protocol.Challenge.V1 {
     }
     /// <summary>Gets whether the "payload_type" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasPayloadType {
       get { return payloadType_ != null; }
     }
     /// <summary>Clears the value of the "payload_type" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearPayloadType() {
       payloadType_ = null;
     }
@@ -142,6 +158,7 @@ namespace Bgs.Protocol.Challenge.V1 {
 
     private pb::ByteString payload_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString Payload {
       get { return payload_ ?? PayloadDefaultValue; }
       set {
@@ -150,21 +167,25 @@ namespace Bgs.Protocol.Challenge.V1 {
     }
     /// <summary>Gets whether the "payload" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasPayload {
       get { return payload_ != null; }
     }
     /// <summary>Clears the value of the "payload" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearPayload() {
       payload_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ChallengeExternalRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ChallengeExternalRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -179,6 +200,7 @@ namespace Bgs.Protocol.Challenge.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasRequestToken) hash ^= RequestToken.GetHashCode();
@@ -191,12 +213,17 @@ namespace Bgs.Protocol.Challenge.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasRequestToken) {
         output.WriteRawTag(10);
         output.WriteString(RequestToken);
@@ -212,9 +239,33 @@ namespace Bgs.Protocol.Challenge.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasRequestToken) {
+        output.WriteRawTag(10);
+        output.WriteString(RequestToken);
+      }
+      if (HasPayloadType) {
+        output.WriteRawTag(18);
+        output.WriteString(PayloadType);
+      }
+      if (HasPayload) {
+        output.WriteRawTag(26);
+        output.WriteBytes(Payload);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasRequestToken) {
@@ -233,6 +284,7 @@ namespace Bgs.Protocol.Challenge.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ChallengeExternalRequest other) {
       if (other == null) {
         return;
@@ -250,7 +302,11 @@ namespace Bgs.Protocol.Challenge.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -271,28 +327,65 @@ namespace Bgs.Protocol.Challenge.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            RequestToken = input.ReadString();
+            break;
+          }
+          case 18: {
+            PayloadType = input.ReadString();
+            break;
+          }
+          case 26: {
+            Payload = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class ChallengeExternalResult : pb::IMessage<ChallengeExternalResult> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ChallengeExternalResult : pb::IMessage<ChallengeExternalResult>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ChallengeExternalResult> _parser = new pb::MessageParser<ChallengeExternalResult>(() => new ChallengeExternalResult());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ChallengeExternalResult> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChallengeExternalResult() {
       OnConstruction();
     }
@@ -300,6 +393,7 @@ namespace Bgs.Protocol.Challenge.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChallengeExternalResult(ChallengeExternalResult other) : this() {
       _hasBits0 = other._hasBits0;
       requestToken_ = other.requestToken_;
@@ -308,6 +402,7 @@ namespace Bgs.Protocol.Challenge.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChallengeExternalResult Clone() {
       return new ChallengeExternalResult(this);
     }
@@ -318,6 +413,7 @@ namespace Bgs.Protocol.Challenge.V1 {
 
     private string requestToken_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string RequestToken {
       get { return requestToken_ ?? RequestTokenDefaultValue; }
       set {
@@ -326,11 +422,13 @@ namespace Bgs.Protocol.Challenge.V1 {
     }
     /// <summary>Gets whether the "request_token" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRequestToken {
       get { return requestToken_ != null; }
     }
     /// <summary>Clears the value of the "request_token" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRequestToken() {
       requestToken_ = null;
     }
@@ -341,6 +439,7 @@ namespace Bgs.Protocol.Challenge.V1 {
 
     private bool passed_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Passed {
       get { if ((_hasBits0 & 1) != 0) { return passed_; } else { return PassedDefaultValue; } }
       set {
@@ -350,21 +449,25 @@ namespace Bgs.Protocol.Challenge.V1 {
     }
     /// <summary>Gets whether the "passed" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasPassed {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "passed" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearPassed() {
       _hasBits0 &= ~1;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ChallengeExternalResult);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ChallengeExternalResult other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -378,6 +481,7 @@ namespace Bgs.Protocol.Challenge.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasRequestToken) hash ^= RequestToken.GetHashCode();
@@ -389,12 +493,17 @@ namespace Bgs.Protocol.Challenge.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasRequestToken) {
         output.WriteRawTag(10);
         output.WriteString(RequestToken);
@@ -406,9 +515,29 @@ namespace Bgs.Protocol.Challenge.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasRequestToken) {
+        output.WriteRawTag(10);
+        output.WriteString(RequestToken);
+      }
+      if (HasPassed) {
+        output.WriteRawTag(16);
+        output.WriteBool(Passed);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasRequestToken) {
@@ -424,6 +553,7 @@ namespace Bgs.Protocol.Challenge.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ChallengeExternalResult other) {
       if (other == null) {
         return;
@@ -438,7 +568,11 @@ namespace Bgs.Protocol.Challenge.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -455,7 +589,31 @@ namespace Bgs.Protocol.Challenge.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            RequestToken = input.ReadString();
+            break;
+          }
+          case 16: {
+            Passed = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

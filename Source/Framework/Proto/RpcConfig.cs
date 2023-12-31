@@ -49,24 +49,33 @@ namespace Bgs.Protocol.Config {
 
   }
   #region Messages
-  public sealed partial class RPCMethodConfig : pb::IMessage<RPCMethodConfig> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class RPCMethodConfig : pb::IMessage<RPCMethodConfig>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<RPCMethodConfig> _parser = new pb::MessageParser<RPCMethodConfig>(() => new RPCMethodConfig());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RPCMethodConfig> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Config.RpcConfigReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RPCMethodConfig() {
       OnConstruction();
     }
@@ -74,6 +83,7 @@ namespace Bgs.Protocol.Config {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RPCMethodConfig(RPCMethodConfig other) : this() {
       _hasBits0 = other._hasBits0;
       serviceName_ = other.serviceName_;
@@ -95,6 +105,7 @@ namespace Bgs.Protocol.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RPCMethodConfig Clone() {
       return new RPCMethodConfig(this);
     }
@@ -106,6 +117,7 @@ namespace Bgs.Protocol.Config {
     private string serviceName_;
     [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ServiceName {
       get { return serviceName_ ?? ServiceNameDefaultValue; }
       set {
@@ -115,12 +127,14 @@ namespace Bgs.Protocol.Config {
     /// <summary>Gets whether the "service_name" field is set</summary>
     [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasServiceName {
       get { return serviceName_ != null; }
     }
     /// <summary>Clears the value of the "service_name" field</summary>
     [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearServiceName() {
       serviceName_ = null;
     }
@@ -132,6 +146,7 @@ namespace Bgs.Protocol.Config {
     private string methodName_;
     [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MethodName {
       get { return methodName_ ?? MethodNameDefaultValue; }
       set {
@@ -141,12 +156,14 @@ namespace Bgs.Protocol.Config {
     /// <summary>Gets whether the "method_name" field is set</summary>
     [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasMethodName {
       get { return methodName_ != null; }
     }
     /// <summary>Clears the value of the "method_name" field</summary>
     [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearMethodName() {
       methodName_ = null;
     }
@@ -157,6 +174,7 @@ namespace Bgs.Protocol.Config {
 
     private uint fixedCallCost_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint FixedCallCost {
       get { if ((_hasBits0 & 1) != 0) { return fixedCallCost_; } else { return FixedCallCostDefaultValue; } }
       set {
@@ -166,11 +184,13 @@ namespace Bgs.Protocol.Config {
     }
     /// <summary>Gets whether the "fixed_call_cost" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasFixedCallCost {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "fixed_call_cost" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearFixedCallCost() {
       _hasBits0 &= ~1;
     }
@@ -181,6 +201,7 @@ namespace Bgs.Protocol.Config {
 
     private uint fixedPacketSize_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint FixedPacketSize {
       get { if ((_hasBits0 & 2) != 0) { return fixedPacketSize_; } else { return FixedPacketSizeDefaultValue; } }
       set {
@@ -190,11 +211,13 @@ namespace Bgs.Protocol.Config {
     }
     /// <summary>Gets whether the "fixed_packet_size" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasFixedPacketSize {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "fixed_packet_size" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearFixedPacketSize() {
       _hasBits0 &= ~2;
     }
@@ -205,6 +228,7 @@ namespace Bgs.Protocol.Config {
 
     private float variableMultiplier_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float VariableMultiplier {
       get { if ((_hasBits0 & 4) != 0) { return variableMultiplier_; } else { return VariableMultiplierDefaultValue; } }
       set {
@@ -214,11 +238,13 @@ namespace Bgs.Protocol.Config {
     }
     /// <summary>Gets whether the "variable_multiplier" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasVariableMultiplier {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "variable_multiplier" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearVariableMultiplier() {
       _hasBits0 &= ~4;
     }
@@ -229,6 +255,7 @@ namespace Bgs.Protocol.Config {
 
     private float multiplier_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float Multiplier {
       get { if ((_hasBits0 & 8) != 0) { return multiplier_; } else { return MultiplierDefaultValue; } }
       set {
@@ -238,11 +265,13 @@ namespace Bgs.Protocol.Config {
     }
     /// <summary>Gets whether the "multiplier" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasMultiplier {
       get { return (_hasBits0 & 8) != 0; }
     }
     /// <summary>Clears the value of the "multiplier" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearMultiplier() {
       _hasBits0 &= ~8;
     }
@@ -253,6 +282,7 @@ namespace Bgs.Protocol.Config {
 
     private uint rateLimitCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint RateLimitCount {
       get { if ((_hasBits0 & 16) != 0) { return rateLimitCount_; } else { return RateLimitCountDefaultValue; } }
       set {
@@ -262,11 +292,13 @@ namespace Bgs.Protocol.Config {
     }
     /// <summary>Gets whether the "rate_limit_count" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRateLimitCount {
       get { return (_hasBits0 & 16) != 0; }
     }
     /// <summary>Clears the value of the "rate_limit_count" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRateLimitCount() {
       _hasBits0 &= ~16;
     }
@@ -277,6 +309,7 @@ namespace Bgs.Protocol.Config {
 
     private uint rateLimitSeconds_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint RateLimitSeconds {
       get { if ((_hasBits0 & 32) != 0) { return rateLimitSeconds_; } else { return RateLimitSecondsDefaultValue; } }
       set {
@@ -286,11 +319,13 @@ namespace Bgs.Protocol.Config {
     }
     /// <summary>Gets whether the "rate_limit_seconds" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRateLimitSeconds {
       get { return (_hasBits0 & 32) != 0; }
     }
     /// <summary>Clears the value of the "rate_limit_seconds" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRateLimitSeconds() {
       _hasBits0 &= ~32;
     }
@@ -301,6 +336,7 @@ namespace Bgs.Protocol.Config {
 
     private uint maxPacketSize_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint MaxPacketSize {
       get { if ((_hasBits0 & 64) != 0) { return maxPacketSize_; } else { return MaxPacketSizeDefaultValue; } }
       set {
@@ -310,11 +346,13 @@ namespace Bgs.Protocol.Config {
     }
     /// <summary>Gets whether the "max_packet_size" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasMaxPacketSize {
       get { return (_hasBits0 & 64) != 0; }
     }
     /// <summary>Clears the value of the "max_packet_size" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearMaxPacketSize() {
       _hasBits0 &= ~64;
     }
@@ -325,6 +363,7 @@ namespace Bgs.Protocol.Config {
 
     private uint maxEncodedSize_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint MaxEncodedSize {
       get { if ((_hasBits0 & 128) != 0) { return maxEncodedSize_; } else { return MaxEncodedSizeDefaultValue; } }
       set {
@@ -334,11 +373,13 @@ namespace Bgs.Protocol.Config {
     }
     /// <summary>Gets whether the "max_encoded_size" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasMaxEncodedSize {
       get { return (_hasBits0 & 128) != 0; }
     }
     /// <summary>Clears the value of the "max_encoded_size" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearMaxEncodedSize() {
       _hasBits0 &= ~128;
     }
@@ -349,6 +390,7 @@ namespace Bgs.Protocol.Config {
 
     private float timeout_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float Timeout {
       get { if ((_hasBits0 & 256) != 0) { return timeout_; } else { return TimeoutDefaultValue; } }
       set {
@@ -358,11 +400,13 @@ namespace Bgs.Protocol.Config {
     }
     /// <summary>Gets whether the "timeout" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasTimeout {
       get { return (_hasBits0 & 256) != 0; }
     }
     /// <summary>Clears the value of the "timeout" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearTimeout() {
       _hasBits0 &= ~256;
     }
@@ -373,6 +417,7 @@ namespace Bgs.Protocol.Config {
 
     private uint capBalance_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint CapBalance {
       get { if ((_hasBits0 & 512) != 0) { return capBalance_; } else { return CapBalanceDefaultValue; } }
       set {
@@ -382,11 +427,13 @@ namespace Bgs.Protocol.Config {
     }
     /// <summary>Gets whether the "cap_balance" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCapBalance {
       get { return (_hasBits0 & 512) != 0; }
     }
     /// <summary>Clears the value of the "cap_balance" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCapBalance() {
       _hasBits0 &= ~512;
     }
@@ -397,6 +444,7 @@ namespace Bgs.Protocol.Config {
 
     private float incomePerSecond_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float IncomePerSecond {
       get { if ((_hasBits0 & 1024) != 0) { return incomePerSecond_; } else { return IncomePerSecondDefaultValue; } }
       set {
@@ -406,11 +454,13 @@ namespace Bgs.Protocol.Config {
     }
     /// <summary>Gets whether the "income_per_second" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIncomePerSecond {
       get { return (_hasBits0 & 1024) != 0; }
     }
     /// <summary>Clears the value of the "income_per_second" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIncomePerSecond() {
       _hasBits0 &= ~1024;
     }
@@ -421,6 +471,7 @@ namespace Bgs.Protocol.Config {
 
     private uint serviceHash_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint ServiceHash {
       get { if ((_hasBits0 & 2048) != 0) { return serviceHash_; } else { return ServiceHashDefaultValue; } }
       set {
@@ -430,11 +481,13 @@ namespace Bgs.Protocol.Config {
     }
     /// <summary>Gets whether the "service_hash" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasServiceHash {
       get { return (_hasBits0 & 2048) != 0; }
     }
     /// <summary>Clears the value of the "service_hash" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearServiceHash() {
       _hasBits0 &= ~2048;
     }
@@ -445,6 +498,7 @@ namespace Bgs.Protocol.Config {
 
     private uint methodId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint MethodId {
       get { if ((_hasBits0 & 4096) != 0) { return methodId_; } else { return MethodIdDefaultValue; } }
       set {
@@ -454,21 +508,25 @@ namespace Bgs.Protocol.Config {
     }
     /// <summary>Gets whether the "method_id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasMethodId {
       get { return (_hasBits0 & 4096) != 0; }
     }
     /// <summary>Clears the value of the "method_id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearMethodId() {
       _hasBits0 &= ~4096;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RPCMethodConfig);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RPCMethodConfig other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -495,6 +553,7 @@ namespace Bgs.Protocol.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasServiceName) hash ^= ServiceName.GetHashCode();
@@ -519,12 +578,17 @@ namespace Bgs.Protocol.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasServiceName) {
         output.WriteRawTag(10);
         output.WriteString(ServiceName);
@@ -588,9 +652,81 @@ namespace Bgs.Protocol.Config {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasServiceName) {
+        output.WriteRawTag(10);
+        output.WriteString(ServiceName);
+      }
+      if (HasMethodName) {
+        output.WriteRawTag(18);
+        output.WriteString(MethodName);
+      }
+      if (HasFixedCallCost) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(FixedCallCost);
+      }
+      if (HasFixedPacketSize) {
+        output.WriteRawTag(32);
+        output.WriteUInt32(FixedPacketSize);
+      }
+      if (HasVariableMultiplier) {
+        output.WriteRawTag(45);
+        output.WriteFloat(VariableMultiplier);
+      }
+      if (HasMultiplier) {
+        output.WriteRawTag(53);
+        output.WriteFloat(Multiplier);
+      }
+      if (HasRateLimitCount) {
+        output.WriteRawTag(56);
+        output.WriteUInt32(RateLimitCount);
+      }
+      if (HasRateLimitSeconds) {
+        output.WriteRawTag(64);
+        output.WriteUInt32(RateLimitSeconds);
+      }
+      if (HasMaxPacketSize) {
+        output.WriteRawTag(72);
+        output.WriteUInt32(MaxPacketSize);
+      }
+      if (HasMaxEncodedSize) {
+        output.WriteRawTag(80);
+        output.WriteUInt32(MaxEncodedSize);
+      }
+      if (HasTimeout) {
+        output.WriteRawTag(93);
+        output.WriteFloat(Timeout);
+      }
+      if (HasCapBalance) {
+        output.WriteRawTag(96);
+        output.WriteUInt32(CapBalance);
+      }
+      if (HasIncomePerSecond) {
+        output.WriteRawTag(109);
+        output.WriteFloat(IncomePerSecond);
+      }
+      if (HasServiceHash) {
+        output.WriteRawTag(112);
+        output.WriteUInt32(ServiceHash);
+      }
+      if (HasMethodId) {
+        output.WriteRawTag(120);
+        output.WriteUInt32(MethodId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasServiceName) {
@@ -645,6 +781,7 @@ namespace Bgs.Protocol.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RPCMethodConfig other) {
       if (other == null) {
         return;
@@ -698,7 +835,11 @@ namespace Bgs.Protocol.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -767,28 +908,113 @@ namespace Bgs.Protocol.Config {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ServiceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            MethodName = input.ReadString();
+            break;
+          }
+          case 24: {
+            FixedCallCost = input.ReadUInt32();
+            break;
+          }
+          case 32: {
+            FixedPacketSize = input.ReadUInt32();
+            break;
+          }
+          case 45: {
+            VariableMultiplier = input.ReadFloat();
+            break;
+          }
+          case 53: {
+            Multiplier = input.ReadFloat();
+            break;
+          }
+          case 56: {
+            RateLimitCount = input.ReadUInt32();
+            break;
+          }
+          case 64: {
+            RateLimitSeconds = input.ReadUInt32();
+            break;
+          }
+          case 72: {
+            MaxPacketSize = input.ReadUInt32();
+            break;
+          }
+          case 80: {
+            MaxEncodedSize = input.ReadUInt32();
+            break;
+          }
+          case 93: {
+            Timeout = input.ReadFloat();
+            break;
+          }
+          case 96: {
+            CapBalance = input.ReadUInt32();
+            break;
+          }
+          case 109: {
+            IncomePerSecond = input.ReadFloat();
+            break;
+          }
+          case 112: {
+            ServiceHash = input.ReadUInt32();
+            break;
+          }
+          case 120: {
+            MethodId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class RPCMeterConfig : pb::IMessage<RPCMeterConfig> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class RPCMeterConfig : pb::IMessage<RPCMeterConfig>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<RPCMeterConfig> _parser = new pb::MessageParser<RPCMeterConfig>(() => new RPCMeterConfig());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RPCMeterConfig> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Config.RpcConfigReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RPCMeterConfig() {
       OnConstruction();
     }
@@ -796,6 +1022,7 @@ namespace Bgs.Protocol.Config {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RPCMeterConfig(RPCMeterConfig other) : this() {
       _hasBits0 = other._hasBits0;
       method_ = other.method_.Clone();
@@ -807,6 +1034,7 @@ namespace Bgs.Protocol.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RPCMeterConfig Clone() {
       return new RPCMeterConfig(this);
     }
@@ -817,6 +1045,7 @@ namespace Bgs.Protocol.Config {
         = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Config.RPCMethodConfig.Parser);
     private readonly pbc::RepeatedField<global::Bgs.Protocol.Config.RPCMethodConfig> method_ = new pbc::RepeatedField<global::Bgs.Protocol.Config.RPCMethodConfig>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Bgs.Protocol.Config.RPCMethodConfig> Method {
       get { return method_; }
     }
@@ -827,6 +1056,7 @@ namespace Bgs.Protocol.Config {
 
     private uint incomePerSecond_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint IncomePerSecond {
       get { if ((_hasBits0 & 1) != 0) { return incomePerSecond_; } else { return IncomePerSecondDefaultValue; } }
       set {
@@ -836,11 +1066,13 @@ namespace Bgs.Protocol.Config {
     }
     /// <summary>Gets whether the "income_per_second" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIncomePerSecond {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "income_per_second" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIncomePerSecond() {
       _hasBits0 &= ~1;
     }
@@ -851,6 +1083,7 @@ namespace Bgs.Protocol.Config {
 
     private uint initialBalance_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint InitialBalance {
       get { if ((_hasBits0 & 2) != 0) { return initialBalance_; } else { return InitialBalanceDefaultValue; } }
       set {
@@ -860,11 +1093,13 @@ namespace Bgs.Protocol.Config {
     }
     /// <summary>Gets whether the "initial_balance" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasInitialBalance {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "initial_balance" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearInitialBalance() {
       _hasBits0 &= ~2;
     }
@@ -875,6 +1110,7 @@ namespace Bgs.Protocol.Config {
 
     private uint capBalance_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint CapBalance {
       get { if ((_hasBits0 & 4) != 0) { return capBalance_; } else { return CapBalanceDefaultValue; } }
       set {
@@ -884,11 +1120,13 @@ namespace Bgs.Protocol.Config {
     }
     /// <summary>Gets whether the "cap_balance" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCapBalance {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "cap_balance" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCapBalance() {
       _hasBits0 &= ~4;
     }
@@ -899,6 +1137,7 @@ namespace Bgs.Protocol.Config {
 
     private float startupPeriod_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float StartupPeriod {
       get { if ((_hasBits0 & 8) != 0) { return startupPeriod_; } else { return StartupPeriodDefaultValue; } }
       set {
@@ -908,21 +1147,25 @@ namespace Bgs.Protocol.Config {
     }
     /// <summary>Gets whether the "startup_period" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasStartupPeriod {
       get { return (_hasBits0 & 8) != 0; }
     }
     /// <summary>Clears the value of the "startup_period" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearStartupPeriod() {
       _hasBits0 &= ~8;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RPCMeterConfig);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RPCMeterConfig other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -939,6 +1182,7 @@ namespace Bgs.Protocol.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= method_.GetHashCode();
@@ -953,12 +1197,17 @@ namespace Bgs.Protocol.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       method_.WriteTo(output, _repeated_method_codec);
       if (HasIncomePerSecond) {
         output.WriteRawTag(16);
@@ -979,9 +1228,38 @@ namespace Bgs.Protocol.Config {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      method_.WriteTo(ref output, _repeated_method_codec);
+      if (HasIncomePerSecond) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(IncomePerSecond);
+      }
+      if (HasInitialBalance) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(InitialBalance);
+      }
+      if (HasCapBalance) {
+        output.WriteRawTag(32);
+        output.WriteUInt32(CapBalance);
+      }
+      if (HasStartupPeriod) {
+        output.WriteRawTag(45);
+        output.WriteFloat(StartupPeriod);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += method_.CalculateSize(_repeated_method_codec);
@@ -1004,6 +1282,7 @@ namespace Bgs.Protocol.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RPCMeterConfig other) {
       if (other == null) {
         return;
@@ -1025,7 +1304,11 @@ namespace Bgs.Protocol.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1054,7 +1337,43 @@ namespace Bgs.Protocol.Config {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            method_.AddEntriesFrom(ref input, _repeated_method_codec);
+            break;
+          }
+          case 16: {
+            IncomePerSecond = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            InitialBalance = input.ReadUInt32();
+            break;
+          }
+          case 32: {
+            CapBalance = input.ReadUInt32();
+            break;
+          }
+          case 45: {
+            StartupPeriod = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

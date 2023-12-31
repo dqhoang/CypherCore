@@ -55,18 +55,19 @@ namespace Bgs.Protocol.Club.V1 {
             "BHNsb3QYBSABKAsyHi5iZ3MucHJvdG9jb2wuY2x1Yi52MS5DbHViU2xvdBIt",
             "CglhdHRyaWJ1dGUYBiADKAsyGi5iZ3MucHJvdG9jb2wudjIuQXR0cmlidXRl",
             "EhUKDWNyZWF0aW9uX3RpbWUYByABKAQSFwoPZXhwaXJhdGlvbl90aW1lGAgg",
-            "ASgEIqkBChNDcmVhdGVUaWNrZXRPcHRpb25zEiwKBHNsb3QYASABKAsyHi5i",
+            "ASgEItkBChNDcmVhdGVUaWNrZXRPcHRpb25zEiwKBHNsb3QYASABKAsyHi5i",
             "Z3MucHJvdG9jb2wuY2x1Yi52MS5DbHViU2xvdBItCglhdHRyaWJ1dGUYAiAD",
             "KAsyGi5iZ3MucHJvdG9jb2wudjIuQXR0cmlidXRlEhwKFGFsbG93ZWRfcmVk",
-            "ZWVtX2NvdW50GAMgASgNEhcKD2V4cGlyYXRpb25fdGltZRgEIAEoBCLQAgoK",
-            "Q2x1YlRpY2tldBIKCgJpZBgBIAEoCRI4CgdjcmVhdG9yGAIgASgLMicuYmdz",
-            "LnByb3RvY29sLmNsdWIudjEuTWVtYmVyRGVzY3JpcHRpb24SMwoEY2x1YhgD",
-            "IAEoCzIlLmJncy5wcm90b2NvbC5jbHViLnYxLkNsdWJEZXNjcmlwdGlvbhIs",
-            "CgRzbG90GAQgASgLMh4uYmdzLnByb3RvY29sLmNsdWIudjEuQ2x1YlNsb3QS",
-            "LQoJYXR0cmlidXRlGAUgAygLMhouYmdzLnByb3RvY29sLnYyLkF0dHJpYnV0",
-            "ZRIcChRjdXJyZW50X3JlZGVlbV9jb3VudBgGIAEoDRIcChRhbGxvd2VkX3Jl",
-            "ZGVlbV9jb3VudBgHIAEoDRIVCg1jcmVhdGlvbl90aW1lGAggASgEEhcKD2V4",
-            "cGlyYXRpb25fdGltZRgJIAEoBFAA"));
+            "ZWVtX2NvdW50GAMgASgNEhcKD2V4cGlyYXRpb25fdGltZRgEIAEoBBIuChBq",
+            "b2luX2NsdWJfc291cmNlGAUgASgNQhSC+SsQKg5Kb2luQ2x1YlNvdXJjZSLQ",
+            "AgoKQ2x1YlRpY2tldBIKCgJpZBgBIAEoCRI4CgdjcmVhdG9yGAIgASgLMicu",
+            "YmdzLnByb3RvY29sLmNsdWIudjEuTWVtYmVyRGVzY3JpcHRpb24SMwoEY2x1",
+            "YhgDIAEoCzIlLmJncy5wcm90b2NvbC5jbHViLnYxLkNsdWJEZXNjcmlwdGlv",
+            "bhIsCgRzbG90GAQgASgLMh4uYmdzLnByb3RvY29sLmNsdWIudjEuQ2x1YlNs",
+            "b3QSLQoJYXR0cmlidXRlGAUgAygLMhouYmdzLnByb3RvY29sLnYyLkF0dHJp",
+            "YnV0ZRIcChRjdXJyZW50X3JlZGVlbV9jb3VudBgGIAEoDRIcChRhbGxvd2Vk",
+            "X3JlZGVlbV9jb3VudBgHIAEoDRIVCg1jcmVhdGlvbl90aW1lGAggASgEEhcK",
+            "D2V4cGlyYXRpb25fdGltZRgJIAEoBFAA"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Bgs.Protocol.FieldOptionsReflection.Descriptor, global::Bgs.Protocol.Club.V1.ClubCoreReflection.Descriptor, global::Bgs.Protocol.Club.V1.ClubMemberReflection.Descriptor, global::Bgs.Protocol.V2.AttributeTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -75,7 +76,7 @@ namespace Bgs.Protocol.Club.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Club.V1.ClubInvitation), global::Bgs.Protocol.Club.V1.ClubInvitation.Parser, new[]{ "Id", "Inviter", "Invitee", "Club", "Slot", "Attribute", "CreationTime", "ExpirationTime", "Suggester" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Club.V1.SendSuggestionOptions), global::Bgs.Protocol.Club.V1.SendSuggestionOptions.Parser, new[]{ "TargetId", "Slot", "Attribute", "JoinClubSource" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Club.V1.ClubSuggestion), global::Bgs.Protocol.Club.V1.ClubSuggestion.Parser, new[]{ "Id", "ClubId", "Suggester", "Suggestee", "Slot", "Attribute", "CreationTime", "ExpirationTime" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Club.V1.CreateTicketOptions), global::Bgs.Protocol.Club.V1.CreateTicketOptions.Parser, new[]{ "Slot", "Attribute", "AllowedRedeemCount", "ExpirationTime" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Club.V1.CreateTicketOptions), global::Bgs.Protocol.Club.V1.CreateTicketOptions.Parser, new[]{ "Slot", "Attribute", "AllowedRedeemCount", "ExpirationTime", "JoinClubSource" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Club.V1.ClubTicket), global::Bgs.Protocol.Club.V1.ClubTicket.Parser, new[]{ "Id", "Creator", "Club", "Slot", "Attribute", "CurrentRedeemCount", "AllowedRedeemCount", "CreationTime", "ExpirationTime" }, null, null, null, null)
           }));
     }
@@ -83,24 +84,33 @@ namespace Bgs.Protocol.Club.V1 {
 
   }
   #region Messages
-  public sealed partial class ClubSlot : pb::IMessage<ClubSlot> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ClubSlot : pb::IMessage<ClubSlot>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ClubSlot> _parser = new pb::MessageParser<ClubSlot>(() => new ClubSlot());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ClubSlot> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Club.V1.ClubInvitationReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubSlot() {
       OnConstruction();
     }
@@ -108,6 +118,7 @@ namespace Bgs.Protocol.Club.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubSlot(ClubSlot other) : this() {
       _hasBits0 = other._hasBits0;
       role_ = other.role_;
@@ -116,6 +127,7 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubSlot Clone() {
       return new ClubSlot(this);
     }
@@ -126,6 +138,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private uint role_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Role {
       get { if ((_hasBits0 & 1) != 0) { return role_; } else { return RoleDefaultValue; } }
       set {
@@ -135,11 +148,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "role" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRole {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "role" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRole() {
       _hasBits0 &= ~1;
     }
@@ -150,6 +165,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private ulong defaultStreamId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong DefaultStreamId {
       get { if ((_hasBits0 & 2) != 0) { return defaultStreamId_; } else { return DefaultStreamIdDefaultValue; } }
       set {
@@ -159,21 +175,25 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "default_stream_id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasDefaultStreamId {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "default_stream_id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearDefaultStreamId() {
       _hasBits0 &= ~2;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ClubSlot);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ClubSlot other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -187,6 +207,7 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasRole) hash ^= Role.GetHashCode();
@@ -198,12 +219,17 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasRole) {
         output.WriteRawTag(8);
         output.WriteUInt32(Role);
@@ -215,9 +241,29 @@ namespace Bgs.Protocol.Club.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasRole) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Role);
+      }
+      if (HasDefaultStreamId) {
+        output.WriteRawTag(16);
+        output.WriteUInt64(DefaultStreamId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasRole) {
@@ -233,6 +279,7 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ClubSlot other) {
       if (other == null) {
         return;
@@ -247,7 +294,11 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -264,27 +315,60 @@ namespace Bgs.Protocol.Club.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Role = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            DefaultStreamId = input.ReadUInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class SendInvitationOptions : pb::IMessage<SendInvitationOptions> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SendInvitationOptions : pb::IMessage<SendInvitationOptions>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SendInvitationOptions> _parser = new pb::MessageParser<SendInvitationOptions>(() => new SendInvitationOptions());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SendInvitationOptions> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Club.V1.ClubInvitationReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SendInvitationOptions() {
       OnConstruction();
     }
@@ -292,14 +376,16 @@ namespace Bgs.Protocol.Club.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SendInvitationOptions(SendInvitationOptions other) : this() {
-      targetId_ = other.HasTargetId ? other.targetId_.Clone() : null;
-      slot_ = other.HasSlot ? other.slot_.Clone() : null;
+      targetId_ = other.targetId_ != null ? other.targetId_.Clone() : null;
+      slot_ = other.slot_ != null ? other.slot_.Clone() : null;
       attribute_ = other.attribute_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SendInvitationOptions Clone() {
       return new SendInvitationOptions(this);
     }
@@ -308,42 +394,24 @@ namespace Bgs.Protocol.Club.V1 {
     public const int TargetIdFieldNumber = 1;
     private global::Bgs.Protocol.Club.V1.MemberId targetId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Club.V1.MemberId TargetId {
       get { return targetId_; }
       set {
         targetId_ = value;
       }
     }
-    /// <summary>Gets whether the target_id field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasTargetId {
-      get { return targetId_ != null; }
-    }
-    /// <summary>Clears the value of the target_id field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearTargetId() {
-      targetId_ = null;
-    }
 
     /// <summary>Field number for the "slot" field.</summary>
     public const int SlotFieldNumber = 2;
     private global::Bgs.Protocol.Club.V1.ClubSlot slot_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Club.V1.ClubSlot Slot {
       get { return slot_; }
       set {
         slot_ = value;
       }
-    }
-    /// <summary>Gets whether the slot field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasSlot {
-      get { return slot_ != null; }
-    }
-    /// <summary>Clears the value of the slot field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearSlot() {
-      slot_ = null;
     }
 
     /// <summary>Field number for the "attribute" field.</summary>
@@ -352,16 +420,19 @@ namespace Bgs.Protocol.Club.V1 {
         = pb::FieldCodec.ForMessage(26, global::Bgs.Protocol.V2.Attribute.Parser);
     private readonly pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute> Attribute {
       get { return attribute_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SendInvitationOptions);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SendInvitationOptions other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -376,10 +447,11 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasTargetId) hash ^= TargetId.GetHashCode();
-      if (HasSlot) hash ^= Slot.GetHashCode();
+      if (targetId_ != null) hash ^= TargetId.GetHashCode();
+      if (slot_ != null) hash ^= Slot.GetHashCode();
       hash ^= attribute_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -388,17 +460,22 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasTargetId) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (targetId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(TargetId);
       }
-      if (HasSlot) {
+      if (slot_ != null) {
         output.WriteRawTag(18);
         output.WriteMessage(Slot);
       }
@@ -406,15 +483,36 @@ namespace Bgs.Protocol.Club.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (targetId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(TargetId);
+      }
+      if (slot_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Slot);
+      }
+      attribute_.WriteTo(ref output, _repeated_attribute_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasTargetId) {
+      if (targetId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(TargetId);
       }
-      if (HasSlot) {
+      if (slot_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Slot);
       }
       size += attribute_.CalculateSize(_repeated_attribute_codec);
@@ -425,18 +523,19 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SendInvitationOptions other) {
       if (other == null) {
         return;
       }
-      if (other.HasTargetId) {
-        if (!HasTargetId) {
+      if (other.targetId_ != null) {
+        if (targetId_ == null) {
           TargetId = new global::Bgs.Protocol.Club.V1.MemberId();
         }
         TargetId.MergeFrom(other.TargetId);
       }
-      if (other.HasSlot) {
-        if (!HasSlot) {
+      if (other.slot_ != null) {
+        if (slot_ == null) {
           Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
         }
         Slot.MergeFrom(other.Slot);
@@ -446,7 +545,11 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -454,14 +557,14 @@ namespace Bgs.Protocol.Club.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasTargetId) {
+            if (targetId_ == null) {
               TargetId = new global::Bgs.Protocol.Club.V1.MemberId();
             }
             input.ReadMessage(TargetId);
             break;
           }
           case 18: {
-            if (!HasSlot) {
+            if (slot_ == null) {
               Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
             }
             input.ReadMessage(Slot);
@@ -473,28 +576,71 @@ namespace Bgs.Protocol.Club.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (targetId_ == null) {
+              TargetId = new global::Bgs.Protocol.Club.V1.MemberId();
+            }
+            input.ReadMessage(TargetId);
+            break;
+          }
+          case 18: {
+            if (slot_ == null) {
+              Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
+            }
+            input.ReadMessage(Slot);
+            break;
+          }
+          case 26: {
+            attribute_.AddEntriesFrom(ref input, _repeated_attribute_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class ClubInvitation : pb::IMessage<ClubInvitation> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ClubInvitation : pb::IMessage<ClubInvitation>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ClubInvitation> _parser = new pb::MessageParser<ClubInvitation>(() => new ClubInvitation());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ClubInvitation> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Club.V1.ClubInvitationReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubInvitation() {
       OnConstruction();
     }
@@ -502,21 +648,23 @@ namespace Bgs.Protocol.Club.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubInvitation(ClubInvitation other) : this() {
       _hasBits0 = other._hasBits0;
       id_ = other.id_;
-      inviter_ = other.HasInviter ? other.inviter_.Clone() : null;
-      invitee_ = other.HasInvitee ? other.invitee_.Clone() : null;
-      club_ = other.HasClub ? other.club_.Clone() : null;
-      slot_ = other.HasSlot ? other.slot_.Clone() : null;
+      inviter_ = other.inviter_ != null ? other.inviter_.Clone() : null;
+      invitee_ = other.invitee_ != null ? other.invitee_.Clone() : null;
+      club_ = other.club_ != null ? other.club_.Clone() : null;
+      slot_ = other.slot_ != null ? other.slot_.Clone() : null;
       attribute_ = other.attribute_.Clone();
       creationTime_ = other.creationTime_;
       expirationTime_ = other.expirationTime_;
-      suggester_ = other.HasSuggester ? other.suggester_.Clone() : null;
+      suggester_ = other.suggester_ != null ? other.suggester_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubInvitation Clone() {
       return new ClubInvitation(this);
     }
@@ -527,6 +675,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private ulong id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong Id {
       get { if ((_hasBits0 & 1) != 0) { return id_; } else { return IdDefaultValue; } }
       set {
@@ -536,11 +685,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasId {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearId() {
       _hasBits0 &= ~1;
     }
@@ -549,84 +700,48 @@ namespace Bgs.Protocol.Club.V1 {
     public const int InviterFieldNumber = 2;
     private global::Bgs.Protocol.Club.V1.MemberDescription inviter_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Club.V1.MemberDescription Inviter {
       get { return inviter_; }
       set {
         inviter_ = value;
       }
     }
-    /// <summary>Gets whether the inviter field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasInviter {
-      get { return inviter_ != null; }
-    }
-    /// <summary>Clears the value of the inviter field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearInviter() {
-      inviter_ = null;
-    }
 
     /// <summary>Field number for the "invitee" field.</summary>
     public const int InviteeFieldNumber = 3;
     private global::Bgs.Protocol.Club.V1.MemberDescription invitee_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Club.V1.MemberDescription Invitee {
       get { return invitee_; }
       set {
         invitee_ = value;
       }
     }
-    /// <summary>Gets whether the invitee field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasInvitee {
-      get { return invitee_ != null; }
-    }
-    /// <summary>Clears the value of the invitee field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearInvitee() {
-      invitee_ = null;
-    }
 
     /// <summary>Field number for the "club" field.</summary>
     public const int ClubFieldNumber = 4;
     private global::Bgs.Protocol.Club.V1.ClubDescription club_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Club.V1.ClubDescription Club {
       get { return club_; }
       set {
         club_ = value;
       }
     }
-    /// <summary>Gets whether the club field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasClub {
-      get { return club_ != null; }
-    }
-    /// <summary>Clears the value of the club field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearClub() {
-      club_ = null;
-    }
 
     /// <summary>Field number for the "slot" field.</summary>
     public const int SlotFieldNumber = 5;
     private global::Bgs.Protocol.Club.V1.ClubSlot slot_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Club.V1.ClubSlot Slot {
       get { return slot_; }
       set {
         slot_ = value;
       }
-    }
-    /// <summary>Gets whether the slot field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasSlot {
-      get { return slot_ != null; }
-    }
-    /// <summary>Clears the value of the slot field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearSlot() {
-      slot_ = null;
     }
 
     /// <summary>Field number for the "attribute" field.</summary>
@@ -635,6 +750,7 @@ namespace Bgs.Protocol.Club.V1 {
         = pb::FieldCodec.ForMessage(50, global::Bgs.Protocol.V2.Attribute.Parser);
     private readonly pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute> Attribute {
       get { return attribute_; }
     }
@@ -645,6 +761,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private ulong creationTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong CreationTime {
       get { if ((_hasBits0 & 2) != 0) { return creationTime_; } else { return CreationTimeDefaultValue; } }
       set {
@@ -654,11 +771,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "creation_time" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCreationTime {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "creation_time" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCreationTime() {
       _hasBits0 &= ~2;
     }
@@ -669,6 +788,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private ulong expirationTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong ExpirationTime {
       get { if ((_hasBits0 & 4) != 0) { return expirationTime_; } else { return ExpirationTimeDefaultValue; } }
       set {
@@ -678,11 +798,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "expiration_time" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasExpirationTime {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "expiration_time" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearExpirationTime() {
       _hasBits0 &= ~4;
     }
@@ -691,29 +813,22 @@ namespace Bgs.Protocol.Club.V1 {
     public const int SuggesterFieldNumber = 9;
     private global::Bgs.Protocol.Club.V1.MemberDescription suggester_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Club.V1.MemberDescription Suggester {
       get { return suggester_; }
       set {
         suggester_ = value;
       }
     }
-    /// <summary>Gets whether the suggester field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasSuggester {
-      get { return suggester_ != null; }
-    }
-    /// <summary>Clears the value of the suggester field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearSuggester() {
-      suggester_ = null;
-    }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ClubInvitation);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ClubInvitation other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -734,17 +849,18 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasId) hash ^= Id.GetHashCode();
-      if (HasInviter) hash ^= Inviter.GetHashCode();
-      if (HasInvitee) hash ^= Invitee.GetHashCode();
-      if (HasClub) hash ^= Club.GetHashCode();
-      if (HasSlot) hash ^= Slot.GetHashCode();
+      if (inviter_ != null) hash ^= Inviter.GetHashCode();
+      if (invitee_ != null) hash ^= Invitee.GetHashCode();
+      if (club_ != null) hash ^= Club.GetHashCode();
+      if (slot_ != null) hash ^= Slot.GetHashCode();
       hash ^= attribute_.GetHashCode();
       if (HasCreationTime) hash ^= CreationTime.GetHashCode();
       if (HasExpirationTime) hash ^= ExpirationTime.GetHashCode();
-      if (HasSuggester) hash ^= Suggester.GetHashCode();
+      if (suggester_ != null) hash ^= Suggester.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -752,29 +868,34 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasId) {
         output.WriteRawTag(9);
         output.WriteFixed64(Id);
       }
-      if (HasInviter) {
+      if (inviter_ != null) {
         output.WriteRawTag(18);
         output.WriteMessage(Inviter);
       }
-      if (HasInvitee) {
+      if (invitee_ != null) {
         output.WriteRawTag(26);
         output.WriteMessage(Invitee);
       }
-      if (HasClub) {
+      if (club_ != null) {
         output.WriteRawTag(34);
         output.WriteMessage(Club);
       }
-      if (HasSlot) {
+      if (slot_ != null) {
         output.WriteRawTag(42);
         output.WriteMessage(Slot);
       }
@@ -787,31 +908,76 @@ namespace Bgs.Protocol.Club.V1 {
         output.WriteRawTag(64);
         output.WriteUInt64(ExpirationTime);
       }
-      if (HasSuggester) {
+      if (suggester_ != null) {
         output.WriteRawTag(74);
         output.WriteMessage(Suggester);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasId) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(Id);
+      }
+      if (inviter_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Inviter);
+      }
+      if (invitee_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Invitee);
+      }
+      if (club_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Club);
+      }
+      if (slot_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Slot);
+      }
+      attribute_.WriteTo(ref output, _repeated_attribute_codec);
+      if (HasCreationTime) {
+        output.WriteRawTag(56);
+        output.WriteUInt64(CreationTime);
+      }
+      if (HasExpirationTime) {
+        output.WriteRawTag(64);
+        output.WriteUInt64(ExpirationTime);
+      }
+      if (suggester_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(Suggester);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasId) {
         size += 1 + 8;
       }
-      if (HasInviter) {
+      if (inviter_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Inviter);
       }
-      if (HasInvitee) {
+      if (invitee_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Invitee);
       }
-      if (HasClub) {
+      if (club_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Club);
       }
-      if (HasSlot) {
+      if (slot_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Slot);
       }
       size += attribute_.CalculateSize(_repeated_attribute_codec);
@@ -821,7 +987,7 @@ namespace Bgs.Protocol.Club.V1 {
       if (HasExpirationTime) {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ExpirationTime);
       }
-      if (HasSuggester) {
+      if (suggester_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Suggester);
       }
       if (_unknownFields != null) {
@@ -831,6 +997,7 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ClubInvitation other) {
       if (other == null) {
         return;
@@ -838,26 +1005,26 @@ namespace Bgs.Protocol.Club.V1 {
       if (other.HasId) {
         Id = other.Id;
       }
-      if (other.HasInviter) {
-        if (!HasInviter) {
+      if (other.inviter_ != null) {
+        if (inviter_ == null) {
           Inviter = new global::Bgs.Protocol.Club.V1.MemberDescription();
         }
         Inviter.MergeFrom(other.Inviter);
       }
-      if (other.HasInvitee) {
-        if (!HasInvitee) {
+      if (other.invitee_ != null) {
+        if (invitee_ == null) {
           Invitee = new global::Bgs.Protocol.Club.V1.MemberDescription();
         }
         Invitee.MergeFrom(other.Invitee);
       }
-      if (other.HasClub) {
-        if (!HasClub) {
+      if (other.club_ != null) {
+        if (club_ == null) {
           Club = new global::Bgs.Protocol.Club.V1.ClubDescription();
         }
         Club.MergeFrom(other.Club);
       }
-      if (other.HasSlot) {
-        if (!HasSlot) {
+      if (other.slot_ != null) {
+        if (slot_ == null) {
           Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
         }
         Slot.MergeFrom(other.Slot);
@@ -869,8 +1036,8 @@ namespace Bgs.Protocol.Club.V1 {
       if (other.HasExpirationTime) {
         ExpirationTime = other.ExpirationTime;
       }
-      if (other.HasSuggester) {
-        if (!HasSuggester) {
+      if (other.suggester_ != null) {
+        if (suggester_ == null) {
           Suggester = new global::Bgs.Protocol.Club.V1.MemberDescription();
         }
         Suggester.MergeFrom(other.Suggester);
@@ -879,7 +1046,11 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -891,28 +1062,28 @@ namespace Bgs.Protocol.Club.V1 {
             break;
           }
           case 18: {
-            if (!HasInviter) {
+            if (inviter_ == null) {
               Inviter = new global::Bgs.Protocol.Club.V1.MemberDescription();
             }
             input.ReadMessage(Inviter);
             break;
           }
           case 26: {
-            if (!HasInvitee) {
+            if (invitee_ == null) {
               Invitee = new global::Bgs.Protocol.Club.V1.MemberDescription();
             }
             input.ReadMessage(Invitee);
             break;
           }
           case 34: {
-            if (!HasClub) {
+            if (club_ == null) {
               Club = new global::Bgs.Protocol.Club.V1.ClubDescription();
             }
             input.ReadMessage(Club);
             break;
           }
           case 42: {
-            if (!HasSlot) {
+            if (slot_ == null) {
               Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
             }
             input.ReadMessage(Slot);
@@ -931,7 +1102,73 @@ namespace Bgs.Protocol.Club.V1 {
             break;
           }
           case 74: {
-            if (!HasSuggester) {
+            if (suggester_ == null) {
+              Suggester = new global::Bgs.Protocol.Club.V1.MemberDescription();
+            }
+            input.ReadMessage(Suggester);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            Id = input.ReadFixed64();
+            break;
+          }
+          case 18: {
+            if (inviter_ == null) {
+              Inviter = new global::Bgs.Protocol.Club.V1.MemberDescription();
+            }
+            input.ReadMessage(Inviter);
+            break;
+          }
+          case 26: {
+            if (invitee_ == null) {
+              Invitee = new global::Bgs.Protocol.Club.V1.MemberDescription();
+            }
+            input.ReadMessage(Invitee);
+            break;
+          }
+          case 34: {
+            if (club_ == null) {
+              Club = new global::Bgs.Protocol.Club.V1.ClubDescription();
+            }
+            input.ReadMessage(Club);
+            break;
+          }
+          case 42: {
+            if (slot_ == null) {
+              Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
+            }
+            input.ReadMessage(Slot);
+            break;
+          }
+          case 50: {
+            attribute_.AddEntriesFrom(ref input, _repeated_attribute_codec);
+            break;
+          }
+          case 56: {
+            CreationTime = input.ReadUInt64();
+            break;
+          }
+          case 64: {
+            ExpirationTime = input.ReadUInt64();
+            break;
+          }
+          case 74: {
+            if (suggester_ == null) {
               Suggester = new global::Bgs.Protocol.Club.V1.MemberDescription();
             }
             input.ReadMessage(Suggester);
@@ -940,27 +1177,37 @@ namespace Bgs.Protocol.Club.V1 {
         }
       }
     }
+    #endif
 
   }
 
-  public sealed partial class SendSuggestionOptions : pb::IMessage<SendSuggestionOptions> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SendSuggestionOptions : pb::IMessage<SendSuggestionOptions>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SendSuggestionOptions> _parser = new pb::MessageParser<SendSuggestionOptions>(() => new SendSuggestionOptions());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SendSuggestionOptions> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Club.V1.ClubInvitationReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SendSuggestionOptions() {
       OnConstruction();
     }
@@ -968,16 +1215,18 @@ namespace Bgs.Protocol.Club.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SendSuggestionOptions(SendSuggestionOptions other) : this() {
       _hasBits0 = other._hasBits0;
-      targetId_ = other.HasTargetId ? other.targetId_.Clone() : null;
-      slot_ = other.HasSlot ? other.slot_.Clone() : null;
+      targetId_ = other.targetId_ != null ? other.targetId_.Clone() : null;
+      slot_ = other.slot_ != null ? other.slot_.Clone() : null;
       attribute_ = other.attribute_.Clone();
       joinClubSource_ = other.joinClubSource_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SendSuggestionOptions Clone() {
       return new SendSuggestionOptions(this);
     }
@@ -986,42 +1235,24 @@ namespace Bgs.Protocol.Club.V1 {
     public const int TargetIdFieldNumber = 1;
     private global::Bgs.Protocol.Club.V1.MemberId targetId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Club.V1.MemberId TargetId {
       get { return targetId_; }
       set {
         targetId_ = value;
       }
     }
-    /// <summary>Gets whether the target_id field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasTargetId {
-      get { return targetId_ != null; }
-    }
-    /// <summary>Clears the value of the target_id field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearTargetId() {
-      targetId_ = null;
-    }
 
     /// <summary>Field number for the "slot" field.</summary>
     public const int SlotFieldNumber = 2;
     private global::Bgs.Protocol.Club.V1.ClubSlot slot_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Club.V1.ClubSlot Slot {
       get { return slot_; }
       set {
         slot_ = value;
       }
-    }
-    /// <summary>Gets whether the slot field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasSlot {
-      get { return slot_ != null; }
-    }
-    /// <summary>Clears the value of the slot field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearSlot() {
-      slot_ = null;
     }
 
     /// <summary>Field number for the "attribute" field.</summary>
@@ -1030,6 +1261,7 @@ namespace Bgs.Protocol.Club.V1 {
         = pb::FieldCodec.ForMessage(26, global::Bgs.Protocol.V2.Attribute.Parser);
     private readonly pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute> Attribute {
       get { return attribute_; }
     }
@@ -1040,6 +1272,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private uint joinClubSource_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint JoinClubSource {
       get { if ((_hasBits0 & 1) != 0) { return joinClubSource_; } else { return JoinClubSourceDefaultValue; } }
       set {
@@ -1049,21 +1282,25 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "join_club_source" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasJoinClubSource {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "join_club_source" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearJoinClubSource() {
       _hasBits0 &= ~1;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SendSuggestionOptions);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SendSuggestionOptions other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1079,10 +1316,11 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasTargetId) hash ^= TargetId.GetHashCode();
-      if (HasSlot) hash ^= Slot.GetHashCode();
+      if (targetId_ != null) hash ^= TargetId.GetHashCode();
+      if (slot_ != null) hash ^= Slot.GetHashCode();
       hash ^= attribute_.GetHashCode();
       if (HasJoinClubSource) hash ^= JoinClubSource.GetHashCode();
       if (_unknownFields != null) {
@@ -1092,17 +1330,22 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasTargetId) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (targetId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(TargetId);
       }
-      if (HasSlot) {
+      if (slot_ != null) {
         output.WriteRawTag(18);
         output.WriteMessage(Slot);
       }
@@ -1114,15 +1357,40 @@ namespace Bgs.Protocol.Club.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (targetId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(TargetId);
+      }
+      if (slot_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Slot);
+      }
+      attribute_.WriteTo(ref output, _repeated_attribute_codec);
+      if (HasJoinClubSource) {
+        output.WriteRawTag(32);
+        output.WriteUInt32(JoinClubSource);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasTargetId) {
+      if (targetId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(TargetId);
       }
-      if (HasSlot) {
+      if (slot_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Slot);
       }
       size += attribute_.CalculateSize(_repeated_attribute_codec);
@@ -1136,18 +1404,19 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SendSuggestionOptions other) {
       if (other == null) {
         return;
       }
-      if (other.HasTargetId) {
-        if (!HasTargetId) {
+      if (other.targetId_ != null) {
+        if (targetId_ == null) {
           TargetId = new global::Bgs.Protocol.Club.V1.MemberId();
         }
         TargetId.MergeFrom(other.TargetId);
       }
-      if (other.HasSlot) {
-        if (!HasSlot) {
+      if (other.slot_ != null) {
+        if (slot_ == null) {
           Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
         }
         Slot.MergeFrom(other.Slot);
@@ -1160,7 +1429,11 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1168,14 +1441,14 @@ namespace Bgs.Protocol.Club.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasTargetId) {
+            if (targetId_ == null) {
               TargetId = new global::Bgs.Protocol.Club.V1.MemberId();
             }
             input.ReadMessage(TargetId);
             break;
           }
           case 18: {
-            if (!HasSlot) {
+            if (slot_ == null) {
               Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
             }
             input.ReadMessage(Slot);
@@ -1191,28 +1464,75 @@ namespace Bgs.Protocol.Club.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (targetId_ == null) {
+              TargetId = new global::Bgs.Protocol.Club.V1.MemberId();
+            }
+            input.ReadMessage(TargetId);
+            break;
+          }
+          case 18: {
+            if (slot_ == null) {
+              Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
+            }
+            input.ReadMessage(Slot);
+            break;
+          }
+          case 26: {
+            attribute_.AddEntriesFrom(ref input, _repeated_attribute_codec);
+            break;
+          }
+          case 32: {
+            JoinClubSource = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class ClubSuggestion : pb::IMessage<ClubSuggestion> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ClubSuggestion : pb::IMessage<ClubSuggestion>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ClubSuggestion> _parser = new pb::MessageParser<ClubSuggestion>(() => new ClubSuggestion());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ClubSuggestion> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Club.V1.ClubInvitationReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubSuggestion() {
       OnConstruction();
     }
@@ -1220,13 +1540,14 @@ namespace Bgs.Protocol.Club.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubSuggestion(ClubSuggestion other) : this() {
       _hasBits0 = other._hasBits0;
       id_ = other.id_;
       clubId_ = other.clubId_;
-      suggester_ = other.HasSuggester ? other.suggester_.Clone() : null;
-      suggestee_ = other.HasSuggestee ? other.suggestee_.Clone() : null;
-      slot_ = other.HasSlot ? other.slot_.Clone() : null;
+      suggester_ = other.suggester_ != null ? other.suggester_.Clone() : null;
+      suggestee_ = other.suggestee_ != null ? other.suggestee_.Clone() : null;
+      slot_ = other.slot_ != null ? other.slot_.Clone() : null;
       attribute_ = other.attribute_.Clone();
       creationTime_ = other.creationTime_;
       expirationTime_ = other.expirationTime_;
@@ -1234,6 +1555,7 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubSuggestion Clone() {
       return new ClubSuggestion(this);
     }
@@ -1244,6 +1566,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private ulong id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong Id {
       get { if ((_hasBits0 & 1) != 0) { return id_; } else { return IdDefaultValue; } }
       set {
@@ -1253,11 +1576,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasId {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearId() {
       _hasBits0 &= ~1;
     }
@@ -1268,6 +1593,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private ulong clubId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong ClubId {
       get { if ((_hasBits0 & 2) != 0) { return clubId_; } else { return ClubIdDefaultValue; } }
       set {
@@ -1277,11 +1603,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "club_id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasClubId {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "club_id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearClubId() {
       _hasBits0 &= ~2;
     }
@@ -1290,63 +1618,36 @@ namespace Bgs.Protocol.Club.V1 {
     public const int SuggesterFieldNumber = 3;
     private global::Bgs.Protocol.Club.V1.MemberDescription suggester_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Club.V1.MemberDescription Suggester {
       get { return suggester_; }
       set {
         suggester_ = value;
       }
     }
-    /// <summary>Gets whether the suggester field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasSuggester {
-      get { return suggester_ != null; }
-    }
-    /// <summary>Clears the value of the suggester field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearSuggester() {
-      suggester_ = null;
-    }
 
     /// <summary>Field number for the "suggestee" field.</summary>
     public const int SuggesteeFieldNumber = 4;
     private global::Bgs.Protocol.Club.V1.MemberDescription suggestee_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Club.V1.MemberDescription Suggestee {
       get { return suggestee_; }
       set {
         suggestee_ = value;
       }
     }
-    /// <summary>Gets whether the suggestee field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasSuggestee {
-      get { return suggestee_ != null; }
-    }
-    /// <summary>Clears the value of the suggestee field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearSuggestee() {
-      suggestee_ = null;
-    }
 
     /// <summary>Field number for the "slot" field.</summary>
     public const int SlotFieldNumber = 5;
     private global::Bgs.Protocol.Club.V1.ClubSlot slot_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Club.V1.ClubSlot Slot {
       get { return slot_; }
       set {
         slot_ = value;
       }
-    }
-    /// <summary>Gets whether the slot field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasSlot {
-      get { return slot_ != null; }
-    }
-    /// <summary>Clears the value of the slot field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearSlot() {
-      slot_ = null;
     }
 
     /// <summary>Field number for the "attribute" field.</summary>
@@ -1355,6 +1656,7 @@ namespace Bgs.Protocol.Club.V1 {
         = pb::FieldCodec.ForMessage(50, global::Bgs.Protocol.V2.Attribute.Parser);
     private readonly pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute> Attribute {
       get { return attribute_; }
     }
@@ -1365,6 +1667,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private ulong creationTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong CreationTime {
       get { if ((_hasBits0 & 4) != 0) { return creationTime_; } else { return CreationTimeDefaultValue; } }
       set {
@@ -1374,11 +1677,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "creation_time" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCreationTime {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "creation_time" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCreationTime() {
       _hasBits0 &= ~4;
     }
@@ -1389,6 +1694,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private ulong expirationTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong ExpirationTime {
       get { if ((_hasBits0 & 8) != 0) { return expirationTime_; } else { return ExpirationTimeDefaultValue; } }
       set {
@@ -1398,21 +1704,25 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "expiration_time" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasExpirationTime {
       get { return (_hasBits0 & 8) != 0; }
     }
     /// <summary>Clears the value of the "expiration_time" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearExpirationTime() {
       _hasBits0 &= ~8;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ClubSuggestion);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ClubSuggestion other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1432,13 +1742,14 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasId) hash ^= Id.GetHashCode();
       if (HasClubId) hash ^= ClubId.GetHashCode();
-      if (HasSuggester) hash ^= Suggester.GetHashCode();
-      if (HasSuggestee) hash ^= Suggestee.GetHashCode();
-      if (HasSlot) hash ^= Slot.GetHashCode();
+      if (suggester_ != null) hash ^= Suggester.GetHashCode();
+      if (suggestee_ != null) hash ^= Suggestee.GetHashCode();
+      if (slot_ != null) hash ^= Slot.GetHashCode();
       hash ^= attribute_.GetHashCode();
       if (HasCreationTime) hash ^= CreationTime.GetHashCode();
       if (HasExpirationTime) hash ^= ExpirationTime.GetHashCode();
@@ -1449,12 +1760,17 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasId) {
         output.WriteRawTag(9);
         output.WriteFixed64(Id);
@@ -1463,15 +1779,15 @@ namespace Bgs.Protocol.Club.V1 {
         output.WriteRawTag(16);
         output.WriteUInt64(ClubId);
       }
-      if (HasSuggester) {
+      if (suggester_ != null) {
         output.WriteRawTag(26);
         output.WriteMessage(Suggester);
       }
-      if (HasSuggestee) {
+      if (suggestee_ != null) {
         output.WriteRawTag(34);
         output.WriteMessage(Suggestee);
       }
-      if (HasSlot) {
+      if (slot_ != null) {
         output.WriteRawTag(42);
         output.WriteMessage(Slot);
       }
@@ -1487,9 +1803,50 @@ namespace Bgs.Protocol.Club.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasId) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(Id);
+      }
+      if (HasClubId) {
+        output.WriteRawTag(16);
+        output.WriteUInt64(ClubId);
+      }
+      if (suggester_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Suggester);
+      }
+      if (suggestee_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Suggestee);
+      }
+      if (slot_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Slot);
+      }
+      attribute_.WriteTo(ref output, _repeated_attribute_codec);
+      if (HasCreationTime) {
+        output.WriteRawTag(56);
+        output.WriteUInt64(CreationTime);
+      }
+      if (HasExpirationTime) {
+        output.WriteRawTag(64);
+        output.WriteUInt64(ExpirationTime);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasId) {
@@ -1498,13 +1855,13 @@ namespace Bgs.Protocol.Club.V1 {
       if (HasClubId) {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ClubId);
       }
-      if (HasSuggester) {
+      if (suggester_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Suggester);
       }
-      if (HasSuggestee) {
+      if (suggestee_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Suggestee);
       }
-      if (HasSlot) {
+      if (slot_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Slot);
       }
       size += attribute_.CalculateSize(_repeated_attribute_codec);
@@ -1521,6 +1878,7 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ClubSuggestion other) {
       if (other == null) {
         return;
@@ -1531,20 +1889,20 @@ namespace Bgs.Protocol.Club.V1 {
       if (other.HasClubId) {
         ClubId = other.ClubId;
       }
-      if (other.HasSuggester) {
-        if (!HasSuggester) {
+      if (other.suggester_ != null) {
+        if (suggester_ == null) {
           Suggester = new global::Bgs.Protocol.Club.V1.MemberDescription();
         }
         Suggester.MergeFrom(other.Suggester);
       }
-      if (other.HasSuggestee) {
-        if (!HasSuggestee) {
+      if (other.suggestee_ != null) {
+        if (suggestee_ == null) {
           Suggestee = new global::Bgs.Protocol.Club.V1.MemberDescription();
         }
         Suggestee.MergeFrom(other.Suggestee);
       }
-      if (other.HasSlot) {
-        if (!HasSlot) {
+      if (other.slot_ != null) {
+        if (slot_ == null) {
           Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
         }
         Slot.MergeFrom(other.Slot);
@@ -1560,7 +1918,11 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1576,21 +1938,21 @@ namespace Bgs.Protocol.Club.V1 {
             break;
           }
           case 26: {
-            if (!HasSuggester) {
+            if (suggester_ == null) {
               Suggester = new global::Bgs.Protocol.Club.V1.MemberDescription();
             }
             input.ReadMessage(Suggester);
             break;
           }
           case 34: {
-            if (!HasSuggestee) {
+            if (suggestee_ == null) {
               Suggestee = new global::Bgs.Protocol.Club.V1.MemberDescription();
             }
             input.ReadMessage(Suggestee);
             break;
           }
           case 42: {
-            if (!HasSlot) {
+            if (slot_ == null) {
               Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
             }
             input.ReadMessage(Slot);
@@ -1610,28 +1972,94 @@ namespace Bgs.Protocol.Club.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            Id = input.ReadFixed64();
+            break;
+          }
+          case 16: {
+            ClubId = input.ReadUInt64();
+            break;
+          }
+          case 26: {
+            if (suggester_ == null) {
+              Suggester = new global::Bgs.Protocol.Club.V1.MemberDescription();
+            }
+            input.ReadMessage(Suggester);
+            break;
+          }
+          case 34: {
+            if (suggestee_ == null) {
+              Suggestee = new global::Bgs.Protocol.Club.V1.MemberDescription();
+            }
+            input.ReadMessage(Suggestee);
+            break;
+          }
+          case 42: {
+            if (slot_ == null) {
+              Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
+            }
+            input.ReadMessage(Slot);
+            break;
+          }
+          case 50: {
+            attribute_.AddEntriesFrom(ref input, _repeated_attribute_codec);
+            break;
+          }
+          case 56: {
+            CreationTime = input.ReadUInt64();
+            break;
+          }
+          case 64: {
+            ExpirationTime = input.ReadUInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class CreateTicketOptions : pb::IMessage<CreateTicketOptions> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CreateTicketOptions : pb::IMessage<CreateTicketOptions>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<CreateTicketOptions> _parser = new pb::MessageParser<CreateTicketOptions>(() => new CreateTicketOptions());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CreateTicketOptions> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Club.V1.ClubInvitationReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CreateTicketOptions() {
       OnConstruction();
     }
@@ -1639,16 +2067,19 @@ namespace Bgs.Protocol.Club.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CreateTicketOptions(CreateTicketOptions other) : this() {
       _hasBits0 = other._hasBits0;
-      slot_ = other.HasSlot ? other.slot_.Clone() : null;
+      slot_ = other.slot_ != null ? other.slot_.Clone() : null;
       attribute_ = other.attribute_.Clone();
       allowedRedeemCount_ = other.allowedRedeemCount_;
       expirationTime_ = other.expirationTime_;
+      joinClubSource_ = other.joinClubSource_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CreateTicketOptions Clone() {
       return new CreateTicketOptions(this);
     }
@@ -1657,21 +2088,12 @@ namespace Bgs.Protocol.Club.V1 {
     public const int SlotFieldNumber = 1;
     private global::Bgs.Protocol.Club.V1.ClubSlot slot_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Club.V1.ClubSlot Slot {
       get { return slot_; }
       set {
         slot_ = value;
       }
-    }
-    /// <summary>Gets whether the slot field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasSlot {
-      get { return slot_ != null; }
-    }
-    /// <summary>Clears the value of the slot field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearSlot() {
-      slot_ = null;
     }
 
     /// <summary>Field number for the "attribute" field.</summary>
@@ -1680,6 +2102,7 @@ namespace Bgs.Protocol.Club.V1 {
         = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.V2.Attribute.Parser);
     private readonly pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute> Attribute {
       get { return attribute_; }
     }
@@ -1690,6 +2113,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private uint allowedRedeemCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint AllowedRedeemCount {
       get { if ((_hasBits0 & 1) != 0) { return allowedRedeemCount_; } else { return AllowedRedeemCountDefaultValue; } }
       set {
@@ -1699,11 +2123,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "allowed_redeem_count" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAllowedRedeemCount {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "allowed_redeem_count" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAllowedRedeemCount() {
       _hasBits0 &= ~1;
     }
@@ -1714,6 +2140,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private ulong expirationTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong ExpirationTime {
       get { if ((_hasBits0 & 2) != 0) { return expirationTime_; } else { return ExpirationTimeDefaultValue; } }
       set {
@@ -1723,21 +2150,52 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "expiration_time" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasExpirationTime {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "expiration_time" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearExpirationTime() {
       _hasBits0 &= ~2;
     }
 
+    /// <summary>Field number for the "join_club_source" field.</summary>
+    public const int JoinClubSourceFieldNumber = 5;
+    private readonly static uint JoinClubSourceDefaultValue = 0;
+
+    private uint joinClubSource_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint JoinClubSource {
+      get { if ((_hasBits0 & 4) != 0) { return joinClubSource_; } else { return JoinClubSourceDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        joinClubSource_ = value;
+      }
+    }
+    /// <summary>Gets whether the "join_club_source" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasJoinClubSource {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "join_club_source" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearJoinClubSource() {
+      _hasBits0 &= ~4;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CreateTicketOptions);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CreateTicketOptions other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1749,16 +2207,19 @@ namespace Bgs.Protocol.Club.V1 {
       if(!attribute_.Equals(other.attribute_)) return false;
       if (AllowedRedeemCount != other.AllowedRedeemCount) return false;
       if (ExpirationTime != other.ExpirationTime) return false;
+      if (JoinClubSource != other.JoinClubSource) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasSlot) hash ^= Slot.GetHashCode();
+      if (slot_ != null) hash ^= Slot.GetHashCode();
       hash ^= attribute_.GetHashCode();
       if (HasAllowedRedeemCount) hash ^= AllowedRedeemCount.GetHashCode();
       if (HasExpirationTime) hash ^= ExpirationTime.GetHashCode();
+      if (HasJoinClubSource) hash ^= JoinClubSource.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1766,13 +2227,18 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasSlot) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (slot_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Slot);
       }
@@ -1785,15 +2251,48 @@ namespace Bgs.Protocol.Club.V1 {
         output.WriteRawTag(32);
         output.WriteUInt64(ExpirationTime);
       }
+      if (HasJoinClubSource) {
+        output.WriteRawTag(40);
+        output.WriteUInt32(JoinClubSource);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (slot_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Slot);
+      }
+      attribute_.WriteTo(ref output, _repeated_attribute_codec);
+      if (HasAllowedRedeemCount) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(AllowedRedeemCount);
+      }
+      if (HasExpirationTime) {
+        output.WriteRawTag(32);
+        output.WriteUInt64(ExpirationTime);
+      }
+      if (HasJoinClubSource) {
+        output.WriteRawTag(40);
+        output.WriteUInt32(JoinClubSource);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasSlot) {
+      if (slot_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Slot);
       }
       size += attribute_.CalculateSize(_repeated_attribute_codec);
@@ -1803,6 +2302,9 @@ namespace Bgs.Protocol.Club.V1 {
       if (HasExpirationTime) {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ExpirationTime);
       }
+      if (HasJoinClubSource) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(JoinClubSource);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1810,12 +2312,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CreateTicketOptions other) {
       if (other == null) {
         return;
       }
-      if (other.HasSlot) {
-        if (!HasSlot) {
+      if (other.slot_ != null) {
+        if (slot_ == null) {
           Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
         }
         Slot.MergeFrom(other.Slot);
@@ -1827,11 +2330,18 @@ namespace Bgs.Protocol.Club.V1 {
       if (other.HasExpirationTime) {
         ExpirationTime = other.ExpirationTime;
       }
+      if (other.HasJoinClubSource) {
+        JoinClubSource = other.JoinClubSource;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1839,7 +2349,7 @@ namespace Bgs.Protocol.Club.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasSlot) {
+            if (slot_ == null) {
               Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
             }
             input.ReadMessage(Slot);
@@ -1857,30 +2367,82 @@ namespace Bgs.Protocol.Club.V1 {
             ExpirationTime = input.ReadUInt64();
             break;
           }
+          case 40: {
+            JoinClubSource = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (slot_ == null) {
+              Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
+            }
+            input.ReadMessage(Slot);
+            break;
+          }
+          case 18: {
+            attribute_.AddEntriesFrom(ref input, _repeated_attribute_codec);
+            break;
+          }
+          case 24: {
+            AllowedRedeemCount = input.ReadUInt32();
+            break;
+          }
+          case 32: {
+            ExpirationTime = input.ReadUInt64();
+            break;
+          }
+          case 40: {
+            JoinClubSource = input.ReadUInt32();
+            break;
+          }
         }
       }
     }
+    #endif
 
   }
 
-  public sealed partial class ClubTicket : pb::IMessage<ClubTicket> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ClubTicket : pb::IMessage<ClubTicket>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ClubTicket> _parser = new pb::MessageParser<ClubTicket>(() => new ClubTicket());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ClubTicket> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Club.V1.ClubInvitationReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubTicket() {
       OnConstruction();
     }
@@ -1888,12 +2450,13 @@ namespace Bgs.Protocol.Club.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubTicket(ClubTicket other) : this() {
       _hasBits0 = other._hasBits0;
       id_ = other.id_;
-      creator_ = other.HasCreator ? other.creator_.Clone() : null;
-      club_ = other.HasClub ? other.club_.Clone() : null;
-      slot_ = other.HasSlot ? other.slot_.Clone() : null;
+      creator_ = other.creator_ != null ? other.creator_.Clone() : null;
+      club_ = other.club_ != null ? other.club_.Clone() : null;
+      slot_ = other.slot_ != null ? other.slot_.Clone() : null;
       attribute_ = other.attribute_.Clone();
       currentRedeemCount_ = other.currentRedeemCount_;
       allowedRedeemCount_ = other.allowedRedeemCount_;
@@ -1903,6 +2466,7 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClubTicket Clone() {
       return new ClubTicket(this);
     }
@@ -1913,6 +2477,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private string id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_ ?? IdDefaultValue; }
       set {
@@ -1921,11 +2486,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasId {
       get { return id_ != null; }
     }
     /// <summary>Clears the value of the "id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearId() {
       id_ = null;
     }
@@ -1934,63 +2501,36 @@ namespace Bgs.Protocol.Club.V1 {
     public const int CreatorFieldNumber = 2;
     private global::Bgs.Protocol.Club.V1.MemberDescription creator_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Club.V1.MemberDescription Creator {
       get { return creator_; }
       set {
         creator_ = value;
       }
     }
-    /// <summary>Gets whether the creator field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasCreator {
-      get { return creator_ != null; }
-    }
-    /// <summary>Clears the value of the creator field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearCreator() {
-      creator_ = null;
-    }
 
     /// <summary>Field number for the "club" field.</summary>
     public const int ClubFieldNumber = 3;
     private global::Bgs.Protocol.Club.V1.ClubDescription club_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Club.V1.ClubDescription Club {
       get { return club_; }
       set {
         club_ = value;
       }
     }
-    /// <summary>Gets whether the club field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasClub {
-      get { return club_ != null; }
-    }
-    /// <summary>Clears the value of the club field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearClub() {
-      club_ = null;
-    }
 
     /// <summary>Field number for the "slot" field.</summary>
     public const int SlotFieldNumber = 4;
     private global::Bgs.Protocol.Club.V1.ClubSlot slot_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Club.V1.ClubSlot Slot {
       get { return slot_; }
       set {
         slot_ = value;
       }
-    }
-    /// <summary>Gets whether the slot field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasSlot {
-      get { return slot_ != null; }
-    }
-    /// <summary>Clears the value of the slot field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearSlot() {
-      slot_ = null;
     }
 
     /// <summary>Field number for the "attribute" field.</summary>
@@ -1999,6 +2539,7 @@ namespace Bgs.Protocol.Club.V1 {
         = pb::FieldCodec.ForMessage(42, global::Bgs.Protocol.V2.Attribute.Parser);
     private readonly pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Bgs.Protocol.V2.Attribute> Attribute {
       get { return attribute_; }
     }
@@ -2009,6 +2550,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private uint currentRedeemCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint CurrentRedeemCount {
       get { if ((_hasBits0 & 1) != 0) { return currentRedeemCount_; } else { return CurrentRedeemCountDefaultValue; } }
       set {
@@ -2018,11 +2560,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "current_redeem_count" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCurrentRedeemCount {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "current_redeem_count" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCurrentRedeemCount() {
       _hasBits0 &= ~1;
     }
@@ -2033,6 +2577,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private uint allowedRedeemCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint AllowedRedeemCount {
       get { if ((_hasBits0 & 2) != 0) { return allowedRedeemCount_; } else { return AllowedRedeemCountDefaultValue; } }
       set {
@@ -2042,11 +2587,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "allowed_redeem_count" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAllowedRedeemCount {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "allowed_redeem_count" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAllowedRedeemCount() {
       _hasBits0 &= ~2;
     }
@@ -2057,6 +2604,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private ulong creationTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong CreationTime {
       get { if ((_hasBits0 & 4) != 0) { return creationTime_; } else { return CreationTimeDefaultValue; } }
       set {
@@ -2066,11 +2614,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "creation_time" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCreationTime {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "creation_time" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCreationTime() {
       _hasBits0 &= ~4;
     }
@@ -2081,6 +2631,7 @@ namespace Bgs.Protocol.Club.V1 {
 
     private ulong expirationTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong ExpirationTime {
       get { if ((_hasBits0 & 8) != 0) { return expirationTime_; } else { return ExpirationTimeDefaultValue; } }
       set {
@@ -2090,21 +2641,25 @@ namespace Bgs.Protocol.Club.V1 {
     }
     /// <summary>Gets whether the "expiration_time" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasExpirationTime {
       get { return (_hasBits0 & 8) != 0; }
     }
     /// <summary>Clears the value of the "expiration_time" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearExpirationTime() {
       _hasBits0 &= ~8;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ClubTicket);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ClubTicket other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2125,12 +2680,13 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasId) hash ^= Id.GetHashCode();
-      if (HasCreator) hash ^= Creator.GetHashCode();
-      if (HasClub) hash ^= Club.GetHashCode();
-      if (HasSlot) hash ^= Slot.GetHashCode();
+      if (creator_ != null) hash ^= Creator.GetHashCode();
+      if (club_ != null) hash ^= Club.GetHashCode();
+      if (slot_ != null) hash ^= Slot.GetHashCode();
       hash ^= attribute_.GetHashCode();
       if (HasCurrentRedeemCount) hash ^= CurrentRedeemCount.GetHashCode();
       if (HasAllowedRedeemCount) hash ^= AllowedRedeemCount.GetHashCode();
@@ -2143,25 +2699,30 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasId) {
         output.WriteRawTag(10);
         output.WriteString(Id);
       }
-      if (HasCreator) {
+      if (creator_ != null) {
         output.WriteRawTag(18);
         output.WriteMessage(Creator);
       }
-      if (HasClub) {
+      if (club_ != null) {
         output.WriteRawTag(26);
         output.WriteMessage(Club);
       }
-      if (HasSlot) {
+      if (slot_ != null) {
         output.WriteRawTag(34);
         output.WriteMessage(Slot);
       }
@@ -2185,21 +2746,66 @@ namespace Bgs.Protocol.Club.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasId) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (creator_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Creator);
+      }
+      if (club_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Club);
+      }
+      if (slot_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Slot);
+      }
+      attribute_.WriteTo(ref output, _repeated_attribute_codec);
+      if (HasCurrentRedeemCount) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(CurrentRedeemCount);
+      }
+      if (HasAllowedRedeemCount) {
+        output.WriteRawTag(56);
+        output.WriteUInt32(AllowedRedeemCount);
+      }
+      if (HasCreationTime) {
+        output.WriteRawTag(64);
+        output.WriteUInt64(CreationTime);
+      }
+      if (HasExpirationTime) {
+        output.WriteRawTag(72);
+        output.WriteUInt64(ExpirationTime);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasId) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
       }
-      if (HasCreator) {
+      if (creator_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Creator);
       }
-      if (HasClub) {
+      if (club_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Club);
       }
-      if (HasSlot) {
+      if (slot_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Slot);
       }
       size += attribute_.CalculateSize(_repeated_attribute_codec);
@@ -2222,6 +2828,7 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ClubTicket other) {
       if (other == null) {
         return;
@@ -2229,20 +2836,20 @@ namespace Bgs.Protocol.Club.V1 {
       if (other.HasId) {
         Id = other.Id;
       }
-      if (other.HasCreator) {
-        if (!HasCreator) {
+      if (other.creator_ != null) {
+        if (creator_ == null) {
           Creator = new global::Bgs.Protocol.Club.V1.MemberDescription();
         }
         Creator.MergeFrom(other.Creator);
       }
-      if (other.HasClub) {
-        if (!HasClub) {
+      if (other.club_ != null) {
+        if (club_ == null) {
           Club = new global::Bgs.Protocol.Club.V1.ClubDescription();
         }
         Club.MergeFrom(other.Club);
       }
-      if (other.HasSlot) {
-        if (!HasSlot) {
+      if (other.slot_ != null) {
+        if (slot_ == null) {
           Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
         }
         Slot.MergeFrom(other.Slot);
@@ -2264,7 +2871,11 @@ namespace Bgs.Protocol.Club.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2276,21 +2887,21 @@ namespace Bgs.Protocol.Club.V1 {
             break;
           }
           case 18: {
-            if (!HasCreator) {
+            if (creator_ == null) {
               Creator = new global::Bgs.Protocol.Club.V1.MemberDescription();
             }
             input.ReadMessage(Creator);
             break;
           }
           case 26: {
-            if (!HasClub) {
+            if (club_ == null) {
               Club = new global::Bgs.Protocol.Club.V1.ClubDescription();
             }
             input.ReadMessage(Club);
             break;
           }
           case 34: {
-            if (!HasSlot) {
+            if (slot_ == null) {
               Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
             }
             input.ReadMessage(Slot);
@@ -2318,7 +2929,68 @@ namespace Bgs.Protocol.Club.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            if (creator_ == null) {
+              Creator = new global::Bgs.Protocol.Club.V1.MemberDescription();
+            }
+            input.ReadMessage(Creator);
+            break;
+          }
+          case 26: {
+            if (club_ == null) {
+              Club = new global::Bgs.Protocol.Club.V1.ClubDescription();
+            }
+            input.ReadMessage(Club);
+            break;
+          }
+          case 34: {
+            if (slot_ == null) {
+              Slot = new global::Bgs.Protocol.Club.V1.ClubSlot();
+            }
+            input.ReadMessage(Slot);
+            break;
+          }
+          case 42: {
+            attribute_.AddEntriesFrom(ref input, _repeated_attribute_codec);
+            break;
+          }
+          case 48: {
+            CurrentRedeemCount = input.ReadUInt32();
+            break;
+          }
+          case 56: {
+            AllowedRedeemCount = input.ReadUInt32();
+            break;
+          }
+          case 64: {
+            CreationTime = input.ReadUInt64();
+            break;
+          }
+          case 72: {
+            ExpirationTime = input.ReadUInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

@@ -60,24 +60,33 @@ namespace Bgs.Protocol.Presence.V1 {
 
   }
   #region Messages
-  public sealed partial class RichPresenceLocalizationKey : pb::IMessage<RichPresenceLocalizationKey> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class RichPresenceLocalizationKey : pb::IMessage<RichPresenceLocalizationKey>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<RichPresenceLocalizationKey> _parser = new pb::MessageParser<RichPresenceLocalizationKey>(() => new RichPresenceLocalizationKey());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RichPresenceLocalizationKey> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Presence.V1.PresenceTypesReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RichPresenceLocalizationKey() {
       OnConstruction();
     }
@@ -85,6 +94,7 @@ namespace Bgs.Protocol.Presence.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RichPresenceLocalizationKey(RichPresenceLocalizationKey other) : this() {
       _hasBits0 = other._hasBits0;
       program_ = other.program_;
@@ -94,6 +104,7 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RichPresenceLocalizationKey Clone() {
       return new RichPresenceLocalizationKey(this);
     }
@@ -104,6 +115,7 @@ namespace Bgs.Protocol.Presence.V1 {
 
     private uint program_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Program {
       get { if ((_hasBits0 & 1) != 0) { return program_; } else { return ProgramDefaultValue; } }
       set {
@@ -113,11 +125,13 @@ namespace Bgs.Protocol.Presence.V1 {
     }
     /// <summary>Gets whether the "program" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasProgram {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "program" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearProgram() {
       _hasBits0 &= ~1;
     }
@@ -128,6 +142,7 @@ namespace Bgs.Protocol.Presence.V1 {
 
     private uint stream_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Stream {
       get { if ((_hasBits0 & 2) != 0) { return stream_; } else { return StreamDefaultValue; } }
       set {
@@ -137,11 +152,13 @@ namespace Bgs.Protocol.Presence.V1 {
     }
     /// <summary>Gets whether the "stream" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasStream {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "stream" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearStream() {
       _hasBits0 &= ~2;
     }
@@ -152,6 +169,7 @@ namespace Bgs.Protocol.Presence.V1 {
 
     private uint localizationId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint LocalizationId {
       get { if ((_hasBits0 & 4) != 0) { return localizationId_; } else { return LocalizationIdDefaultValue; } }
       set {
@@ -161,21 +179,25 @@ namespace Bgs.Protocol.Presence.V1 {
     }
     /// <summary>Gets whether the "localization_id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasLocalizationId {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "localization_id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearLocalizationId() {
       _hasBits0 &= ~4;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RichPresenceLocalizationKey);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RichPresenceLocalizationKey other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -190,6 +212,7 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasProgram) hash ^= Program.GetHashCode();
@@ -202,12 +225,17 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasProgram) {
         output.WriteRawTag(13);
         output.WriteFixed32(Program);
@@ -223,9 +251,33 @@ namespace Bgs.Protocol.Presence.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasProgram) {
+        output.WriteRawTag(13);
+        output.WriteFixed32(Program);
+      }
+      if (HasStream) {
+        output.WriteRawTag(21);
+        output.WriteFixed32(Stream);
+      }
+      if (HasLocalizationId) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(LocalizationId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasProgram) {
@@ -244,6 +296,7 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RichPresenceLocalizationKey other) {
       if (other == null) {
         return;
@@ -261,7 +314,11 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -282,28 +339,65 @@ namespace Bgs.Protocol.Presence.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 13: {
+            Program = input.ReadFixed32();
+            break;
+          }
+          case 21: {
+            Stream = input.ReadFixed32();
+            break;
+          }
+          case 24: {
+            LocalizationId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class FieldKey : pb::IMessage<FieldKey> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class FieldKey : pb::IMessage<FieldKey>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<FieldKey> _parser = new pb::MessageParser<FieldKey>(() => new FieldKey());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<FieldKey> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Presence.V1.PresenceTypesReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FieldKey() {
       OnConstruction();
     }
@@ -311,6 +405,7 @@ namespace Bgs.Protocol.Presence.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FieldKey(FieldKey other) : this() {
       _hasBits0 = other._hasBits0;
       program_ = other.program_;
@@ -321,6 +416,7 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FieldKey Clone() {
       return new FieldKey(this);
     }
@@ -331,6 +427,7 @@ namespace Bgs.Protocol.Presence.V1 {
 
     private uint program_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Program {
       get { if ((_hasBits0 & 1) != 0) { return program_; } else { return ProgramDefaultValue; } }
       set {
@@ -340,11 +437,13 @@ namespace Bgs.Protocol.Presence.V1 {
     }
     /// <summary>Gets whether the "program" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasProgram {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "program" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearProgram() {
       _hasBits0 &= ~1;
     }
@@ -355,6 +454,7 @@ namespace Bgs.Protocol.Presence.V1 {
 
     private uint group_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Group {
       get { if ((_hasBits0 & 2) != 0) { return group_; } else { return GroupDefaultValue; } }
       set {
@@ -364,11 +464,13 @@ namespace Bgs.Protocol.Presence.V1 {
     }
     /// <summary>Gets whether the "group" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasGroup {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "group" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearGroup() {
       _hasBits0 &= ~2;
     }
@@ -379,6 +481,7 @@ namespace Bgs.Protocol.Presence.V1 {
 
     private uint field_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Field {
       get { if ((_hasBits0 & 4) != 0) { return field_; } else { return FieldDefaultValue; } }
       set {
@@ -388,11 +491,13 @@ namespace Bgs.Protocol.Presence.V1 {
     }
     /// <summary>Gets whether the "field" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasField {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "field" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearField() {
       _hasBits0 &= ~4;
     }
@@ -403,6 +508,7 @@ namespace Bgs.Protocol.Presence.V1 {
 
     private ulong uniqueId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong UniqueId {
       get { if ((_hasBits0 & 8) != 0) { return uniqueId_; } else { return UniqueIdDefaultValue; } }
       set {
@@ -412,21 +518,25 @@ namespace Bgs.Protocol.Presence.V1 {
     }
     /// <summary>Gets whether the "unique_id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasUniqueId {
       get { return (_hasBits0 & 8) != 0; }
     }
     /// <summary>Clears the value of the "unique_id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearUniqueId() {
       _hasBits0 &= ~8;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as FieldKey);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(FieldKey other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -442,6 +552,7 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasProgram) hash ^= Program.GetHashCode();
@@ -455,12 +566,17 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasProgram) {
         output.WriteRawTag(8);
         output.WriteUInt32(Program);
@@ -480,9 +596,37 @@ namespace Bgs.Protocol.Presence.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasProgram) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Program);
+      }
+      if (HasGroup) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Group);
+      }
+      if (HasField) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(Field);
+      }
+      if (HasUniqueId) {
+        output.WriteRawTag(32);
+        output.WriteUInt64(UniqueId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasProgram) {
@@ -504,6 +648,7 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(FieldKey other) {
       if (other == null) {
         return;
@@ -524,7 +669,11 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -549,27 +698,68 @@ namespace Bgs.Protocol.Presence.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Program = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Group = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            Field = input.ReadUInt32();
+            break;
+          }
+          case 32: {
+            UniqueId = input.ReadUInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class Field : pb::IMessage<Field> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class Field : pb::IMessage<Field>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<Field> _parser = new pb::MessageParser<Field>(() => new Field());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Field> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Presence.V1.PresenceTypesReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Field() {
       OnConstruction();
     }
@@ -577,13 +767,15 @@ namespace Bgs.Protocol.Presence.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Field(Field other) : this() {
-      key_ = other.HasKey ? other.key_.Clone() : null;
-      value_ = other.HasValue ? other.value_.Clone() : null;
+      key_ = other.key_ != null ? other.key_.Clone() : null;
+      value_ = other.value_ != null ? other.value_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Field Clone() {
       return new Field(this);
     }
@@ -592,50 +784,34 @@ namespace Bgs.Protocol.Presence.V1 {
     public const int KeyFieldNumber = 1;
     private global::Bgs.Protocol.Presence.V1.FieldKey key_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Presence.V1.FieldKey Key {
       get { return key_; }
       set {
         key_ = value;
       }
     }
-    /// <summary>Gets whether the key field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasKey {
-      get { return key_ != null; }
-    }
-    /// <summary>Clears the value of the key field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearKey() {
-      key_ = null;
-    }
 
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 2;
     private global::Bgs.Protocol.Variant value_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Variant Value {
       get { return value_; }
       set {
         value_ = value;
       }
     }
-    /// <summary>Gets whether the value field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasValue {
-      get { return value_ != null; }
-    }
-    /// <summary>Clears the value of the value field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearValue() {
-      value_ = null;
-    }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Field);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Field other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -649,10 +825,11 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasKey) hash ^= Key.GetHashCode();
-      if (HasValue) hash ^= Value.GetHashCode();
+      if (key_ != null) hash ^= Key.GetHashCode();
+      if (value_ != null) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -660,32 +837,57 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasKey) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (key_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Key);
       }
-      if (HasValue) {
+      if (value_ != null) {
         output.WriteRawTag(18);
         output.WriteMessage(Value);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (key_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Key);
+      }
+      if (value_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasKey) {
+      if (key_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Key);
       }
-      if (HasValue) {
+      if (value_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Value);
       }
       if (_unknownFields != null) {
@@ -695,18 +897,19 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Field other) {
       if (other == null) {
         return;
       }
-      if (other.HasKey) {
-        if (!HasKey) {
+      if (other.key_ != null) {
+        if (key_ == null) {
           Key = new global::Bgs.Protocol.Presence.V1.FieldKey();
         }
         Key.MergeFrom(other.Key);
       }
-      if (other.HasValue) {
-        if (!HasValue) {
+      if (other.value_ != null) {
+        if (value_ == null) {
           Value = new global::Bgs.Protocol.Variant();
         }
         Value.MergeFrom(other.Value);
@@ -715,7 +918,11 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -723,14 +930,43 @@ namespace Bgs.Protocol.Presence.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasKey) {
+            if (key_ == null) {
               Key = new global::Bgs.Protocol.Presence.V1.FieldKey();
             }
             input.ReadMessage(Key);
             break;
           }
           case 18: {
-            if (!HasValue) {
+            if (value_ == null) {
+              Value = new global::Bgs.Protocol.Variant();
+            }
+            input.ReadMessage(Value);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (key_ == null) {
+              Key = new global::Bgs.Protocol.Presence.V1.FieldKey();
+            }
+            input.ReadMessage(Key);
+            break;
+          }
+          case 18: {
+            if (value_ == null) {
               Value = new global::Bgs.Protocol.Variant();
             }
             input.ReadMessage(Value);
@@ -739,27 +975,37 @@ namespace Bgs.Protocol.Presence.V1 {
         }
       }
     }
+    #endif
 
   }
 
-  public sealed partial class FieldOperation : pb::IMessage<FieldOperation> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class FieldOperation : pb::IMessage<FieldOperation>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<FieldOperation> _parser = new pb::MessageParser<FieldOperation>(() => new FieldOperation());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<FieldOperation> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Presence.V1.PresenceTypesReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FieldOperation() {
       OnConstruction();
     }
@@ -767,14 +1013,16 @@ namespace Bgs.Protocol.Presence.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FieldOperation(FieldOperation other) : this() {
       _hasBits0 = other._hasBits0;
-      field_ = other.HasField ? other.field_.Clone() : null;
+      field_ = other.field_ != null ? other.field_.Clone() : null;
       operation_ = other.operation_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FieldOperation Clone() {
       return new FieldOperation(this);
     }
@@ -783,21 +1031,12 @@ namespace Bgs.Protocol.Presence.V1 {
     public const int FieldFieldNumber = 1;
     private global::Bgs.Protocol.Presence.V1.Field field_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Presence.V1.Field Field {
       get { return field_; }
       set {
         field_ = value;
       }
-    }
-    /// <summary>Gets whether the field field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasField {
-      get { return field_ != null; }
-    }
-    /// <summary>Clears the value of the field field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearField() {
-      field_ = null;
     }
 
     /// <summary>Field number for the "operation" field.</summary>
@@ -806,6 +1045,7 @@ namespace Bgs.Protocol.Presence.V1 {
 
     private global::Bgs.Protocol.Presence.V1.FieldOperation.Types.OperationType operation_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.Presence.V1.FieldOperation.Types.OperationType Operation {
       get { if ((_hasBits0 & 1) != 0) { return operation_; } else { return OperationDefaultValue; } }
       set {
@@ -815,21 +1055,25 @@ namespace Bgs.Protocol.Presence.V1 {
     }
     /// <summary>Gets whether the "operation" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasOperation {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "operation" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearOperation() {
       _hasBits0 &= ~1;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as FieldOperation);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(FieldOperation other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -843,9 +1087,10 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasField) hash ^= Field.GetHashCode();
+      if (field_ != null) hash ^= Field.GetHashCode();
       if (HasOperation) hash ^= Operation.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -854,13 +1099,18 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasField) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (field_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Field);
       }
@@ -871,12 +1121,32 @@ namespace Bgs.Protocol.Presence.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (field_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Field);
+      }
+      if (HasOperation) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Operation);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasField) {
+      if (field_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Field);
       }
       if (HasOperation) {
@@ -889,12 +1159,13 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(FieldOperation other) {
       if (other == null) {
         return;
       }
-      if (other.HasField) {
-        if (!HasField) {
+      if (other.field_ != null) {
+        if (field_ == null) {
           Field = new global::Bgs.Protocol.Presence.V1.Field();
         }
         Field.MergeFrom(other.Field);
@@ -906,7 +1177,11 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -914,7 +1189,33 @@ namespace Bgs.Protocol.Presence.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasField) {
+            if (field_ == null) {
+              Field = new global::Bgs.Protocol.Presence.V1.Field();
+            }
+            input.ReadMessage(Field);
+            break;
+          }
+          case 16: {
+            Operation = (global::Bgs.Protocol.Presence.V1.FieldOperation.Types.OperationType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (field_ == null) {
               Field = new global::Bgs.Protocol.Presence.V1.Field();
             }
             input.ReadMessage(Field);
@@ -927,10 +1228,12 @@ namespace Bgs.Protocol.Presence.V1 {
         }
       }
     }
+    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the FieldOperation message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       public enum OperationType {
         [pbr::OriginalName("SET")] Set = 0,
@@ -942,23 +1245,32 @@ namespace Bgs.Protocol.Presence.V1 {
 
   }
 
-  public sealed partial class PresenceState : pb::IMessage<PresenceState> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class PresenceState : pb::IMessage<PresenceState>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<PresenceState> _parser = new pb::MessageParser<PresenceState>(() => new PresenceState());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PresenceState> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Presence.V1.PresenceTypesReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PresenceState() {
       OnConstruction();
     }
@@ -966,13 +1278,15 @@ namespace Bgs.Protocol.Presence.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PresenceState(PresenceState other) : this() {
-      entityId_ = other.HasEntityId ? other.entityId_.Clone() : null;
+      entityId_ = other.entityId_ != null ? other.entityId_.Clone() : null;
       fieldOperation_ = other.fieldOperation_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PresenceState Clone() {
       return new PresenceState(this);
     }
@@ -981,21 +1295,12 @@ namespace Bgs.Protocol.Presence.V1 {
     public const int EntityIdFieldNumber = 1;
     private global::Bgs.Protocol.EntityId entityId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.EntityId EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
       }
-    }
-    /// <summary>Gets whether the entity_id field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasEntityId {
-      get { return entityId_ != null; }
-    }
-    /// <summary>Clears the value of the entity_id field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearEntityId() {
-      entityId_ = null;
     }
 
     /// <summary>Field number for the "field_operation" field.</summary>
@@ -1004,16 +1309,19 @@ namespace Bgs.Protocol.Presence.V1 {
         = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Presence.V1.FieldOperation.Parser);
     private readonly pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.FieldOperation> fieldOperation_ = new pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.FieldOperation>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.FieldOperation> FieldOperation {
       get { return fieldOperation_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PresenceState);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PresenceState other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1027,9 +1335,10 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasEntityId) hash ^= EntityId.GetHashCode();
+      if (entityId_ != null) hash ^= EntityId.GetHashCode();
       hash ^= fieldOperation_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1038,13 +1347,18 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasEntityId) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (entityId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(EntityId);
       }
@@ -1052,12 +1366,29 @@ namespace Bgs.Protocol.Presence.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (entityId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(EntityId);
+      }
+      fieldOperation_.WriteTo(ref output, _repeated_fieldOperation_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasEntityId) {
+      if (entityId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(EntityId);
       }
       size += fieldOperation_.CalculateSize(_repeated_fieldOperation_codec);
@@ -1068,12 +1399,13 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PresenceState other) {
       if (other == null) {
         return;
       }
-      if (other.HasEntityId) {
-        if (!HasEntityId) {
+      if (other.entityId_ != null) {
+        if (entityId_ == null) {
           EntityId = new global::Bgs.Protocol.EntityId();
         }
         EntityId.MergeFrom(other.EntityId);
@@ -1083,7 +1415,11 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1091,7 +1427,7 @@ namespace Bgs.Protocol.Presence.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasEntityId) {
+            if (entityId_ == null) {
               EntityId = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(EntityId);
@@ -1103,28 +1439,64 @@ namespace Bgs.Protocol.Presence.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (entityId_ == null) {
+              EntityId = new global::Bgs.Protocol.EntityId();
+            }
+            input.ReadMessage(EntityId);
+            break;
+          }
+          case 18: {
+            fieldOperation_.AddEntriesFrom(ref input, _repeated_fieldOperation_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class ChannelState : pb::IMessage<ChannelState> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ChannelState : pb::IMessage<ChannelState>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ChannelState> _parser = new pb::MessageParser<ChannelState>(() => new ChannelState());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ChannelState> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.Presence.V1.PresenceTypesReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChannelState() {
       OnConstruction();
     }
@@ -1132,15 +1504,17 @@ namespace Bgs.Protocol.Presence.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChannelState(ChannelState other) : this() {
       _hasBits0 = other._hasBits0;
-      entityId_ = other.HasEntityId ? other.entityId_.Clone() : null;
+      entityId_ = other.entityId_ != null ? other.entityId_.Clone() : null;
       fieldOperation_ = other.fieldOperation_.Clone();
       healing_ = other.healing_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChannelState Clone() {
       return new ChannelState(this);
     }
@@ -1149,21 +1523,12 @@ namespace Bgs.Protocol.Presence.V1 {
     public const int EntityIdFieldNumber = 1;
     private global::Bgs.Protocol.EntityId entityId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.EntityId EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
       }
-    }
-    /// <summary>Gets whether the entity_id field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasEntityId {
-      get { return entityId_ != null; }
-    }
-    /// <summary>Clears the value of the entity_id field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearEntityId() {
-      entityId_ = null;
     }
 
     /// <summary>Field number for the "field_operation" field.</summary>
@@ -1172,6 +1537,7 @@ namespace Bgs.Protocol.Presence.V1 {
         = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Presence.V1.FieldOperation.Parser);
     private readonly pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.FieldOperation> fieldOperation_ = new pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.FieldOperation>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.FieldOperation> FieldOperation {
       get { return fieldOperation_; }
     }
@@ -1182,6 +1548,7 @@ namespace Bgs.Protocol.Presence.V1 {
 
     private bool healing_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Healing {
       get { if ((_hasBits0 & 1) != 0) { return healing_; } else { return HealingDefaultValue; } }
       set {
@@ -1191,21 +1558,25 @@ namespace Bgs.Protocol.Presence.V1 {
     }
     /// <summary>Gets whether the "healing" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasHealing {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "healing" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearHealing() {
       _hasBits0 &= ~1;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ChannelState);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ChannelState other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1220,9 +1591,10 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasEntityId) hash ^= EntityId.GetHashCode();
+      if (entityId_ != null) hash ^= EntityId.GetHashCode();
       hash ^= fieldOperation_.GetHashCode();
       if (HasHealing) hash ^= Healing.GetHashCode();
       if (_unknownFields != null) {
@@ -1232,13 +1604,18 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasEntityId) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (entityId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(EntityId);
       }
@@ -1250,12 +1627,33 @@ namespace Bgs.Protocol.Presence.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (entityId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(EntityId);
+      }
+      fieldOperation_.WriteTo(ref output, _repeated_fieldOperation_codec);
+      if (HasHealing) {
+        output.WriteRawTag(24);
+        output.WriteBool(Healing);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasEntityId) {
+      if (entityId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(EntityId);
       }
       size += fieldOperation_.CalculateSize(_repeated_fieldOperation_codec);
@@ -1269,12 +1667,13 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ChannelState other) {
       if (other == null) {
         return;
       }
-      if (other.HasEntityId) {
-        if (!HasEntityId) {
+      if (other.entityId_ != null) {
+        if (entityId_ == null) {
           EntityId = new global::Bgs.Protocol.EntityId();
         }
         EntityId.MergeFrom(other.EntityId);
@@ -1287,7 +1686,11 @@ namespace Bgs.Protocol.Presence.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1295,7 +1698,7 @@ namespace Bgs.Protocol.Presence.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (!HasEntityId) {
+            if (entityId_ == null) {
               EntityId = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(EntityId);
@@ -1311,7 +1714,38 @@ namespace Bgs.Protocol.Presence.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (entityId_ == null) {
+              EntityId = new global::Bgs.Protocol.EntityId();
+            }
+            input.ReadMessage(EntityId);
+            break;
+          }
+          case 18: {
+            fieldOperation_.AddEntriesFrom(ref input, _repeated_fieldOperation_codec);
+            break;
+          }
+          case 24: {
+            Healing = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

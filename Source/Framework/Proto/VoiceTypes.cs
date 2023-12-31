@@ -67,24 +67,33 @@ namespace Bgs.Protocol {
   #endregion
 
   #region Messages
-  public sealed partial class VoiceCredentials : pb::IMessage<VoiceCredentials> {
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class VoiceCredentials : pb::IMessage<VoiceCredentials>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<VoiceCredentials> _parser = new pb::MessageParser<VoiceCredentials>(() => new VoiceCredentials());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<VoiceCredentials> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Bgs.Protocol.VoiceTypesReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VoiceCredentials() {
       OnConstruction();
     }
@@ -92,6 +101,7 @@ namespace Bgs.Protocol {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VoiceCredentials(VoiceCredentials other) : this() {
       _hasBits0 = other._hasBits0;
       voiceId_ = other.voiceId_;
@@ -103,6 +113,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VoiceCredentials Clone() {
       return new VoiceCredentials(this);
     }
@@ -113,6 +124,7 @@ namespace Bgs.Protocol {
 
     private string voiceId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string VoiceId {
       get { return voiceId_ ?? VoiceIdDefaultValue; }
       set {
@@ -121,11 +133,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "voice_id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasVoiceId {
       get { return voiceId_ != null; }
     }
     /// <summary>Clears the value of the "voice_id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearVoiceId() {
       voiceId_ = null;
     }
@@ -136,6 +150,7 @@ namespace Bgs.Protocol {
 
     private string token_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Token {
       get { return token_ ?? TokenDefaultValue; }
       set {
@@ -144,11 +159,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "token" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasToken {
       get { return token_ != null; }
     }
     /// <summary>Clears the value of the "token" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearToken() {
       token_ = null;
     }
@@ -159,6 +176,7 @@ namespace Bgs.Protocol {
 
     private string url_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Url {
       get { return url_ ?? UrlDefaultValue; }
       set {
@@ -167,11 +185,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "url" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasUrl {
       get { return url_ != null; }
     }
     /// <summary>Clears the value of the "url" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearUrl() {
       url_ = null;
     }
@@ -182,6 +202,7 @@ namespace Bgs.Protocol {
 
     private global::Bgs.Protocol.VoiceJoinType joinType_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.VoiceJoinType JoinType {
       get { if ((_hasBits0 & 1) != 0) { return joinType_; } else { return JoinTypeDefaultValue; } }
       set {
@@ -191,11 +212,13 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "join_type" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasJoinType {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "join_type" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearJoinType() {
       _hasBits0 &= ~1;
     }
@@ -206,6 +229,7 @@ namespace Bgs.Protocol {
 
     private global::Bgs.Protocol.VoiceMuteReason muteReason_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Bgs.Protocol.VoiceMuteReason MuteReason {
       get { if ((_hasBits0 & 2) != 0) { return muteReason_; } else { return MuteReasonDefaultValue; } }
       set {
@@ -215,21 +239,25 @@ namespace Bgs.Protocol {
     }
     /// <summary>Gets whether the "mute_reason" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasMuteReason {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "mute_reason" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearMuteReason() {
       _hasBits0 &= ~2;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as VoiceCredentials);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(VoiceCredentials other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -246,6 +274,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasVoiceId) hash ^= VoiceId.GetHashCode();
@@ -260,12 +289,17 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (HasVoiceId) {
         output.WriteRawTag(10);
         output.WriteString(VoiceId);
@@ -289,9 +323,41 @@ namespace Bgs.Protocol {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasVoiceId) {
+        output.WriteRawTag(10);
+        output.WriteString(VoiceId);
+      }
+      if (HasToken) {
+        output.WriteRawTag(18);
+        output.WriteString(Token);
+      }
+      if (HasUrl) {
+        output.WriteRawTag(26);
+        output.WriteString(Url);
+      }
+      if (HasJoinType) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) JoinType);
+      }
+      if (HasMuteReason) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) MuteReason);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasVoiceId) {
@@ -316,6 +382,7 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(VoiceCredentials other) {
       if (other == null) {
         return;
@@ -339,7 +406,11 @@ namespace Bgs.Protocol {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -368,7 +439,43 @@ namespace Bgs.Protocol {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            VoiceId = input.ReadString();
+            break;
+          }
+          case 18: {
+            Token = input.ReadString();
+            break;
+          }
+          case 26: {
+            Url = input.ReadString();
+            break;
+          }
+          case 32: {
+            JoinType = (global::Bgs.Protocol.VoiceJoinType) input.ReadEnum();
+            break;
+          }
+          case 40: {
+            MuteReason = (global::Bgs.Protocol.VoiceMuteReason) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
