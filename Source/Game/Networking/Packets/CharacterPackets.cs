@@ -145,6 +145,12 @@ namespace Game.Networking.Packets
 
                 LastLoginVersion = fields.Read<int>(22);
 
+                PersonalTabard.EmblemStyle = fields.Read<int>(23);
+                PersonalTabard.EmblemColor = fields.Read<int>(24);
+                PersonalTabard.BorderStyle = fields.Read<int>(25);
+                PersonalTabard.BorderColor = fields.Read<int>(26);
+                PersonalTabard.BackgroundColor = fields.Read<int>(27);
+
                 int equipmentFieldsPerSlot = 5;
 
                 for (var slot = 0; slot < VisualItems.Length && (slot + 1) * equipmentFieldsPerSlot <= equipment.Length; ++slot)
@@ -253,6 +259,9 @@ namespace Game.Networking.Packets
             public VisualItemInfo[] VisualItems = new VisualItemInfo[InventorySlots.ReagentBagEnd];
             public List<string> MailSenders = new();
             public List<uint> MailSenderTypes = new();
+            public bool RpeResetAvailable = false;
+            public bool RpeResetQuestClearAvailable = false;
+            public CustomTabardInfo PersonalTabard;
 
             public struct VisualItemInfo
             {
@@ -1139,4 +1148,13 @@ namespace Game.Networking.Packets
         // Server side data
         public string Name;
     }
+
+    public class CustomTabardInfo
+    {
+        public int EmblemStyle = -1;
+        public int EmblemColor = -1;
+        public int BorderStyle = -1;
+        public int BorderColor = -1;
+        public int BackgroundColor = -1;
+    };
 }
