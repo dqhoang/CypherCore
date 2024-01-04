@@ -97,6 +97,8 @@ namespace BNetServer.Networking
                 timezoneOffset = (short)convert.TotalMinutes;
             }
             build = (uint)logonRequest.ApplicationVersion;
+            if (logonRequest.HasCachedWebCredentials)
+                return VerifyWebCredentials(logonRequest.CachedWebCredentials, response);
 
             ChallengeExternalRequest externalChallenge = new();
             externalChallenge.PayloadType = "web_auth_url";
@@ -107,13 +109,23 @@ namespace BNetServer.Networking
         }
 
         [Service(OriginalHash.AuthenticationService, 7)]
-        BattlenetRpcErrorCode HandleVerifyWebCredentials(VerifyWebCredentialsRequest verifyWebCredentialsRequest)
+        BattlenetRpcErrorCode HandleVerifyWebCredentials(VerifyWebCredentialsRequest verifyWebCredentialsRequest, NoData response)
         {
-            if (verifyWebCredentialsRequest.WebCredentials.IsEmpty)
+            if(verifyWebCredentialsRequest.HasWebCredentials)
+            {
+                return VerifyWebCredentials(verifyWebCredentialsRequest.WebCredentials, response);
+            }
+
+            return BattlenetRpcErrorCode.Denied;
+        }
+
+        BattlenetRpcErrorCode VerifyWebCredentials(ByteString webCredentials, NoData response)
+        {
+            if (webCredentials.IsEmpty)
                 return BattlenetRpcErrorCode.Denied;
 
             PreparedStatement stmt = LoginDatabase.GetPreparedStatement(LoginStatements.SelBnetAccountInfo);
-            stmt.AddValue(0, verifyWebCredentialsRequest.WebCredentials.ToStringUtf8());
+            stmt.AddValue(0, webCredentials.ToStringUtf8());
 
             SQLResult result = DB.Login.Query(stmt);
             if (result.IsEmpty())
